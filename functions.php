@@ -43,9 +43,11 @@ function md_partitions_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'md_partitions' ),
-	) );
+		register_nav_menus( array(
+			'home-nav'   => esc_html__( 'Home Page Desktop Menu', 'md_partitions' ),
+			'page-nav'   => esc_html__( 'Page Desktop Menu', 'md_partitions' ),
+			'mobile-nav' => esc_html__( 'Mobile Menu', 'md_partitions' )
+		) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -58,12 +60,6 @@ function md_partitions_setup() {
 		'gallery',
 		'caption',
 	) );
-
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'md_partitions_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -102,20 +98,56 @@ function md_partitions_widgets_init() {
 add_action( 'widgets_init', 'md_partitions_widgets_init' );
 
 /**
+ * Register scripts for later use.
+ */
+function md_partitions_register_scripts()  {
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        // Load the copy of jQuery that comes with WordPress
+        // The last parameter set to TRUE states that it should be loaded in the footer.
+        wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, FALSE, TRUE);
+    }
+}
+add_action('init', 'md_partitions_register_scripts');
+
+/**
  * Enqueue scripts and styles.
  */
 function md_partitions_scripts() {
 	wp_enqueue_style( 'md_partitions-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'md_partitions-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'md_partitions-navigation', get_template_directory_uri() . '/js/min/navigation-min.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'md_partitions-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'md_partitions-skip-link-focus-fix', get_template_directory_uri() . '/js/min/skip-link-focus-fix-min.js', array(), '20151215', true );
+
+	if ( is_page_template( 'front-page.php' ) ) {
+		wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', false, false, true );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'md_partitions_scripts' );
+
+/**
+ * Custom ACF Options
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+	    'page_title'    => 'Theme General Settings',
+	    'menu_title'    => 'Theme Settings',
+	    'menu_slug'     => 'theme-general-settings',
+	    'capability'    => 'edit_posts',
+	    'redirect'      => false
+	));
+	// acf_add_options_sub_page(array(
+	//     'page_title'    => 'Menu Settings',
+	//     'menu_title'    => 'Dropdown Menu',
+	//     'parent_slug'   => 'theme-general-settings',
+	// ));
+}
+
 
 /**
  * Implement the Custom Header feature.
