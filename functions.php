@@ -121,7 +121,8 @@ function md_partitions_scripts() {
 	wp_enqueue_script( 'md_partitions-skip-link-focus-fix', get_template_directory_uri() . '/js/min/skip-link-focus-fix-min.js', array(), '20151215', true );
 
 	if ( is_page_template( 'front-page.php' ) ) {
-		wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', false, false, true );
+		wp_enqueue_script( 'md_partitions-wallop-library', get_template_directory_uri() . '/js/min/Wallop.min.js', false, false, true );
+		wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('md_partitions-wallop-library'), false, true );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -135,9 +136,9 @@ add_action( 'wp_enqueue_scripts', 'md_partitions_scripts' );
  */
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
-	    'page_title'    => 'Theme General Settings',
-	    'menu_title'    => 'Theme Settings',
-	    'menu_slug'     => 'theme-general-settings',
+	    'page_title'    => 'Company Information',
+	    'menu_title'    => 'Company Information',
+	    'menu_slug'     => 'company-information',
 	    'capability'    => 'edit_posts',
 	    'redirect'      => false
 	));

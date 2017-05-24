@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php
+ * Template part for displaying page content in front-page.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -42,6 +42,7 @@
 
 	<div class="entry-content">
 		<?php
+
 			the_content();
 
 			wp_link_pages( array(
