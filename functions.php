@@ -41,6 +41,7 @@ function md_partitions_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'frontpage-highlight', 500, 500, true );
 
 	// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -210,3 +211,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Displays the sidebar on the frontpage.
  */
 require get_template_directory() . '/inc/frontpage-sidebar.php';
+
+/**
+ * Displays the highlight boxes on the frontpage.
+ */
+require get_template_directory() . '/inc/frontpage-highlights.php';
