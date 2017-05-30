@@ -457,7 +457,7 @@ html {
 
 /* line 11, sass/elements/_elements.scss */
 body {
-  background: #ffffff;
+  background: #111111;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -627,11 +627,11 @@ textarea {
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_links.scss */
 a {
-  color: royalblue;
+  color: #81bc00;
 }
 /* line 4, sass/navigation/_links.scss */
 a:visited {
-  color: purple;
+  color: #111111;
 }
 /* line 7, sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
@@ -852,6 +852,26 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Site Container Styles
+--------------------------------------------------------------*/
+/* line 4, sass/site/_site.scss */
+.site-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  background-color: #ffffff;
+}
+@media (min-width: 450px) {
+  /* line 4, sass/site/_site.scss */
+  .site-content {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 /* line 1, sass/site/primary/_posts-and-pages.scss */
@@ -900,6 +920,24 @@ a:hover, a:active {
 /* line 4, sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/* line 1, sass/site/footer/_footer.scss */
+.site-footer {
+  color: #fff;
+  text-align: center;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+@media (min-width: 450px) {
+  /* line 1, sass/site/footer/_footer.scss */
+  .site-footer {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
 }
 
 /*--------------------------------------------------------------

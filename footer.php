@@ -15,9 +15,16 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'md_partitions' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'md_partitions' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'md_partitions' ), 'md_partitions', '<a href="https://automattic.com/" rel="designer">Millennium Marketing Solutions</a>' ); ?>
+      <div class="footer-message">
+
+        <?php if ( function_exists( 'get_field' ) ) {
+          $ft_msg = get_field( 'footer_message', 'option' );
+
+            echo $ft_msg;
+
+        } ?>
+
+      </div><!-- footer-message -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
