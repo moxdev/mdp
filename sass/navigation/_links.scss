@@ -17,3 +17,8 @@ a {
 		outline: 0;
 	}
 }
+
+a[x-apple-data-detectors=true] {
+ color: inherit !important;
+ text-decoration: inherit !important;
+}

@@ -2,4 +2,21 @@
   color: #fff;
   text-align: center;
   @include padding-left-right;
+  font-family: $font__bold;
+
+  @include linx(#fff, #fff, #fff, #fff);
+
+  .contact-information {
+    font-family: $font__light;
+
+    a {
+      text-decoration: none;
+    }
+
+    .company-name {
+      font-family: $font__bold;
+      color: $color__brand-1;
+      text-transform: uppercase;
+    }
+  }
 }

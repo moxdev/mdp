@@ -646,6 +646,12 @@ a:hover, a:active {
   outline: 0;
 }
 
+/* line 21, sass/navigation/_links.scss */
+a[x-apple-data-detectors=true] {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -931,6 +937,7 @@ a:hover, a:active {
   text-align: center;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+  font-family: "SourceSansPro-Bold";
 }
 @media (min-width: 450px) {
   /* line 1, sass/site/footer/_footer.scss */
@@ -938,6 +945,36 @@ a:hover, a:active {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
+}
+/* line 25, sass/mixins/_mixins-master.scss */
+.site-footer a {
+  color: #fff;
+}
+/* line 27, sass/mixins/_mixins-master.scss */
+.site-footer a:visited {
+  color: #fff;
+}
+/* line 30, sass/mixins/_mixins-master.scss */
+.site-footer a:hover {
+  color: #fff;
+}
+/* line 33, sass/mixins/_mixins-master.scss */
+.site-footer a:active {
+  color: #fff;
+}
+/* line 9, sass/site/footer/_footer.scss */
+.site-footer .contact-information {
+  font-family: "SourceSansPro-Light";
+}
+/* line 12, sass/site/footer/_footer.scss */
+.site-footer .contact-information a {
+  text-decoration: none;
+}
+/* line 16, sass/site/footer/_footer.scss */
+.site-footer .contact-information .company-name {
+  font-family: "SourceSansPro-Bold";
+  color: #81bc00;
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
