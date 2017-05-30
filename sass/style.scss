@@ -41,6 +41,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Page Templates
+  ## Frontpage Template
+
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -109,3 +112,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Home Carousel
 --------------------------------------------------------------*/
 @import "modules/home-carousel";
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+@import "page-templates/page-templates";

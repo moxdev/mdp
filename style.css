@@ -41,6 +41,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Page Templates
+  ## Frontpage Template
+
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'SourceSansPro-BlackIt';
@@ -385,6 +388,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #81bc00;
   line-height: 1.2;
+  font-family: "SourceSansPro-Bold";
 }
 
 /* line 1, sass/typography/_copy.scss */
@@ -1279,6 +1283,30 @@ object {
 /* line 165, sass/modules/_home-carousel.scss */
 .Wallop-dot--current {
   background-color: #000;
+}
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Front Page Template
+--------------------------------------------------------------*/
+/* line 3, sass/page-templates/_frontpage.scss */
+.page-template-front-page .site-content {
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -12px 0px;
+}
+/* line 10, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-sidebar-wrapper {
+  display: none;
+}
+@media (min-width: 750px) {
+  /* line 10, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-sidebar-wrapper {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

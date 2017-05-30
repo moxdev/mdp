@@ -41,15 +41,19 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
+		<div class="entry-content-wrapper">
 
-			the_content();
+			<?php
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'md_partitions' ),
-				'after'  => '</div>',
-			) );
-		?>
+				the_content();
+
+				if ( function_exists( 'md_partitions_frontpage_sidebar' ) ) {
+					md_partitions_frontpage_sidebar();
+				}
+
+			?>
+
+		</div><!-- entry-content-wrapper -->
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
