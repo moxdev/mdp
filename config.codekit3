@@ -57,6 +57,15 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/bs-config-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/bs-config-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/bs-config.js": {
 		"ft": 64,
 		"mi": 0,
@@ -71,6 +80,16 @@
 		"oA": 2,
 		"oAP": "\/comments.php",
 		"oF": 0
+		},
+	"\/custom-editor-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/custom-editor-style-min.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/fonts\/SourceSansPro-BlackIt.eot": {
 		"ft": 8192,
@@ -231,6 +250,16 @@
 		"oA": 2,
 		"oAP": "\/header.php",
 		"oF": 0
+		},
+	"\/img\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,

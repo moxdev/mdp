@@ -28,6 +28,10 @@ textarea {
     }
 }
 
+.wysiwyg-bold-font {
+    font-family: $font__bold;
+}
+
 @import "headings";
 
 @import "copy";

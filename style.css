@@ -370,6 +370,11 @@ textarea {
   }
 }
 
+/* line 31, sass/typography/_typography.scss */
+.wysiwyg-bold-font {
+  font-family: "SourceSansPro-Bold";
+}
+
 /* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -691,12 +696,35 @@ a[x-apple-data-detectors=true] {
 /* line 1, sass/navigation/_masthead.scss */
 #masthead {
   background-color: #ffffff;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-/* line 14, sass/navigation/_masthead.scss */
+@media (min-width: 450px) {
+  /* line 1, sass/navigation/_masthead.scss */
+  #masthead {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+/* line 7, sass/navigation/_masthead.scss */
+#masthead .masthead-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 19, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper {
   display: block;
 }
-/* line 17, sass/navigation/_masthead.scss */
+/* line 22, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link {
   text-align: center;
   background-color: #111111;
@@ -706,13 +734,13 @@ a[x-apple-data-detectors=true] {
       -ms-transform: skewX(20deg);
           transform: skewX(20deg);
 }
-/* line 24, sass/navigation/_masthead.scss */
+/* line 29, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link span {
   -webkit-transform: skewX(-20deg);
       -ms-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
-/* line 28, sass/navigation/_masthead.scss */
+/* line 33, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link a {
   color: #fff;
   text-decoration: none;
@@ -720,7 +748,7 @@ a[x-apple-data-detectors=true] {
       -ms-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
-/* line 37, sass/navigation/_masthead.scss */
+/* line 42, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper button {
   display: inline-block;
   color: white;
@@ -732,15 +760,15 @@ a[x-apple-data-detectors=true] {
       -ms-transform: skewX(20deg);
           transform: skewX(20deg);
 }
-/* line 49, sass/navigation/_masthead.scss */
+/* line 54, sass/navigation/_masthead.scss */
 #masthead .home-desktop-navigation {
   display: none;
 }
-/* line 54, sass/navigation/_masthead.scss */
+/* line 59, sass/navigation/_masthead.scss */
 #masthead .page-desktop-navigation {
   display: none;
 }
-/* line 59, sass/navigation/_masthead.scss */
+/* line 64, sass/navigation/_masthead.scss */
 #masthead .mobile-navigation {
   display: none;
 }

@@ -149,6 +149,37 @@ if( function_exists('acf_add_options_page') ) {
 	));
 }
 
+/**
+ * ADD STYLES TO WYSIWYG
+ */
+// Insert 'styleselect' into the $buttons array
+function my_mce_buttons_2( $buttons ) {
+    array_unshift( $buttons, 'styleselect' );
+    return $buttons;
+}
+// Use 'mce_buttons' for button row #1, mce_buttons_3' for button row #3
+add_filter('mce_buttons_2', 'my_mce_buttons_2');
+
+function my_mce_before_init_insert_formats( $init_array ) {
+  $style_formats = array(
+		array(
+			'title'   => 'Bold Font', // Title to show in dropdown
+			'inline'  => 'span', // Element to add class to
+			'classes' => 'wysiwyg-bold-font' // CSS class to add
+    )
+  );
+
+  $init_array['style_formats'] = json_encode( $style_formats );
+  return $init_array;
+}
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+
+// EDITOR STYLES
+
+function md_partitions_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' ); // add css to root
+}
+add_action( 'admin_init', 'md_partitions_add_editor_styles' );
 
 /**
  * Implement the Custom Header feature.
