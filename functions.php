@@ -129,10 +129,15 @@ function md_partitions_scripts() {
 	if( is_page_template('front-page.php') ) {
 		if( function_exists('get_field') ) {
 			if( have_rows('slides') ) {
+
 				wp_enqueue_script( 'md_partitions-images-loaded', get_template_directory_uri() . '/js/min/jquery.imagesloaded.min.js', array('jquery'), '20150908', true );
+
 				wp_enqueue_script( 'md_partitions-image-fill', get_template_directory_uri() . '/js/min/jquery-imagefill.min.js', array('jquery', 'md_partitions-images-loaded'), '20150908', true );
+
 				wp_enqueue_script( 'md_partitions-touchswipe', get_template_directory_uri() . '/js/min/jquery.touchSwipe.min.js', array('jquery'), '20150908', true );
-				wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel.js', array('jquery', 'md_partitions-images-loaded', 'md_partitions-image-fill', 'md_partitions-touchswipe'), '20150908', true );
+
+				wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('jquery', 'md_partitions-images-loaded', 'md_partitions-image-fill', 'md_partitions-touchswipe'), '20150908', true );
+
 			}
 		}
 	}
@@ -268,3 +273,45 @@ require get_template_directory() . '/inc/certifications-section.php';
  * Displays the Certifications Section.
  */
 require get_template_directory() . '/inc/frontpage-carousel.php';
+
+function mm4_you_home_carousel_body_class( $classes ) {
+	// Adds a class of group-blog to blogs with more than 1 published author.
+	if ( is_page_template('front-page.php') || is_page_template('frontpage-b.php') || is_page_template('frontpage-c.php') && function_exists('get_field') ) {
+		if( get_field('add_image_carousel') == 'Yes' )
+		$classes[] = 'has-carousel';
+	}
+
+	return $classes;
+}
+add_filter( 'body_class', 'mm4_you_home_carousel_body_class' );
+
+
+function mm4_you_home_carousel_type_1() {
+	if( is_page_template('front-page.php') || is_page_template('frontpage-b.php') ) {
+		if( function_exists('get_field') ) {
+			$addCarousel = get_field('add_image_carousel');
+			if( $addCarousel == 'Yes' && have_rows('slides') ): ?>
+				<div id="home-carousel" class="carousel-type-1">
+					<ul>
+					<?php while ( have_rows('slides') ) : the_row(); ?>
+						<li>
+						<?php $text = get_sub_field('slide_caption');
+						$imageArr = get_sub_field('slide_image');
+						$image = wp_get_attachment_image_src($imageArr[id], 'front-page-slide-1'); ?>
+						<img src="<?php echo $image[0] ?>" alt="<?php echo $imageArr[title]; ?>">
+						<span><?php echo $text; ?></span>
+						</li>
+					<?php endwhile; ?>
+					</ul>
+					<?php $rows = get_field('slides');
+					$rowCount = count($rows); ?>
+					<ol class="carousel-nav">
+					<?php for ($i = 1; $i <= $rowCount; $i++) { ?>
+						<li><a href="#"><?php echo $i; ?></a></li>
+					<?php } ?>
+					</ol>
+				</div>
+			<?php endif;
+		}
+	}
+}

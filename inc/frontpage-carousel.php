@@ -7,42 +7,55 @@
  */
 
 function md_partitions_home_carousel() {
-    if( is_page_template('front-page.php') ) {
-        if( function_exists('get_field') ) {
 
-            $addCarousel = get_field('add_image_carousel');
+  if( is_page_template('front-page.php') ) {
+    if( function_exists('get_field') ) {
 
-            if( $addCarousel == 'Yes' && have_rows('slides') ): ?>
+      $addCarousel = get_field('add_image_carousel');
 
-                <div id="home-carousel" class="carousel-type-1">
-                    <ul>
+      if( $addCarousel == 'Yes' && have_rows('slides') ): ?>
 
-                    <?php while ( have_rows('slides') ) : the_row(); ?>
+        <div id="home-carousel" class="carousel">
+          <ul>
 
-                        <li>
-                            <?php $text = get_sub_field('slide_caption');
-                            $imageArr = get_sub_field('slide_image');
-                            $image = wp_get_attachment_image_src($imageArr[id], 'front-page-slide-1'); ?>
-                            <img src="<?php echo $image[0] ?>" alt="<?php echo $imageArr[title]; ?>">
-                            <span><?php echo $text; ?></span>
-                        </li>
-                    <?php endwhile; ?>
+          <?php while ( have_rows('slides') ) : the_row(); ?>
 
-                    </ul>
+            <li>
 
-                    <?php $rows = get_field('slides');
-                    $rowCount = count($rows); ?>
+            <?php
 
-                    <ol class="carousel-nav">
-                        <?php for ($i = 1; $i <= $rowCount; $i++) { ?>
-                            <li><a href="#"><?php echo $i; ?></a></li>
-                        <?php } ?>
-                    </ol>
-                </div>
+              $text     = get_sub_field('slide_caption');
+              $imageArr = get_sub_field('slide_image');
+              $image    = wp_get_attachment_image_src($imageArr[id], 'front-page-slide-1'); ?>
 
-            <?php endif;
-        }
+              <img src="<?php echo esc_url( $image[0] ); ?>" alt="<?php echo esc_attr( $imageArr[title] ); ?>">
+              <span><?php echo esc_html( $text ); ?></span>
+
+            </li>
+
+          <?php endwhile; ?>
+
+          </ul>
+
+          <?php
+
+          $rows     = get_field('slides');
+          $rowCount = count($rows); ?>
+
+          <ol class="carousel-nav">
+
+          <?php for ($i = 1; $i <= $rowCount; $i++) { ?>
+
+            <li><a href="#"><?php echo $i; ?></a></li>
+
+          <?php } ?>
+
+          </ol>
+        </div><!-- #home-carousel -->
+
+      <?php endif;
     }
+  }
 }
 
 

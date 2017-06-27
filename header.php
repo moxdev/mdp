@@ -81,8 +81,12 @@
 
 	</header><!-- #masthead -->
 
-	<?php if( is_page_template( 'front-page.php' ) && function_exists('md_partitions_home_carousel') ) {
-		md_partitions_home_carousel();
+	<?php if( function_exists('mm4_you_home_carousel_type_1') ) {
+		mm4_you_home_carousel_type_1();
+	} ?>
+
+	<?php if( function_exists('mm4_you_home_carousel_type_2') ) {
+		mm4_you_home_carousel_type_2();
 	} ?>
 
 
