@@ -121,9 +121,20 @@ function md_partitions_scripts() {
 
 	wp_enqueue_script( 'md_partitions-skip-link-focus-fix', get_template_directory_uri() . '/js/min/skip-link-focus-fix-min.js', array(), '20151215', true );
 
-	if ( is_page_template( 'front-page.php' ) ) {
-		wp_enqueue_script( 'md_partitions-wallop-library', get_template_directory_uri() . '/js/min/Wallop.min.js', false, false, true );
-		wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('md_partitions-wallop-library'), false, true );
+	// if ( is_page_template( 'front-page.php' ) ) {
+	// 	wp_enqueue_script( 'md_partitions-wallop-library', get_template_directory_uri() . '/js/min/Wallop.min.js', false, false, true );
+	// 	wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('md_partitions-wallop-library'), false, true );
+	// }
+
+	if( is_page_template('front-page.php') ) {
+		if( function_exists('get_field') ) {
+			if( have_rows('slides') ) {
+				wp_enqueue_script( 'md_partitions-images-loaded', get_template_directory_uri() . '/js/min/jquery.imagesloaded.min.js', array('jquery'), '20150908', true );
+				wp_enqueue_script( 'md_partitions-image-fill', get_template_directory_uri() . '/js/min/jquery-imagefill.min.js', array('jquery', 'md_partitions-images-loaded'), '20150908', true );
+				wp_enqueue_script( 'md_partitions-touchswipe', get_template_directory_uri() . '/js/min/jquery.touchSwipe.min.js', array('jquery'), '20150908', true );
+				wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel.js', array('jquery', 'md_partitions-images-loaded', 'md_partitions-image-fill', 'md_partitions-touchswipe'), '20150908', true );
+			}
+		}
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -131,6 +142,17 @@ function md_partitions_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'md_partitions_scripts' );
+
+function md_partitions_carousel_body_class( $classes ) {
+    // Adds a class of group-blog to blogs with more than 1 published author.
+    if ( is_page_template('front-page.php') && function_exists('get_field') ) {
+        if( get_field('add_image_carousel') == 'Yes' )
+        $classes[] = 'has-carousel';
+    }
+
+    return $classes;
+}
+add_filter( 'body_class', 'md_partitions_carousel_body_class' );
 
 /**
  * Custom ACF Options
@@ -241,3 +263,8 @@ require get_template_directory() . '/inc/other-projects-section.php';
  * Displays the Certifications Section.
  */
 require get_template_directory() . '/inc/certifications-section.php';
+
+/**
+ * Displays the Certifications Section.
+ */
+require get_template_directory() . '/inc/frontpage-carousel.php';

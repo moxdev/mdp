@@ -1,0 +1,167 @@
+/**
+ * wallop.css
+ *
+ * @fileoverview Default styles for wallop – recommended
+ *
+ * @author Pedro Duarte
+ * @author http://pedroduarte.me/wallop
+ */
+
+/*
+  This is the top-level selector
+
+  It should be relative positioned
+  to allow the children to be positioned absolutely
+  relative to this
+ */
+.Wallop {
+  position: relative;
+}
+
+/*
+  This element groups all the items, but not the buttons
+
+  It's a recommendation but it's very likely
+  you'll want to hide any overflow from the items
+  Especially when doing animations such as scale
+ */
+.Wallop-list {
+  position: relative;
+  overflow: hidden;
+}
+
+/*
+  This is the item element
+
+  By default, they are all hidden and
+  positioned absolute
+  I recommend always having .Wallop-item--current
+  in your markup by default (probably on the first element)
+ */
+.Wallop-item {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*
+  This is the current item element
+
+  All we do here, is make it visible again reset
+  the position to static. Could also be relative
+ */
+.Wallop-item--current {
+  visibility: visible;
+  position: relative;
+}
+
+
+/**
+ * wallop--fade.css
+ *
+ * @fileoverview Fade animation for wallop
+ *
+ * @author Pedro Duarte
+ * @author http://pedroduarte.me/wallop
+ */
+
+ .Wallop--fade .Wallop-item--hidePrevious,
+ .Wallop--fade .Wallop-item--hideNext {
+  visibility: visible;
+  -webkit-animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -moz-animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -ms-animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: fadeOut 450ms cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+/*
+  In order to fade out properly we need to make sure
+  that the item that is going to be the previous one
+  has a higer z-index that the next one
+ */
+.Wallop--fade .Wallop-item--hidePrevious,
+.Wallop--fade .Wallop-item--hideNext { z-index: 2; }
+.Wallop--fade .Wallop-item--showPrevious,
+.Wallop--fade .Wallop-item--showNext { z-index: 1; }
+
+ /*==========  FADE ANIMATIONS  ==========*/
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-moz-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-ms-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* =========== Custom Wallop Styles ================== */
+
+ .Wallop {
+   // max-width: 500px;
+   // overflow: hidden;
+ }
+
+ .Wallop-list {
+   margin: 15px 0;
+ }
+
+ .Wallop-item {
+
+     img {
+       width: 100%;
+     }
+
+     span {
+         position:absolute;
+         max-width: 800px;
+         margin-left: calc(100% / 2 - 100px);
+         text-align: left;
+         z-index:10;
+         font-size:2.5em;
+         line-height:1.1;
+         color:#FFF;
+         text-shadow:2px 2px 4px rgba(0, 0, 0, 1);
+         top:3.5em;
+         left:1em;
+         right:1em;
+         font-weight:700;
+     }
+ }
+
+ .Wallop-pagination {
+   text-align: center;
+ }
+
+ .Wallop-dot {
+   text-indent: -9999px;
+   border: 0;
+   border-radius: 50%;
+   width: 12px;
+   height: 12px;
+   padding: 0;
+   margin: 5px;
+   background-color: #ccc;
+   -webkit-appearance: none;
+ }
+
+ .Wallop-dot--current {
+   background-color: #000;
+ }

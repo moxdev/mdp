@@ -81,10 +81,8 @@
 
 	</header><!-- #masthead -->
 
-	<?php if (is_front_page()) { ?>
-		<img src="http://unsplash.it/1500/800/?random">
-	 <?php
-		# code...
+	<?php if( is_page_template( 'front-page.php' ) && function_exists('md_partitions_home_carousel') ) {
+		md_partitions_home_carousel();
 	} ?>
 
 

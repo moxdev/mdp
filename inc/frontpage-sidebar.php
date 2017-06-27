@@ -22,7 +22,6 @@ function md_partitions_frontpage_sidebar() {
 
 			<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $text ); ?></a>
 
-
 		</aside><!-- #frontpage-secondary -->
 
 		<?php

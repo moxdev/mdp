@@ -302,6 +302,12 @@
 		"oAP": "\/inc\/featured-projects-section.php",
 		"oF": 0
 		},
+	"\/inc\/frontpage-carousel.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/frontpage-carousel.php",
+		"oF": 0
+		},
 	"\/inc\/frontpage-highlights.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -382,6 +388,33 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/home-carousel-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/min\/jquery-imagefill.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery-imagefill.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/min\/jquery.imagesloaded.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery.imagesloaded.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/min\/jquery.touchSwipe.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery.touchSwipe.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -991,6 +1024,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/modules\/_infinite-scroll.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/modules\/_wallop-home-carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/modules\/_wallop-home-carousel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
