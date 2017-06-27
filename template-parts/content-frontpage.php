@@ -47,10 +47,6 @@
 
 				the_content();
 
-				if ( function_exists( 'md_partitions_frontpage_sidebar' ) ) {
-					md_partitions_frontpage_sidebar();
-				}
-
 			?>
 
 		</div><!-- entry-content-wrapper -->

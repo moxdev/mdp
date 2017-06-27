@@ -664,28 +664,57 @@ a[x-apple-data-detectors=true] {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-/* Small menu. */
+/* Moble Menu. */
 /* line 14, sass/navigation/_menus.scss */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
+#mobile-toggle {
+  display: inline-block;
+  color: white;
+  background-color: #81bc00;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 10px;
 }
 
-/* line 32, sass/navigation/_menus.scss */
+/* line 24, sass/navigation/_menus.scss */
+#site-navigation {
+  display: none;
+}
+
+/* line 28, sass/navigation/_menus.scss */
+#site-navigation.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/* line 42, sass/navigation/_menus.scss */
+#site-navigation.active ul {
+  list-style-type: none;
+}
+
+/* line 60, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 37, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 42, sass/navigation/_menus.scss */
+/* line 70, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -714,6 +743,7 @@ a[x-apple-data-detectors=true] {
 }
 /* line 7, sass/navigation/_masthead.scss */
 #masthead .masthead-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,57 +754,34 @@ a[x-apple-data-detectors=true] {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 19, sass/navigation/_masthead.scss */
+/* line 17, sass/navigation/_masthead.scss */
+#masthead .site-branding .logo-link svg {
+  max-width: 100px;
+}
+/* line 24, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper {
   display: block;
 }
-/* line 22, sass/navigation/_masthead.scss */
+/* line 27, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link {
   text-align: center;
+  font-size: .7em;
   background-color: #111111;
   padding: 5px 10px;
-  margin: 10px;
-  -webkit-transform: skewX(20deg);
-      -ms-transform: skewX(20deg);
-          transform: skewX(20deg);
 }
-/* line 29, sass/navigation/_masthead.scss */
+/* line 35, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link span {
   -webkit-transform: skewX(-20deg);
       -ms-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
-/* line 33, sass/navigation/_masthead.scss */
+/* line 39, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link a {
   color: #fff;
   text-decoration: none;
   -webkit-transform: skewX(-20deg);
       -ms-transform: skewX(-20deg);
           transform: skewX(-20deg);
-}
-/* line 42, sass/navigation/_masthead.scss */
-#masthead .mobile-menu-wrapper button {
-  display: inline-block;
-  color: white;
-  background-color: #81bc00;
-  text-align: center;
-  padding: 5px 10px;
-  margin: 10px;
-  -webkit-transform: skewX(20deg);
-      -ms-transform: skewX(20deg);
-          transform: skewX(20deg);
-}
-/* line 54, sass/navigation/_masthead.scss */
-#masthead .home-desktop-navigation {
-  display: none;
-}
-/* line 59, sass/navigation/_masthead.scss */
-#masthead .page-desktop-navigation {
-  display: none;
-}
-/* line 64, sass/navigation/_masthead.scss */
-#masthead .mobile-navigation {
-  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -899,7 +906,7 @@ a[x-apple-data-detectors=true] {
   margin-right: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-  background-color: #ffffff;
+  background-color: #EEEDEE;
 }
 @media (min-width: 450px) {
   /* line 4, sass/site/_site.scss */

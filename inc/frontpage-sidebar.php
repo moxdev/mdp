@@ -14,18 +14,18 @@ function md_partitions_frontpage_sidebar() {
 		$text = get_field( 'link_text' );
 		$link = get_field( 'page_link' ); ?>
 
-		<div class="frontpage-sidebar-wrapper">
+		<aside id="frontpage-secondary" class="widget-area" role="complementary">
 
 			<div class="image-wrapper">
-				<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+				<img src="<?php echo $img['url']; ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" description="<?php echo esc_attr( $img['description'] ); ?>">
 			</div>
 
-			<div class="link-wrapper">
-				<a href="<?php echo esc_html( $link ); ?>"><?php echo esc_html( $text ); ?></a>
-			</div>
+			<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $text ); ?></a>
 
-		</div>
+
+		</aside><!-- #frontpage-secondary -->
 
 		<?php
 	}
 }
+

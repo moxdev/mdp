@@ -216,3 +216,28 @@ require get_template_directory() . '/inc/frontpage-sidebar.php';
  * Displays the highlight boxes on the frontpage.
  */
 require get_template_directory() . '/inc/frontpage-highlights.php';
+
+/**
+ * Displays the Materials Section.
+ */
+require get_template_directory() . '/inc/materials-section.php';
+
+/**
+ * Displays the Styles Section.
+ */
+require get_template_directory() . '/inc/styles-section.php';
+
+/**
+ * Displays the Featured Projects Section.
+ */
+require get_template_directory() . '/inc/featured-projects-section.php';
+
+/**
+ * Displays the Other Projects Section.
+ */
+require get_template_directory() . '/inc/other-projects-section.php';
+
+/**
+ * Displays the Certifications Section.
+ */
+require get_template_directory() . '/inc/certifications-section.php';

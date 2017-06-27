@@ -59,31 +59,34 @@
 
 				} ?>
 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'md_partitions' ); ?></button>
+				<button id="mobile-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="Menu"><span class="inner"><?php esc_html_e( 'Menu', 'md_partitions' ); ?></span></button>
+
 			</div>
 
 			<?php if ( is_page_template( 'front-page.php' ) ) {  ?>
 
-				<nav class="home-desktop-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'home-nav', 'menu_id' => 'home-desktop-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				<nav id="site-navigation" class="main-navigation home-desktop-navigation" role="navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'home-nav', 'menu_id' => 'home-desktop-menu', 'container' => '' ) ); ?>
+				</nav><!-- home-desktop-navigation -->
 
 			<?php }else {  ?>
 
-				<nav class="page-desktop-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'page-nav', 'menu_id' => 'page-desktop-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				<nav id="site-navigation" class="main-navigation page-desktop-navigation" role="navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'page-nav', 'menu_id' => 'page-desktop-menu', 'container' => '' ) ); ?>
+				</nav><!-- page-desktop-navigation -->
 
 			<?php } ?>
 
 		</div>
 
-		<nav class="mobile-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'mobile-nav', 'menu_id' => 'mobile-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-
 	</header><!-- #masthead -->
 
-	<img src="http://unsplash.it/1500/800/?random">
+	<?php if (is_front_page()) { ?>
+		<img src="http://unsplash.it/1500/800/?random">
+	 <?php
+		# code...
+	} ?>
+
+
 
 	<div id="content" class="site-content">

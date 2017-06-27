@@ -57,15 +57,6 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
-	"\/bs-config-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/bs-config-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/bs-config.js": {
 		"ft": 64,
 		"mi": 0,
@@ -281,6 +272,12 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/inc\/certifications-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/certifications-section.php",
+		"oF": 0
+		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -299,6 +296,18 @@
 		"oAP": "\/inc\/extras.php",
 		"oF": 0
 		},
+	"\/inc\/featured-projects-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/featured-projects-section.php",
+		"oF": 0
+		},
+	"\/inc\/frontpage-highlights.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/frontpage-highlights.php",
+		"oF": 0
+		},
 	"\/inc\/frontpage-sidebar.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -309,6 +318,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/jetpack.php",
+		"oF": 0
+		},
+	"\/inc\/materials-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/materials-section.php",
+		"oF": 0
+		},
+	"\/inc\/other-projects-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/other-projects-section.php",
+		"oF": 0
+		},
+	"\/inc\/styles-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/styles-section.php",
 		"oF": 0
 		},
 	"\/inc\/template-tags.php": {
@@ -453,6 +480,30 @@
 		"oA": 1,
 		"oAP": "\/mdp.sublime-workspace",
 		"oF": 1
+		},
+	"\/page-about.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-about.php",
+		"oF": 0
+		},
+	"\/page-contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-contact.php",
+		"oF": 0
+		},
+	"\/page-drill-page-sidebar.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-drill-page-sidebar.php",
+		"oF": 0
+		},
+	"\/page-projects.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-projects.php",
+		"oF": 0
 		},
 	"\/page.php": {
 		"ft": 8192,
@@ -1219,6 +1270,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/search.php",
+		"oF": 0
+		},
+	"\/sidebar-drill.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sidebar-drill.php",
 		"oF": 0
 		},
 	"\/sidebar.php": {

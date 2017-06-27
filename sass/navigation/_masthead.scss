@@ -5,6 +5,7 @@
   padding-bottom: 10px;
 
   .masthead-wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,6 +13,10 @@
 
   .site-branding {
     .logo-link {
+
+      svg {
+        max-width: 100px;
+      }
 
     }
   }
@@ -21,10 +26,11 @@
 
     .phone-link {
       text-align: center;
+      font-size: .7em;
       background-color: $color__brand-3;
       padding: 5px 10px;
-      margin: 10px;
-      transform: skewX(20deg);
+      // margin: 10px;
+      // transform: skewX(20deg);
 
       span {
         transform: skewX(-20deg);
@@ -36,33 +42,19 @@
         transform: skewX(-20deg);
       }
     }
-
-
-
-    button {
-      display: inline-block;
-      color: white;
-      background-color: $color__button-background;
-      text-align: center;
-      padding: 5px 10px;
-      margin: 10px;
-      transform: skewX(20deg);
-
-    }
   }
 
-  .home-desktop-navigation {
-    display: none;
+  // .home-desktop-navigation {
+  //   display: none;
 
-  }
+  // }
 
-  .page-desktop-navigation {
-    display: none;
+  // .page-desktop-navigation {
+  //   display: none;
 
-  }
+  // }
 
-  .mobile-navigation {
-    display: none;
-
-  }
+  // .mobile-navigation {
+  //   display: none;
+  // }
 }

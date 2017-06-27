@@ -13,6 +13,26 @@
 
 	</div><!-- #content -->
 
+  <?php if ( is_page_template('page-drill-page-sidebar.php') && function_exists( 'md_partitions_materials_section' ) ) {
+      md_partitions_materials_section();
+  } ?>
+
+  <?php if ( is_page_template('page-drill-page-sidebar.php') && function_exists( 'md_partitions_styles_section' ) ) {
+      md_partitions_styles_section();
+  } ?>
+
+  <?php if ( is_page_template('page-projects.php') && function_exists( 'md_partitions_featured_projects_section' ) ) {
+      md_partitions_featured_projects_section();
+  } ?>
+
+  <?php if ( is_page_template('page-projects.php') && function_exists( 'md_partitions_other_projects_section' ) ) {
+      md_partitions_other_projects_section();
+  } ?>
+
+  <?php if ( is_page_template('page-about.php') && function_exists( 'md_partitions_certifications_section' ) ) {
+      md_partitions_certifications_section();
+  } ?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
       <div class="footer-message">

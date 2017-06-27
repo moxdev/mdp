@@ -10,10 +10,38 @@
 
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+/* Moble Menu. */
+#mobile-toggle {
+  display: inline-block;
+  color: white;
+  background-color: $color__button-background;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 10px;
+  // transform: skewX(20deg);
+}
+
+#site-navigation {
+	display: none;
+}
+
+#site-navigation.active {
 	display: block;
+	position: absolute;
+	top: 0;
+	right:0;
+	bottom: 0;
+	left:0;
+	background: #fff;
+	width: 100%;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+
+	ul {
+		list-style-type: none;
+	}
 }
 
 // @media screen and (min-width: 37.5em) {

@@ -10,7 +10,7 @@ function md_partitions_frontpage_highlights() {
 
 	if ( function_exists( 'get_field' ) ) {
 
-		$add_highlights  = get_field( 'add__frontpage_highlight_boxes' );
+		$add_highlights  = get_field( 'add_frontpage_highlight_boxes' );
 
 		if ( $add_highlights ): ?>
 

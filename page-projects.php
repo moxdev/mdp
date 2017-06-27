@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Projects Page
  *
- * This is the template that displays the home page..
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -17,7 +16,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'frontpage' );
+				get_template_part( 'template-parts/content', 'page' );
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
@@ -29,14 +28,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-	<?php if ( function_exists( 'md_partitions_frontpage_sidebar' ) ) {
-		md_partitions_frontpage_sidebar();
-	} ?>
-
-	<?php if ( function_exists( 'md_partitions_frontpage_highlights' ) ) {
-		md_partitions_frontpage_highlights();
-	} ?>
 
 <?php
 
