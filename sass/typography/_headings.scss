@@ -9,7 +9,7 @@ h1 {
   font-family: $font__bold;
 }
 
-h2.product-header {
+h2.section-header {
   background-color: $color__brand-1;
   @include reset;
   @include font-smooth;

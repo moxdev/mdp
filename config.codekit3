@@ -296,12 +296,6 @@
 		"oAP": "\/inc\/extras.php",
 		"oF": 0
 		},
-	"\/inc\/featured-projects-section.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/featured-projects-section.php",
-		"oF": 0
-		},
 	"\/inc\/frontpage-carousel.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -326,28 +320,22 @@
 		"oAP": "\/inc\/jetpack.php",
 		"oF": 0
 		},
-	"\/inc\/materials-section.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/materials-section.php",
-		"oF": 0
-		},
-	"\/inc\/other-projects-section.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/other-projects-section.php",
-		"oF": 0
-		},
 	"\/inc\/product-section.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/product-section.php",
 		"oF": 0
 		},
-	"\/inc\/styles-section.php": {
+	"\/inc\/projects-other-section.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/inc\/styles-section.php",
+		"oAP": "\/inc\/projects-other-section.php",
+		"oF": 0
+		},
+	"\/inc\/projects-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/projects-section.php",
 		"oF": 0
 		},
 	"\/inc\/template-tags.php": {
@@ -782,6 +770,12 @@
 		"oAP": "\/sass\/.sass-cache\/e30c04ab4efb65b05b110064bc40b34ef2c0ef10\/_elements.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/e30c04ab4efb65b05b110064bc40b34ef2c0ef10\/_links.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e30c04ab4efb65b05b110064bc40b34ef2c0ef10\/_links.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/e30c04ab4efb65b05b110064bc40b34ef2c0ef10\/_lists.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1060,19 +1054,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/navigation\/_links.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/navigation\/_links.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/navigation\/_masthead.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1147,6 +1128,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_page-templates.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-templates\/_projects-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-templates\/_projects-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

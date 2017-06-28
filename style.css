@@ -25,9 +25,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 # Typography
 # Elements
+  ## Links
 # Forms
 # Navigation
-	## Links
 	## Menus
 # Accessibility
 # Alignments
@@ -392,7 +392,7 @@ h1 {
 }
 
 /* line 12, sass/typography/_headings.scss */
-h2.product-header {
+h2.section-header {
   background-color: #81bc00;
   margin: 0;
   padding: 0;
@@ -511,33 +511,33 @@ hr {
 
 /* line 1, sass/elements/_lists.scss */
 ul, ol {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 1.5em 0;
+  padding-left: 1.2em;
 }
 
-/* line 6, sass/elements/_lists.scss */
+/* line 8, sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
 
-/* line 10, sass/elements/_lists.scss */
+/* line 12, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 14, sass/elements/_lists.scss */
+/* line 16, sass/elements/_lists.scss */
 li > ul,
 li > ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 21, sass/elements/_lists.scss */
+/* line 23, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 25, sass/elements/_lists.scss */
+/* line 27, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
@@ -562,6 +562,9 @@ table {
   width: 100%;
 }
 
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
 /* line 25, sass/mixins/_mixins-master.scss */
 a {
   color: #81bc00;
@@ -577,6 +580,21 @@ a:hover {
 /* line 33, sass/mixins/_mixins-master.scss */
 a:active {
   color: #81bc00;
+}
+
+/* line 9, sass/elements/_links.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 12, sass/elements/_links.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 18, sass/elements/_links.scss */
+a[x-apple-data-detectors=true] {
+  color: inherit !important;
+  text-decoration: inherit !important;
 }
 
 /*--------------------------------------------------------------
@@ -671,36 +689,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-/* line 1, sass/navigation/_links.scss */
-a {
-  color: #81bc00;
-}
-/* line 4, sass/navigation/_links.scss */
-a:visited {
-  color: #111111;
-}
-/* line 7, sass/navigation/_links.scss */
-a:hover, a:focus, a:active {
-  color: midnightblue;
-}
-/* line 12, sass/navigation/_links.scss */
-a:focus {
-  outline: thin dotted;
-}
-/* line 15, sass/navigation/_links.scss */
-a:hover, a:active {
-  outline: 0;
-}
-
-/* line 21, sass/navigation/_links.scss */
-a[x-apple-data-detectors=true] {
-  color: inherit !important;
-  text-decoration: inherit !important;
-}
-
-/*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 /* Moble Menu. */
@@ -780,7 +768,23 @@ a[x-apple-data-detectors=true] {
     padding-right: 2.75rem;
   }
 }
-/* line 7, sass/navigation/_masthead.scss */
+/* line 25, sass/mixins/_mixins-master.scss */
+#masthead a {
+  color: #81bc00;
+}
+/* line 27, sass/mixins/_mixins-master.scss */
+#masthead a:visited {
+  color: #81bc00;
+}
+/* line 30, sass/mixins/_mixins-master.scss */
+#masthead a:hover {
+  color: #81bc00;
+}
+/* line 33, sass/mixins/_mixins-master.scss */
+#masthead a:active {
+  color: #81bc00;
+}
+/* line 9, sass/navigation/_masthead.scss */
 #masthead .masthead-wrapper {
   position: relative;
   display: -webkit-box;
@@ -793,28 +797,28 @@ a[x-apple-data-detectors=true] {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 17, sass/navigation/_masthead.scss */
+/* line 19, sass/navigation/_masthead.scss */
 #masthead .site-branding .logo-link svg {
   max-width: 100px;
 }
-/* line 24, sass/navigation/_masthead.scss */
+/* line 26, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper {
   display: block;
 }
-/* line 27, sass/navigation/_masthead.scss */
+/* line 29, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link {
   text-align: center;
   font-size: .7em;
   background-color: #111111;
   padding: 5px 10px;
 }
-/* line 35, sass/navigation/_masthead.scss */
+/* line 37, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link span {
   -webkit-transform: skewX(-20deg);
       -ms-transform: skewX(-20deg);
           transform: skewX(-20deg);
 }
-/* line 39, sass/navigation/_masthead.scss */
+/* line 41, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .phone-link a {
   color: #fff;
   text-decoration: none;
@@ -975,8 +979,12 @@ a[x-apple-data-detectors=true] {
 /* line 4, sass/site/_site.scss */
 .site-content {
   background-color: #EEEDEE;
+  background-image: url("/wp-content/themes/md_partitions/img/background-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -12px 0px;
 }
-/* line 7, sass/site/_site.scss */
+/* line 12, sass/site/_site.scss */
 .site-content #primary {
   max-width: 1200px;
   margin-left: auto;
@@ -985,7 +993,7 @@ a[x-apple-data-detectors=true] {
   padding-right: 1.75rem;
 }
 @media (min-width: 450px) {
-  /* line 7, sass/site/_site.scss */
+  /* line 12, sass/site/_site.scss */
   .site-content #primary {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
@@ -1417,20 +1425,12 @@ ol.carousel-nav li.active a:hover {
 ## Drill Page with Sidebar Template
 --------------------------------------------------------------*/
 /* line 3, sass/page-templates/_drill-page-sidebar.scss */
-.page-template-page-drill-page-sidebar .site-content {
-  background-color: #EEEDEE;
-  background-image: url("/wp-content/themes/md_partitions/img/background-lines.svg");
-  background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: -12px 0px;
-}
-/* line 12, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section {
   background-color: #fff;
   margin: 0;
   padding: 0;
 }
-/* line 17, sass/page-templates/_drill-page-sidebar.scss */
+/* line 8, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1438,44 +1438,44 @@ ol.carousel-nav li.active a:hover {
   padding-bottom: 1.5em;
 }
 @media (min-width: 450px) {
-  /* line 17, sass/page-templates/_drill-page-sidebar.scss */
+  /* line 8, sass/page-templates/_drill-page-sidebar.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
 @media (min-width: 950px) {
-  /* line 17, sass/page-templates/_drill-page-sidebar.scss */
+  /* line 8, sass/page-templates/_drill-page-sidebar.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 17, sass/page-templates/_drill-page-sidebar.scss */
+  /* line 8, sass/page-templates/_drill-page-sidebar.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 21, sass/page-templates/_drill-page-sidebar.scss */
+/* line 12, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper {
   text-align: center;
 }
-/* line 24, sass/page-templates/_drill-page-sidebar.scss */
+/* line 15, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
   max-width: 200px;
 }
-/* line 29, sass/page-templates/_drill-page-sidebar.scss */
+/* line 20, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .price {
   color: #81bc00;
 }
-/* line 34, sass/page-templates/_drill-page-sidebar.scss */
+/* line 25, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section {
   background-color: #000;
   color: #fff;
 }
-/* line 38, sass/page-templates/_drill-page-sidebar.scss */
+/* line 29, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section a {
   text-decoration: none;
   font-family: "SourceSansPro-Bold";
@@ -1483,7 +1483,7 @@ ol.carousel-nav li.active a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 44, sass/page-templates/_drill-page-sidebar.scss */
+/* line 35, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -1491,33 +1491,124 @@ ol.carousel-nav li.active a:hover {
   padding-right: 1.75rem;
 }
 @media (min-width: 950px) {
-  /* line 44, sass/page-templates/_drill-page-sidebar.scss */
+  /* line 35, sass/page-templates/_drill-page-sidebar.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 44, sass/page-templates/_drill-page-sidebar.scss */
+  /* line 35, sass/page-templates/_drill-page-sidebar.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
 @media (min-width: 450px) {
-  /* line 44, sass/page-templates/_drill-page-sidebar.scss */
+  /* line 35, sass/page-templates/_drill-page-sidebar.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 48, sass/page-templates/_drill-page-sidebar.scss */
+/* line 39, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper {
   text-align: center;
 }
-/* line 51, sass/page-templates/_drill-page-sidebar.scss */
+/* line 42, sass/page-templates/_drill-page-sidebar.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
   max-width: 200px;
+}
+
+/*--------------------------------------------------------------
+## Projects Page Template
+--------------------------------------------------------------*/
+/* line 3, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects-section {
+  background-color: #fff;
+}
+/* line 6, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects-section .featured-projects-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media (min-width: 450px) {
+  /* line 6, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects-section .featured-projects-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media (min-width: 950px) {
+  /* line 6, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects-section .featured-projects-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 6, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects-section .featured-projects-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+/* line 10, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects-section .featured-projects-wrapper .project-wrapper {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 14, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects-section .featured-projects-wrapper .project-wrapper img {
+  display: block;
+}
+/* line 18, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects-section .featured-projects-wrapper .project-wrapper a {
+  color: #000;
+  text-decoration: none;
+  font-family: "SourceSansPro-Bold";
+}
+/* line 30, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .other-projects-section {
+  background-color: #fff;
+}
+/* line 33, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .other-projects-section .other-projects-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media (min-width: 450px) {
+  /* line 33, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .other-projects-section .other-projects-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media (min-width: 950px) {
+  /* line 33, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .other-projects-section .other-projects-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 33, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .other-projects-section .other-projects-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+/* line 37, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .other-projects-section .other-projects-wrapper h3 {
+  font-family: "SourceSansPro-Bold";
+  margin: 0;
+  padding: 0;
+  margin-bottom: .2em;
 }
 
 /*# sourceMappingURL=style.css.map */

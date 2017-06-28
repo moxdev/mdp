@@ -240,6 +240,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Displays the Certifications Section.
+ */
+require get_template_directory() . '/inc/frontpage-carousel.php';
+
+/**
  * Displays the sidebar on the frontpage.
  */
 require get_template_directory() . '/inc/frontpage-sidebar.php';
@@ -250,38 +255,19 @@ require get_template_directory() . '/inc/frontpage-sidebar.php';
 require get_template_directory() . '/inc/frontpage-highlights.php';
 
 /**
- * Displays the Materials Section.
+ * Displays the Product Section.
  */
-require get_template_directory() . '/inc/materials-section.php';
-
-/**
- * Displays the Styles Section.
- */
-require get_template_directory() . '/inc/styles-section.php';
+require get_template_directory() . '/inc/product-section.php';
 
 /**
  * Displays the Featured Projects Section.
  */
-require get_template_directory() . '/inc/featured-projects-section.php';
-
-/**
- * Displays the Other Projects Section.
- */
-require get_template_directory() . '/inc/other-projects-section.php';
-
-/**
- * Displays the Product Section.
- */
-require get_template_directory() . '/inc/product-section.php';
+require get_template_directory() . '/inc/projects-section.php';
 
 /**
  * Displays the Certifications Section.
  */
 require get_template_directory() . '/inc/certifications-section.php';
 
-/**
- * Displays the Certifications Section.
- */
-require get_template_directory() . '/inc/frontpage-carousel.php';
 
 

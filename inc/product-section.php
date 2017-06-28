@@ -28,7 +28,7 @@ function md_partitions_product_section() {
 
                      ?>
 
-                     <h2 class="product-header"><?php echo esc_html( $header ); ?></h2>
+                     <h2 class="section-header"><?php echo esc_html( $header ); ?></h2>
 
                      <?php if( have_rows('product') ): ?>
 
@@ -106,7 +106,7 @@ function md_partitions_product_section() {
 
           else :
 
-              // no layouts found
+              echo '<h2> There no product sections, please add sections in WordPress</h2>';
 
           endif;
 

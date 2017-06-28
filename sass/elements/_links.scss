@@ -1,1 +1,21 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
 @include linx($color__brand-1, #fff, #fff, $color__brand-1);
+
+a {
+
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+a[x-apple-data-detectors=true] {
+ color: inherit !important;
+ text-decoration: inherit !important;
+}

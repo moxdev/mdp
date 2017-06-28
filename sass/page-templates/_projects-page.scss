@@ -1,0 +1,46 @@
+.page-template-page-projects {
+
+  .featured-projects-section {
+    background-color: #fff;
+
+    .featured-projects-wrapper {
+      @include padding-left-right;
+      @include section-padding;
+
+      .project-wrapper {
+        max-width: 200px;
+        @include margin-auto;
+
+        img {
+          display: block;
+        }
+
+        a {
+          color: #000;
+          text-decoration: none;
+          font-family: $font__bold;
+        }
+
+
+      }
+    }
+
+  }
+
+  .other-projects-section {
+    background-color: #fff;
+
+    .other-projects-wrapper {
+      @include padding-left-right;
+      @include section-padding;
+
+      h3 {
+        font-family: $font__bold;
+        @include reset;
+        margin-bottom: .2em;
+      }
+    }
+
+  }
+
+}
