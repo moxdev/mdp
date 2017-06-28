@@ -1,7 +1,8 @@
 .page-template-front-page {
 
   .site-content {
-    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg');
+    background-image: url('/wp-content/themes/md_partitions/img/background-lines.svg');
+    // background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg');
     background-repeat: no-repeat;
     background-size: 200%;
     background-position: -12px 0px;

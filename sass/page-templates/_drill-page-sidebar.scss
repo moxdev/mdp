@@ -1,0 +1,61 @@
+.page-template-page-drill-page-sidebar {
+
+  .site-content {
+    background-color: $color__background-alt-body;
+    background-image: url('/wp-content/themes/md_partitions/img/background-lines.svg');
+    // background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg');
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: -12px 0px;
+  }
+
+  .product-section {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+
+    .product-wrapper {
+      @include padding-left-right;
+      @include section-padding;
+
+      .image-wrapper{
+        text-align: center;
+
+        img {
+          max-width: 200px;
+        }
+      }
+
+      .price {
+        color: $color__brand-1;
+      }
+    }
+
+    .callout-section {
+      background-color: #000;
+      color: #fff;
+
+      a {
+        text-decoration: none;
+        font-family: $font__bold;
+        @include font-smooth;
+      }
+
+      .callout-wrapper {
+        @include section-padding;
+        @include padding-left-right;
+
+        .image-wrapper{
+          text-align: center;
+
+          img {
+            max-width: 200px;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}

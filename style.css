@@ -391,6 +391,28 @@ h1 {
   font-family: "SourceSansPro-Bold";
 }
 
+/* line 12, sass/typography/_headings.scss */
+h2.product-header {
+  background-color: #81bc00;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  font-family: "SourceSansPro-Regular";
+  letter-spacing: 3px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .5em 0;
+}
+
+/* line 25, sass/typography/_headings.scss */
+h3.product-header {
+  font-family: "SourceSansPro-Bold";
+}
+
 /* line 1, sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
@@ -538,6 +560,23 @@ figure {
 table {
   margin: 0 0 1.5em;
   width: 100%;
+}
+
+/* line 25, sass/mixins/_mixins-master.scss */
+a {
+  color: #81bc00;
+}
+/* line 27, sass/mixins/_mixins-master.scss */
+a:visited {
+  color: #fff;
+}
+/* line 30, sass/mixins/_mixins-master.scss */
+a:hover {
+  color: #fff;
+}
+/* line 33, sass/mixins/_mixins-master.scss */
+a:active {
+  color: #81bc00;
 }
 
 /*--------------------------------------------------------------
@@ -907,15 +946,24 @@ a[x-apple-data-detectors=true] {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 20%;
+  display: block;
 }
-/* line 15, sass/site/secondary/_drill-page-sidebar.scss */
+/* line 17, sass/site/secondary/_drill-page-sidebar.scss */
 #secondary.drill-page-sidebar .wrapper .container-top a,
 #secondary.drill-page-sidebar .wrapper .container-bottom a {
   color: #fff;
   text-decoration: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding: .5em 2em;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: .1em 1em;
+  font-family: "SourceSansPro-Regular";
+  font-size: 1.7em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px black;
 }
 
 /*--------------------------------------------------------------
@@ -1349,20 +1397,127 @@ ol.carousel-nav li.active a:hover {
 --------------------------------------------------------------*/
 /* line 3, sass/page-templates/_frontpage.scss */
 .page-template-front-page .site-content {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg");
+  background-image: url("/wp-content/themes/md_partitions/img/background-lines.svg");
   background-repeat: no-repeat;
   background-size: 200%;
   background-position: -12px 0px;
 }
-/* line 10, sass/page-templates/_frontpage.scss */
+/* line 11, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-sidebar-wrapper {
   display: none;
 }
 @media (min-width: 750px) {
-  /* line 10, sass/page-templates/_frontpage.scss */
+  /* line 11, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-sidebar-wrapper {
     display: block;
   }
+}
+
+/*--------------------------------------------------------------
+## Drill Page with Sidebar Template
+--------------------------------------------------------------*/
+/* line 3, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .site-content {
+  background-color: #EEEDEE;
+  background-image: url("/wp-content/themes/md_partitions/img/background-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -12px 0px;
+}
+/* line 12, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+/* line 17, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .product-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media (min-width: 450px) {
+  /* line 17, sass/page-templates/_drill-page-sidebar.scss */
+  .page-template-page-drill-page-sidebar .product-section .product-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media (min-width: 950px) {
+  /* line 17, sass/page-templates/_drill-page-sidebar.scss */
+  .page-template-page-drill-page-sidebar .product-section .product-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 17, sass/page-templates/_drill-page-sidebar.scss */
+  .page-template-page-drill-page-sidebar .product-section .product-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+/* line 21, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper {
+  text-align: center;
+}
+/* line 24, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
+  max-width: 200px;
+}
+/* line 29, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .product-wrapper .price {
+  color: #81bc00;
+}
+/* line 34, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .callout-section {
+  background-color: #000;
+  color: #fff;
+}
+/* line 38, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .callout-section a {
+  text-decoration: none;
+  font-family: "SourceSansPro-Bold";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 44, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+@media (min-width: 950px) {
+  /* line 44, sass/page-templates/_drill-page-sidebar.scss */
+  .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 44, sass/page-templates/_drill-page-sidebar.scss */
+  .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+@media (min-width: 450px) {
+  /* line 44, sass/page-templates/_drill-page-sidebar.scss */
+  .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+/* line 48, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper {
+  text-align: center;
+}
+/* line 51, sass/page-templates/_drill-page-sidebar.scss */
+.page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
+  max-width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

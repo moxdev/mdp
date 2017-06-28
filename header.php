@@ -27,7 +27,8 @@
 		<div class="masthead-wrapper">
 
 			<div class="site-branding">
-				<a class="logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/logo.svg'); ?></a>
+				<!-- <a class="logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //echo file_get_contents('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/logo.svg'); ?></a> -->
+				<a class="logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents('http://www.mdp.dev/wp-content/themes/md_partitions/img/logo.svg'); ?></a>
 
 				<?php
 				if ( is_front_page() && is_home() ) : ?>

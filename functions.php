@@ -43,6 +43,8 @@ function md_partitions_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'frontpage-highlight', 500, 500, true );
 	add_image_size( 'drill-page-sidebar', 450, 240, true );
+	add_image_size( 'product-image', 300, 300, true );
+	add_image_size( 'callout-image', 300, 9999, false );
 
 	// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -266,6 +268,11 @@ require get_template_directory() . '/inc/featured-projects-section.php';
  * Displays the Other Projects Section.
  */
 require get_template_directory() . '/inc/other-projects-section.php';
+
+/**
+ * Displays the Product Section.
+ */
+require get_template_directory() . '/inc/product-section.php';
 
 /**
  * Displays the Certifications Section.

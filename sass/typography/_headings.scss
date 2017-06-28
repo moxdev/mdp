@@ -8,3 +8,20 @@ h1 {
   line-height: 1.2;
   font-family: $font__bold;
 }
+
+h2.product-header {
+  background-color: $color__brand-1;
+  @include reset;
+  @include font-smooth;
+  color: #fff;
+  font-family: $font__regular;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .5em 0;
+}
+
+h3.product-header {
+  font-family: $font__bold;
+}
