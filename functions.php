@@ -42,6 +42,7 @@ function md_partitions_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'frontpage-highlight', 500, 500, true );
+	add_image_size( 'drill-page-sidebar', 450, 240, true );
 
 	// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -148,8 +149,10 @@ function md_partitions_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'md_partitions_scripts' );
 
+/*
+ * Add has-carousel class to body if is front page
+ */
 function md_partitions_carousel_body_class( $classes ) {
-    // Adds a class of group-blog to blogs with more than 1 published author.
     if ( is_page_template('front-page.php') && function_exists('get_field') ) {
         if( get_field('add_image_carousel') == 'Yes' )
         $classes[] = 'has-carousel';
@@ -274,44 +277,4 @@ require get_template_directory() . '/inc/certifications-section.php';
  */
 require get_template_directory() . '/inc/frontpage-carousel.php';
 
-function mm4_you_home_carousel_body_class( $classes ) {
-	// Adds a class of group-blog to blogs with more than 1 published author.
-	if ( is_page_template('front-page.php') || is_page_template('frontpage-b.php') || is_page_template('frontpage-c.php') && function_exists('get_field') ) {
-		if( get_field('add_image_carousel') == 'Yes' )
-		$classes[] = 'has-carousel';
-	}
 
-	return $classes;
-}
-add_filter( 'body_class', 'mm4_you_home_carousel_body_class' );
-
-
-function mm4_you_home_carousel_type_1() {
-	if( is_page_template('front-page.php') || is_page_template('frontpage-b.php') ) {
-		if( function_exists('get_field') ) {
-			$addCarousel = get_field('add_image_carousel');
-			if( $addCarousel == 'Yes' && have_rows('slides') ): ?>
-				<div id="home-carousel" class="carousel-type-1">
-					<ul>
-					<?php while ( have_rows('slides') ) : the_row(); ?>
-						<li>
-						<?php $text = get_sub_field('slide_caption');
-						$imageArr = get_sub_field('slide_image');
-						$image = wp_get_attachment_image_src($imageArr[id], 'front-page-slide-1'); ?>
-						<img src="<?php echo $image[0] ?>" alt="<?php echo $imageArr[title]; ?>">
-						<span><?php echo $text; ?></span>
-						</li>
-					<?php endwhile; ?>
-					</ul>
-					<?php $rows = get_field('slides');
-					$rowCount = count($rows); ?>
-					<ol class="carousel-nav">
-					<?php for ($i = 1; $i <= $rowCount; $i++) { ?>
-						<li><a href="#"><?php echo $i; ?></a></li>
-					<?php } ?>
-					</ol>
-				</div>
-			<?php endif;
-		}
-	}
-}

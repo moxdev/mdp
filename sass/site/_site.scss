@@ -2,9 +2,12 @@
 ## Site Container Styles
 --------------------------------------------------------------*/
 .site-content {
-  @include container;
-  @include padding-left-right;
   background-color: $color__background-alt-body;
+
+  #primary {
+    @include container;
+    @include padding-left-right;
+  }
 }
 
 
