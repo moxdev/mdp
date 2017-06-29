@@ -55,6 +55,12 @@
 		"oAP": "\/*notes\/rollins-hl.php",
 		"oF": 0
 		},
+	"\/*notes\/sidebar-rebuild.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/*notes\/sidebar-rebuild.php",
+		"oF": 0
+		},
 	"\/.jscsrc": {
 		"ft": 8192,
 		"oA": 2,
@@ -289,6 +295,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/background-lines.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/front-background-lines-small.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/front-background-lines-small.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

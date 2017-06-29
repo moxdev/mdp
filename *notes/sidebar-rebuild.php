@@ -19,8 +19,8 @@
 
     if ($top_img):
 
-      $link_text_top = get_field('top_title');
-      $page_link_top = get_field('top_link');
+      $link_text_top = get_sub_field('top_title');
+      $page_link_top = get_sub_field('top_link');
 
       ?>
 
@@ -34,7 +34,7 @@
 
         if($top_img): ?>
 
-          <img src="<?php echo esc_url( $top_img['sizes']['drill-page-sidebar'] ); ?>" alt="<?php echo esc_attr( $top_img['alt'] ); ?>" description="<?php echo esc_attr( $top_img['description'] ); ?>">
+          <img src="<?php echo esc_url( $top_img['sizes']['home-highlight'] ); ?>" alt="<?php echo esc_attr( $top_img['alt'] ); ?>" description="<?php echo esc_attr( $top_img['description'] ); ?>">
 
         <?php endif;
 
@@ -56,8 +56,8 @@
 
     if ($bottom_img):
 
-      $link_text_bottom = get_field('bottom_title');
-      $page_link_bottom = get_field('bottom_link');
+      $link_text_bottom = get_sub_field('bottom_title');
+      $page_link_bottom = get_sub_field('bottom_link');
 
       ?>
 
@@ -71,7 +71,7 @@
 
         if($bottom_img): ?>
 
-          <img src="<?php echo esc_url( $bottom_img['sizes']['drill-page-sidebar'] ); ?>" alt="<?php echo esc_attr( $bottom_img['alt'] ); ?>" description="<?php echo esc_attr( $bottom_img['description'] ); ?>">
+          <img src="<?php echo esc_url( $bottom_img['sizes']['home-highlight'] ); ?>" alt="<?php echo esc_attr( $bottom_img['alt'] ); ?>" description="<?php echo esc_attr( $bottom_img['description'] ); ?>">
 
         <?php endif;
 

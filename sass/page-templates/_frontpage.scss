@@ -3,10 +3,10 @@
   .site-content {
     background-color: #fff;
     // background-image: url('/wp-content/themes/md_partitions/img/background-lines.svg');
-    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg');
+    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines-small.svg');
     background-repeat: no-repeat;
     background-size: 200%;
-    background-position: -12px 0px;
+    background-position: -12px -10px;
   }
 
   #frontpage-secondary {
@@ -66,8 +66,6 @@
             font-family: $font__regular;
           }
         }
-
-
       }
 
       @include respond-to(med-small) {

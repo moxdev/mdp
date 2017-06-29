@@ -936,29 +936,54 @@ textarea {
   max-width: 100%;
 }
 
-/* line 2, sass/site/secondary/_drill-page-sidebar.scss */
-#secondary.drill-page-sidebar .wrapper {
-  width: 100%;
+/* line 4, sass/site/secondary/_drill-page-sidebar.scss */
+#secondary.drill-page-sidebar .wrapper .sidebar-highlight {
+  position: relative;
   text-align: center;
+  background-color: #000;
 }
-/* line 6, sass/site/secondary/_drill-page-sidebar.scss */
-#secondary.drill-page-sidebar .wrapper .container-top,
-#secondary.drill-page-sidebar .wrapper .container-bottom {
-  width: 100%;
-  min-height: 170px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* line 15, sass/site/secondary/_drill-page-sidebar.scss */
-#secondary.drill-page-sidebar .wrapper .container-top a,
-#secondary.drill-page-sidebar .wrapper .container-bottom a {
-  color: #fff;
+/* line 9, sass/site/secondary/_drill-page-sidebar.scss */
+#secondary.drill-page-sidebar .wrapper .sidebar-highlight a {
   text-decoration: none;
+  cursor: pointer;
+}
+/* line 13, sass/site/secondary/_drill-page-sidebar.scss */
+#secondary.drill-page-sidebar .wrapper .sidebar-highlight a:hover img {
+  opacity: 1;
+}
+/* line 17, sass/site/secondary/_drill-page-sidebar.scss */
+#secondary.drill-page-sidebar .wrapper .sidebar-highlight a:hover span {
+  opacity: 0;
+  padding-top: 1em;
+}
+/* line 23, sass/site/secondary/_drill-page-sidebar.scss */
+#secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
+  display: block;
+  opacity: .6;
+  width: 100%;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+/* line 30, sass/site/secondary/_drill-page-sidebar.scss */
+#secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
+  display: block;
+  position: absolute;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  padding: .5em 2em;
+  top: 0;
+  right: 15%;
+  left: 15%;
+  margin-top: 20%;
+  padding: 5px 0;
+  line-height: 1;
+  -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
+  transition: opacity .35s ease-in-out, padding .35s ease-in-out;
+}
+/* line 43, sass/site/secondary/_drill-page-sidebar.scss */
+#secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
+  color: #FFF;
+  font-size: 1.6em;
+  font-family: "SourceSansPro-Regular";
 }
 
 /*--------------------------------------------------------------
@@ -1397,10 +1422,10 @@ ol.carousel-nav li.active a:hover {
 /* line 3, sass/page-templates/_frontpage.scss */
 .page-template-front-page .site-content {
   background-color: #fff;
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines-small.svg");
   background-repeat: no-repeat;
   background-size: 200%;
-  background-position: -12px 0px;
+  background-position: -12px -10px;
 }
 /* line 12, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary {
@@ -1474,33 +1499,33 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  /* line 78, sass/page-templates/_frontpage.scss */
+  /* line 76, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0%;
             flex: 1 1 0%;
   }
-  /* line 82, sass/page-templates/_frontpage.scss */
+  /* line 80, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
     font-size: 1.5em;
     top: .35em;
   }
 }
 @media (min-width: 750px) {
-  /* line 89, sass/page-templates/_frontpage.scss */
+  /* line 87, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
     font-size: 2em;
     top: 0;
   }
 }
 @media (min-width: 950px) {
-  /* line 98, sass/page-templates/_frontpage.scss */
+  /* line 96, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
     font-size: 2.75em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 106, sass/page-templates/_frontpage.scss */
+  /* line 104, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
     font-size: 3em;
   }
