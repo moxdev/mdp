@@ -950,24 +950,15 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 20%;
-  display: block;
 }
-/* line 17, sass/site/secondary/_drill-page-sidebar.scss */
+/* line 15, sass/site/secondary/_drill-page-sidebar.scss */
 #secondary.drill-page-sidebar .wrapper .container-top a,
 #secondary.drill-page-sidebar .wrapper .container-bottom a {
   color: #fff;
   text-decoration: none;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  padding: .1em 1em;
-  font-family: "SourceSansPro-Regular";
-  font-size: 1.7em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.2;
-  text-shadow: 1px 1px 2px black;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: .5em 2em;
 }
 
 /*--------------------------------------------------------------
@@ -978,8 +969,8 @@ textarea {
 --------------------------------------------------------------*/
 /* line 4, sass/site/_site.scss */
 .site-content {
-  background-color: #EEEDEE;
-  background-image: url("/wp-content/themes/md_partitions/img/background-lines.svg");
+  background-color: #E3E3E3;
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg");
   background-repeat: no-repeat;
   background-size: 200%;
   background-position: -12px 0px;
@@ -1405,19 +1396,113 @@ ol.carousel-nav li.active a:hover {
 --------------------------------------------------------------*/
 /* line 3, sass/page-templates/_frontpage.scss */
 .page-template-front-page .site-content {
-  background-image: url("/wp-content/themes/md_partitions/img/background-lines.svg");
+  background-color: #fff;
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg");
   background-repeat: no-repeat;
   background-size: 200%;
   background-position: -12px 0px;
 }
-/* line 11, sass/page-templates/_frontpage.scss */
-.page-template-front-page .frontpage-sidebar-wrapper {
+/* line 12, sass/page-templates/_frontpage.scss */
+.page-template-front-page #frontpage-secondary {
   display: none;
 }
 @media (min-width: 750px) {
-  /* line 11, sass/page-templates/_frontpage.scss */
-  .page-template-front-page .frontpage-sidebar-wrapper {
+  /* line 12, sass/page-templates/_frontpage.scss */
+  .page-template-front-page #frontpage-secondary {
     display: block;
+  }
+}
+/* line 24, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box {
+  position: relative;
+  text-align: center;
+  background-color: #000;
+}
+/* line 29, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 33, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a:hover img {
+  opacity: 1;
+}
+/* line 37, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a:hover span {
+  opacity: 0;
+  padding-top: 1em;
+}
+/* line 43, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box img {
+  display: block;
+  opacity: .6;
+  width: 100%;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+/* line 50, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-wrapper {
+  display: block;
+  position: absolute;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  top: 0;
+  right: 15%;
+  left: 15%;
+  margin-top: 40%;
+  padding: 5px 0;
+  line-height: 1;
+  -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
+  transition: opacity .35s ease-in-out, padding .35s ease-in-out;
+}
+/* line 63, sass/page-templates/_frontpage.scss */
+.page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-wrapper .span-text {
+  color: #FFF;
+  font-size: 1.6em;
+  font-family: "SourceSansPro-Regular";
+}
+@media (min-width: 575px) {
+  /* line 22, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  /* line 78, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
+  }
+  /* line 82, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
+    font-size: 1.5em;
+    top: .35em;
+  }
+}
+@media (min-width: 750px) {
+  /* line 89, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
+    font-size: 2em;
+    top: 0;
+  }
+}
+@media (min-width: 950px) {
+  /* line 98, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
+    font-size: 2.75em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 106, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box span {
+    font-size: 3em;
   }
 }
 
@@ -1605,6 +1690,49 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 37, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section .other-projects-wrapper h3 {
+  font-family: "SourceSansPro-Bold";
+  margin: 0;
+  padding: 0;
+  margin-bottom: .2em;
+}
+
+/*--------------------------------------------------------------
+## About Us Page Template
+--------------------------------------------------------------*/
+/* line 3, sass/page-templates/_about-us-page.scss */
+.page-template-page-about .certification-section {
+  background-color: #fff;
+}
+/* line 6, sass/page-templates/_about-us-page.scss */
+.page-template-page-about .certification-section .certification-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media (min-width: 450px) {
+  /* line 6, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media (min-width: 950px) {
+  /* line 6, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 6, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+/* line 10, sass/page-templates/_about-us-page.scss */
+.page-template-page-about .certification-section .certification-wrapper h3 {
   font-family: "SourceSansPro-Bold";
   margin: 0;
   padding: 0;

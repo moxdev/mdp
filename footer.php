@@ -13,6 +13,14 @@
 
 	</div><!-- #content -->
 
+  <?php if ( is_page_template('front-page.php') && function_exists( 'md_partitions_frontpage_sidebar' ) ) {
+    md_partitions_frontpage_sidebar();
+  } ?>
+
+  <?php if ( is_page_template('front-page.php') && function_exists( 'md_partitions_frontpage_highlights' ) ) {
+    md_partitions_frontpage_highlights();
+  } ?>
+
   <?php if ( is_page_template('page-drill-page-sidebar.php') && function_exists( 'md_partitions_product_section' ) ) {
       md_partitions_product_section();
   } ?>

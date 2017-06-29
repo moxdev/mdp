@@ -1,18 +1,118 @@
 .page-template-front-page {
 
   .site-content {
-    background-image: url('/wp-content/themes/md_partitions/img/background-lines.svg');
-    // background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg');
+    background-color: #fff;
+    // background-image: url('/wp-content/themes/md_partitions/img/background-lines.svg');
+    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/background-lines.svg');
     background-repeat: no-repeat;
     background-size: 200%;
     background-position: -12px 0px;
   }
 
-  .frontpage-sidebar-wrapper {
+  #frontpage-secondary {
     display: none;
 
     @include respond-to(tablet) {
       display: block;
+    }
+  }
+
+  .frontpage-highlight-section {
+
+    .frontpage-highlight-wrapper {
+
+      .highlight-box {
+        position:relative;
+        text-align:center;
+        background-color:#000;
+
+        a {
+          text-decoration:none;
+          cursor: pointer;
+
+          &:hover img {
+            opacity:1;
+          }
+
+          &:hover span {
+            opacity:0;
+            padding-top:1em;
+          }
+        }
+
+        img {
+          display:block;
+          opacity:.6;
+          width:100%;
+          transition:opacity .5s ease-in-out;
+        }
+
+        .span-wrapper {
+          display:block;
+          position:absolute;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          top: 0;
+          right:15%;
+          left:15%;
+          margin-top: 40%;
+          padding: 5px 0;
+          line-height:1;
+          transition:opacity .35s ease-in-out, padding .35s ease-in-out;
+
+          .span-text {
+            color:#FFF;
+            font-size:1.6em;
+            font-family: $font__regular;
+          }
+        }
+
+
+      }
+
+      @include respond-to(med-small) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .highlight-box {
+          flex: 1 1 0%;
+        }
+
+        .highlight-box span {
+          font-size:1.5em;
+          top:.35em;
+        }
+      }
+
+      @include respond-to(tablet) {
+        .highlight-box span {
+            font-size:2em;
+            // padding:1.25em .5em;
+            top:0;
+          }
+
+      }
+
+      @include respond-to(medium) {
+        .highlight-box span {
+            font-size:2.75em;
+            // padding:1.25em .75em;
+          }
+
+      }
+
+      @include respond-to(large) {
+        .highlight-box span {
+            font-size:3em;
+            // padding:1.5em 1em;
+          }
+
+      }
+
+      @include respond-to(x-large) {
+
+      }
     }
   }
 }

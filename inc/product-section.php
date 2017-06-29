@@ -7,6 +7,7 @@
  */
 
 function md_partitions_product_section() {
+
   if ( function_exists( 'get_field' ) ) {
 
     $add_section = get_field( 'add_a_product_section' );

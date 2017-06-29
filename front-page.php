@@ -30,14 +30,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php if ( function_exists( 'md_partitions_frontpage_sidebar' ) ) {
-		md_partitions_frontpage_sidebar();
-	} ?>
-
-	<?php if ( function_exists( 'md_partitions_frontpage_highlights' ) ) {
-		md_partitions_frontpage_highlights();
-	} ?>
-
 <?php
 
 get_footer();

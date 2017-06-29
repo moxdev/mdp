@@ -10,52 +10,62 @@ function md_partitions_frontpage_highlights() {
 
 	if ( function_exists( 'get_field' ) ) {
 
-		$add_highlights  = get_field( 'add_frontpage_highlight_boxes' );
+	  $add_highlights  = get_field( 'add_frontpage_highlight_boxes' );
 
-		if ( $add_highlights ): ?>
+	  if ( $add_highlights ): ?>
 
-			<section class="frontpage-highlight-section">
-				<div class="frontpage-highlight-wrapper">
+	    <section class="frontpage-highlight-section">
 
-					<?php if( have_rows('highlight_boxes') ): ?>
+	      <?php if( have_rows('highlight_boxes') ): ?>
 
-					    <div class="">
+	      	<div class="frontpage-highlight-wrapper">
 
-					    <?php while( have_rows('highlight_boxes') ): the_row();
+	        	<?php while( have_rows('highlight_boxes') ): the_row();
 
-									$img       = get_sub_field('background_image');
-									$link_text = get_sub_field('link_text');
-									$page_link = get_sub_field('page_link');
+	          	$img       = get_sub_field('background_image');
+	          	$link_text = get_sub_field('link_text');
+	          	$page_link = get_sub_field('page_link');
 
-					        ?>
+	            if ( $img ): ?>
 
-					        <div class="highlight-box">
-					        	<div class="highlight-inner-wrapper">
+	            <div class="highlight-box">
 
-					        		<?php if( $img ) : ?>
+	              <?php if( $page_link ): ?>
 
-					        			<img src="<?php echo $img['sizes']['frontpage-highlight']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+	                <a href="<?php echo esc_url( $page_link ); ?>">
 
-					        		<?php endif; ?>
+	              <?php endif;
 
-					        		<?php if( $link_text ) : ?>
+	              if($img): ?>
 
-					        			<span><a href="<?php echo $page_link; ?>"><?php echo esc_html( $link_text ); ?></a></span>
+	                <img src="<?php echo esc_url( $img['sizes']['home-highlight'] ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" description="<?php echo esc_attr( $img['description'] ); ?>">
 
-					        		<?php endif; ?>
+	              <?php endif;
 
-					        	</div>
-					        </div>
+	              if( $link_text ): ?>
 
-					    <?php endwhile; ?>
+	                <span class="span-wrapper"><span class="span-text"><?php echo esc_html( $link_text ); ?></span></span>
 
-					    </div>
+	              <?php endif;
 
-					<?php endif; ?>
+	              if( $page_link ): ?>
 
-				</div><!-- frontpage-highlight-wrapper -->
-			</section>
+	                </a>
 
-		<?php endif;
+	              <?php endif; ?>
+
+	            </div><!-- highlight-box -->
+
+            <?php endif;
+
+	          endwhile; ?>
+
+	        </div><!-- frontpage-highlight-wrapper -->
+
+	      <?php endif; ?>
+
+	    </section><!-- frontpage-highlight-section -->
+
+	  <?php endif;
 	}
 }

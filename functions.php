@@ -41,10 +41,11 @@ function md_partitions_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'frontpage-highlight', 500, 500, true );
+	add_image_size('home-highlight', 475, 430, true);
 	add_image_size( 'drill-page-sidebar', 450, 240, true );
 	add_image_size( 'product-image', 300, 300, true );
 	add_image_size( 'callout-image', 300, 9999, false );
+	// add_image_size( 'frontpage-highlight', 500, 500, true );
 
 	// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

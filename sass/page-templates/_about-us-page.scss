@@ -1,0 +1,29 @@
+.page-template-page-about {
+
+  .certification-section {
+    background-color: #fff;
+
+    .certification-wrapper {
+      @include padding-left-right;
+      @include section-padding;
+
+      h3 {
+        font-family: $font__bold;
+        @include reset;
+        margin-bottom: .2em;
+      }
+
+      .col-1 {
+
+      }
+
+      .col-2 {
+
+      }
+
+      .col-3 {
+
+      }
+    }
+  }
+}

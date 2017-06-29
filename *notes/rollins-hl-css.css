@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------
+### Highlight Boxes
+--------------------------------------------------------------*/
+#home-highlight-inner-wrapper {
+  max-width:1300px;
+  margin:0 auto;
+}
+
+#home-highlight-inner-wrapper .home-highlight {
+  background-color:#000;
+  text-align:center;
+  font-family: 'dustismo_romanregular';
+  position:relative;
+}
+
+#home-highlight-inner-wrapper .home-highlight a {
+  text-decoration:none;
+}
+
+#home-highlight-inner-wrapper .home-highlight img {
+  display:block;
+  opacity:.6;
+  width:100%;
+  transition:opacity .5s ease-in-out;
+}
+
+#home-highlight-inner-wrapper .home-highlight span {
+  color:#FFF;
+  font-size:3em;
+  line-height:1;
+  display:block;
+  position:absolute;
+  left:0;
+  right:0;
+  padding:1.5em 1em;
+  top:0;
+  bottom:0;
+  transition:opacity .35s ease-in-out, padding .35s ease-in-out;
+}
+
+#home-highlight-inner-wrapper .home-highlight a:hover img {
+  opacity:1;
+}
+
+#home-highlight-inner-wrapper .home-highlight a:hover span {
+  opacity:0;
+  padding-top:1em;
+}
+
+@media screen and (min-width:575px) {
+  #home-highlight-inner-wrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  #home-highlight-inner-wrapper.highlight-4 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #home-highlight-inner-wrapper .home-highlight {
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    margin-right:3px;
+  }
+
+  #home-highlight-inner-wrapper.highlight-4 .home-highlight {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+  }
+
+  #home-highlight-inner-wrapper .home-highlight:last-child, #home-highlight-inner-wrapper.highlight-4 .home-highlight:nth-child(2) {
+    margin-right:0;
+  }
+
+  #home-highlight-inner-wrapper .home-highlight span {
+    font-size:1.5em;
+    top:.35em;
+  }
+}
+
+@media screen and (min-width:725px) {
+  #home-highlight-inner-wrapper .home-highlight {
+    margin-right:6px;
+  }
+
+  #home-highlight-inner-wrapper .home-highlight span {
+    font-size:2em;
+    padding:1.25em .5em;
+    top:0;
+  }
+}
+
+@media screen and (min-width:975px) {
+  #home-highlight-inner-wrapper .home-highlight span {
+    font-size:2.75em;
+    padding:1.25em .75em;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  #home-highlight-inner-wrapper .home-highlight span {
+    font-size:3em;
+    padding:1.5em 1em;
+  }
+}
+
+@media screen and (min-width:1325px) {
+  #home-highlight-wrapper {
+    padding:0 0 3em 0;
+  }
+}
