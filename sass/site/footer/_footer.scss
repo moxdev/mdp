@@ -3,8 +3,16 @@
   text-align: center;
   @include padding-left-right;
   font-family: $font__bold;
+  font-size: .9em;
+  border-top: 2px solid #fff;
+  padding-top: 1em;
+  padding-bottom: 4em;
 
   @include linx(#fff, #fff, #fff, #fff);
+
+  .footer-message {
+    @include font-smooth;
+  }
 
   .contact-information {
     font-family: $font__light;

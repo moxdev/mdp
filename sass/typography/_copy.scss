@@ -1,5 +1,7 @@
 p {
-	margin-bottom: 1.5em;
+	@include reset;
+	margin-top: .5em;
+	margin-bottom: 1em;
 }
 
 dfn, cite, em, i {

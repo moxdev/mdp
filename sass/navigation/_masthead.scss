@@ -1,8 +1,8 @@
 #masthead {
   background-color: $color__brand-2;
   @include padding-left-right;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
 
   @include linx($color__brand-1,$color__brand-1,$color__brand-1,$color__brand-1);
 
@@ -26,24 +26,40 @@
   .mobile-menu-wrapper {
     display: block;
 
-    .phone-link {
-      text-align: center;
-      font-size: .7em;
-      background-color: $color__brand-3;
-      padding: 5px 10px;
-      // margin: 10px;
-      // transform: skewX(20deg);
-
-      span {
-        transform: skewX(-20deg);
-      }
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        transform: skewX(-20deg);
-      }
+    .slant-btn {
+      transform: skew(30deg);
+      display: inline-block;
     }
+
+    .unslant {
+      transform: skew(-30deg);
+      display: inline-block;
+
+    }
+
+    .call-btn {
+      background-color: $color__brand-3;
+      color: #fff;
+      text-decoration: none;
+      padding: 0 15px;
+      text-align: center;
+      font-size: .8em;
+      float: right;
+    }
+
+    #mobile-toggle {
+      float: right;
+      clear: both;
+      border: none;
+      border-radius: 0;
+      @include reset;
+      text-align: center;
+      font-size: .8em;
+      margin-top: 10px;
+      padding-left: 27px;
+      padding-right: 27px;
+    }
+
   }
 
   // .home-desktop-navigation {

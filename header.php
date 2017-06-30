@@ -52,16 +52,17 @@
 						$phone = get_field( 'phone', 'options' );
 
 						if ( $phone ): ?>
+							<a class="call-btn slant-btn" href="tel:<?php echo esc_html( $phone ); ?>"><span class="unslant">Click-To-Call</span></a>
 
-							<div class="phone-link">
-								<span><a href="tel:<?php echo esc_html( $phone ) ?>">Click-To-Call</a></span>
-							</div>
+							<!-- <div class="phone-link">
+
+							</div> -->
 
 						<?php endif;
 
 				} ?>
 
-				<button id="mobile-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="Menu"><span class="inner"><?php esc_html_e( 'Menu', 'md_partitions' ); ?></span></button>
+				<button id="mobile-toggle" class="slant-btn" aria-controls="site-navigation" aria-expanded="false" aria-label="Menu"><span class="unslant"><?php esc_html_e( 'Menu', 'md_partitions' ); ?></span></button>
 
 			</div>
 

@@ -5,8 +5,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: $color__brand-1;
-  line-height: 1.2;
+  line-height: 1;
   font-family: $font__bold;
+  margin-bottom: .25em;
 }
 
 h2.section-header {
