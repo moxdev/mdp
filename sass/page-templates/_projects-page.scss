@@ -1,29 +1,51 @@
 .page-template-page-projects {
 
-  .featured-projects-section {
+  .featured-projects {
     background-color: #fff;
 
     .featured-projects-wrapper {
-      @include padding-left-right;
+      @include container;
       @include section-padding;
+      @include padding-left-right;
 
-      .project-wrapper {
-        max-width: 200px;
-        @include margin-auto;
+      ul {
+        list-style-type: none;
+
+        li {
+          padding-bottom: 1em;
+        }
+
+        .image-wrapper {
+          max-width: 230px;
+          @include margin-auto;
+        }
 
         img {
           display: block;
         }
 
-        a {
-          color: #000;
-          text-decoration: none;
+        span.project-title {
+          display: block;
           font-family: $font__bold;
-        }
+          text-align: left;
+          padding-top: 5px;
 
+          &:after {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 30px;
+            background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/arrow-green.png');
+            background-repeat: no-repeat;
+            background-size: 40%;
+            margin-left: 10px;
+            margin-top: 5px;
+          }
+        }
 
       }
     }
+
 
   }
 

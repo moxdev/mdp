@@ -40,6 +40,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+  ## Lightbox
 # Home Carousel
 # Page Templates
   ## Frontpage Template
@@ -1232,6 +1233,363 @@ object {
 }
 
 /*--------------------------------------------------------------
+## Lightbox
+--------------------------------------------------------------*/
+/* IMAGE LIGHTBOX SELECTOR */
+/* line 3, sass/media/_lightbox.scss */
+#imagelightbox {
+  cursor: pointer;
+  position: fixed;
+  z-index: 10000;
+  -ms-touch-action: none;
+      touch-action: none;
+  box-shadow: 0 0 3.125em rgba(0, 0, 0, 0.75);
+  /* 50 */
+}
+
+/* line 11, sass/media/_lightbox.scss */
+.imagelightbox-scroll-lock {
+  overflow: hidden;
+}
+
+/* line 15, sass/media/_lightbox.scss */
+.imagelightbox-disable-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* WITH ACTIVITY INDICATION */
+/* line 21, sass/media/_lightbox.scss */
+.imagelightbox-loading,
+.imagelightbox-loading div {
+  border-radius: 9999px;
+}
+
+/* line 26, sass/media/_lightbox.scss */
+.imagelightbox-loading {
+  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 10003;
+  top: 50%;
+  left: 50%;
+  padding: 0.65em;
+  margin: -1.3em 0 0 -1.3em;
+  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.75);
+  /* 40 */
+}
+
+/* line 38, sass/media/_lightbox.scss */
+.imagelightbox-loading div {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #fff;
+  -webkit-animation: imagelightbox-loading .5s ease infinite;
+          animation: imagelightbox-loading .5s ease infinite;
+}
+
+@-webkit-keyframes imagelightbox-loading {
+  from {
+    opacity: .5;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: .5;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@keyframes imagelightbox-loading {
+  from {
+    opacity: .5;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: .5;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+/* WITH OVERLAY */
+/* line 62, sass/media/_lightbox.scss */
+.imagelightbox-overlay {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* WITH "CLOSE" BUTTON */
+/* line 75, sass/media/_lightbox.scss */
+.imagelightbox-close {
+  cursor: pointer;
+  width: 2.5em;
+  /* 40 */
+  height: 2.5em;
+  /* 40 */
+  background-color: #666;
+  position: fixed;
+  z-index: 10002;
+  top: 2.5em;
+  /* 40 */
+  right: 2.5em;
+  /* 40 */
+  border-radius: 50%;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+/* line 88, sass/media/_lightbox.scss */
+.imagelightbox-close:hover {
+  background-color: #111;
+}
+
+/* line 92, sass/media/_lightbox.scss */
+.imagelightbox-close:before,
+.imagelightbox-close:after {
+  width: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* line 104, sass/media/_lightbox.scss */
+.imagelightbox-close:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* line 108, sass/media/_lightbox.scss */
+.imagelightbox-close:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* WITH CAPTION */
+/* line 114, sass/media/_lightbox.scss */
+.imagelightbox-caption {
+  text-align: center;
+  color: #fff;
+  background-color: #666;
+  position: fixed;
+  z-index: 10001;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.625em;
+  /* 10 */
+}
+
+/* WITH NAVIGATION */
+/* line 128, sass/media/_lightbox.scss */
+.imagelightbox-nav {
+  background-color: #444;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 10001;
+  left: 50%;
+  bottom: 3.75em;
+  /* 60 */
+  padding: 0.313em;
+  /* 5 */
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+/* line 140, sass/media/_lightbox.scss */
+.imagelightbox-nav a {
+  position: relative;
+  top: 0.2em;
+  width: 1em;
+  /* 20 */
+  height: 1em;
+  /* 20 */
+  border: 1px solid #fff;
+  display: inline-block;
+  margin: 0 0.313em;
+  /* 5 */
+  border-radius: 50%;
+}
+
+/* line 151, sass/media/_lightbox.scss */
+.imagelightbox-nav .active {
+  background-color: #fff;
+}
+
+/* WITH ARROWS */
+/* line 157, sass/media/_lightbox.scss */
+.imagelightbox-arrow {
+  cursor: pointer;
+  width: 3.75em;
+  /* 60 */
+  height: 7.5em;
+  /* 120 */
+  background-color: #444;
+  background-color: rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+  display: none;
+  position: fixed;
+  z-index: 10001;
+  top: 50%;
+  margin-top: -3.75em;
+  /* 60 */
+}
+
+/* line 170, sass/media/_lightbox.scss */
+.imagelightbox-arrow:hover,
+.imagelightbox-arrow:focus {
+  background-color: #666;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 175, sass/media/_lightbox.scss */
+.imagelightbox-arrow:active {
+  background-color: #111;
+}
+
+/* line 178, sass/media/_lightbox.scss */
+.imagelightbox-arrow-left {
+  left: 2.5em;
+  /* 40 */
+}
+
+/* line 181, sass/media/_lightbox.scss */
+.imagelightbox-arrow-right {
+  right: 2.5em;
+  /* 40 */
+}
+
+/* line 184, sass/media/_lightbox.scss */
+.imagelightbox-arrow:before {
+  width: 0;
+  height: 0;
+  border: 1em solid transparent;
+  content: '';
+  display: inline-block;
+  margin-bottom: -0.125em;
+  /* 2 */
+}
+
+/* line 192, sass/media/_lightbox.scss */
+.imagelightbox-arrow-left:before {
+  border-left: none;
+  border-right-color: #fff;
+  margin-left: -0.313em;
+  /* 5 */
+}
+
+/* line 197, sass/media/_lightbox.scss */
+.imagelightbox-arrow-right:before {
+  border-right: none;
+  border-left-color: #fff;
+  margin-right: -0.313em;
+  /* 5 */
+}
+
+/* line 203, sass/media/_lightbox.scss */
+.imagelightbox-loading,
+.imagelightbox-overlay,
+.imagelightbox-close,
+.imagelightbox-nav,
+.imagelightbox-arrow {
+  -webkit-animation: fade-in .25s linear;
+          animation: fade-in .25s linear;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 41.25em) {
+  /* 660 */
+  /* line 217, sass/media/_lightbox.scss */
+  #container {
+    width: 100%;
+  }
+
+  /* line 220, sass/media/_lightbox.scss */
+  .imagelightbox-close {
+    top: 1.25em;
+    /* 20 */
+    right: 1.25em;
+    /* 20 */
+  }
+
+  /* line 224, sass/media/_lightbox.scss */
+  .imagelightbox-arrow {
+    width: 2.5em;
+    /* 40 */
+    height: 3.75em;
+    /* 60 */
+    margin-top: -1.875em;
+    /* 30 */
+  }
+
+  /* line 229, sass/media/_lightbox.scss */
+  .imagelightbox-arrow-left {
+    left: 1.25em;
+    /* 20 */
+  }
+
+  /* line 232, sass/media/_lightbox.scss */
+  .imagelightbox-arrow-right {
+    right: 1.25em;
+    /* 20 */
+  }
+}
+@media only screen and (max-width: 20em) {
+  /* 320 */
+  /* line 238, sass/media/_lightbox.scss */
+  .imagelightbox-arrow-left {
+    left: 0;
+  }
+
+  /* line 241, sass/media/_lightbox.scss */
+  .imagelightbox-arrow-right {
+    right: 0;
+  }
+}
+/*--------------------------------------------------------------
 # Home Carousel
 --------------------------------------------------------------*/
 /* line 1, sass/modules/_home-carousel.scss */
@@ -1634,58 +1992,82 @@ ol.carousel-nav li.active a:hover {
 ## Projects Page Template
 --------------------------------------------------------------*/
 /* line 3, sass/page-templates/_projects-page.scss */
-.page-template-page-projects .featured-projects-section {
+.page-template-page-projects .featured-projects {
   background-color: #fff;
 }
 /* line 6, sass/page-templates/_projects-page.scss */
-.page-template-page-projects .featured-projects-section .featured-projects-wrapper {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+.page-template-page-projects .featured-projects .featured-projects-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-}
-@media (min-width: 450px) {
-  /* line 6, sass/page-templates/_projects-page.scss */
-  .page-template-page-projects .featured-projects-section .featured-projects-wrapper {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 @media (min-width: 950px) {
   /* line 6, sass/page-templates/_projects-page.scss */
-  .page-template-page-projects .featured-projects-section .featured-projects-wrapper {
+  .page-template-page-projects .featured-projects .featured-projects-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
   /* line 6, sass/page-templates/_projects-page.scss */
-  .page-template-page-projects .featured-projects-section .featured-projects-wrapper {
+  .page-template-page-projects .featured-projects .featured-projects-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 10, sass/page-templates/_projects-page.scss */
-.page-template-page-projects .featured-projects-section .featured-projects-wrapper .project-wrapper {
-  max-width: 200px;
+@media (min-width: 450px) {
+  /* line 6, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+/* line 11, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects .featured-projects-wrapper ul {
+  list-style-type: none;
+}
+/* line 14, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects .featured-projects-wrapper ul li {
+  padding-bottom: 1em;
+}
+/* line 18, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects .featured-projects-wrapper ul .image-wrapper {
+  max-width: 230px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 14, sass/page-templates/_projects-page.scss */
-.page-template-page-projects .featured-projects-section .featured-projects-wrapper .project-wrapper img {
+/* line 23, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects .featured-projects-wrapper ul img {
   display: block;
 }
-/* line 18, sass/page-templates/_projects-page.scss */
-.page-template-page-projects .featured-projects-section .featured-projects-wrapper .project-wrapper a {
-  color: #000;
-  text-decoration: none;
+/* line 27, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects .featured-projects-wrapper ul span.project-title {
+  display: block;
   font-family: "SourceSansPro-Bold";
+  text-align: left;
+  padding-top: 5px;
 }
-/* line 30, sass/page-templates/_projects-page.scss */
+/* line 33, sass/page-templates/_projects-page.scss */
+.page-template-page-projects .featured-projects .featured-projects-wrapper ul span.project-title:after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 30px;
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/arrow-green.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/* line 52, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section {
   background-color: #fff;
 }
-/* line 33, sass/page-templates/_projects-page.scss */
+/* line 55, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section .other-projects-wrapper {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1693,27 +2075,27 @@ ol.carousel-nav li.active a:hover {
   padding-bottom: 1.5em;
 }
 @media (min-width: 450px) {
-  /* line 33, sass/page-templates/_projects-page.scss */
+  /* line 55, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .other-projects-section .other-projects-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
 @media (min-width: 950px) {
-  /* line 33, sass/page-templates/_projects-page.scss */
+  /* line 55, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .other-projects-section .other-projects-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 33, sass/page-templates/_projects-page.scss */
+  /* line 55, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .other-projects-section .other-projects-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 37, sass/page-templates/_projects-page.scss */
+/* line 59, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section .other-projects-wrapper h3 {
   font-family: "SourceSansPro-Bold";
   margin: 0;

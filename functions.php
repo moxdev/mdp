@@ -41,10 +41,11 @@ function md_partitions_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size('home-highlight', 475, 430, true);
-	add_image_size( 'drill-page-sidebar', 450, 240, true );
-	add_image_size( 'product-image', 300, 300, true );
-	add_image_size( 'callout-image', 300, 9999, false );
+		add_image_size('home-highlight', 475, 430, true);
+		add_image_size( 'drill-page-sidebar', 450, 240, true );
+		add_image_size( 'product-image', 300, 300, true );
+		add_image_size( 'featured-project-image', 300, 300, true );
+		add_image_size( 'callout-image', 300, 9999, false );
 	// add_image_size( 'frontpage-highlight', 500, 500, true );
 
 	// This theme uses wp_nav_menu() in one location.
@@ -261,9 +262,9 @@ require get_template_directory() . '/inc/frontpage-highlights.php';
 require get_template_directory() . '/inc/product-section.php';
 
 /**
- * Displays the Featured Projects Section.
+ * Displays the Other Projects Section.
  */
-require get_template_directory() . '/inc/projects-section.php';
+require get_template_directory() . '/inc/projects-other-section.php';
 
 /**
  * Displays the Certifications Section.
@@ -271,4 +272,67 @@ require get_template_directory() . '/inc/projects-section.php';
 require get_template_directory() . '/inc/certifications-section.php';
 
 
+// Featured Images Light Box
+function md_partitions_project_listing() {
+	if(function_exists('get_field')) {
+		if( have_rows('project_listing') ):
+			// You will probably want to change this path to a minified version of the script
+			wp_enqueue_script( 'md-partitions-lightbox', get_template_directory_uri() . '/js/min/lightbox-min.js', array( 'jquery'), NULL, TRUE );
+			$i = 0; ?>
+			<section class="featured-projects">
+				<h2 class="section-header">Featured Projects</h2>
+				<div class="featured-projects-wrapper">
+					<ul>
+						<?php
+						while( have_rows('project_listing') ): the_row();
+						$i++;
+						$name = get_sub_field('project_name');
+						$thumb = get_sub_field('project_main_image');
+						$gallery_imgs = get_sub_field('project_gallery'); ?>
+						<li class="trigger-gallery-<?php echo $i; ?>">
+							<?php // $thumb['sizes']['thumbnail'] or any custom size you have defined ?>
+							<div class="image-wrapper"><img src="<?php echo esc_url( $thumb['sizes']['featured-project-image'] ); ?>" alt="<?php echo esc_attr( $thumb['alt'] ); ?>">
+							<span class="project-title"><?php echo esc_html( $name ); ?><span></div>
+							<?php // You might want to remove the inline CSS and add to your SASS files ?>
+							<div class="gallery-images" style="display:none">
+								<ul>
+									<?php foreach( $gallery_imgs as $img ): ?>
+										<li><a href="<?php echo esc_url( $img['url'] ); ?>" data-imagelightbox="gallery-<?php echo $i; ?>"><?php echo esc_html( $img['filename'] ); ?></a></li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+						</li>
+						<?php endwhile; ?>
+					</ul>
+				</div>
+			</section>
+		<?php endif;
+	}
+}
 
+add_action( 'wp_footer', 'md_partitions_build_project_script', 100, 1 );
+function md_partitions_build_project_script() {
+	if(function_exists('get_field')) {
+		if( have_rows('project_listing') ):
+			$i = 0; ?>
+			<script>
+			<?php while( have_rows('project_listing') ): the_row();
+				$i++;
+				// Feel free to change the options below. You can find them here: https://github.com/rejas/imagelightbox ?>
+				var gallery<?php echo $i; ?> = jQuery('a[data-imagelightbox="gallery-<?php echo $i; ?>"]').imageLightbox({
+					activity: true,
+					arrows: true,
+					button:true,
+					lockbody:true,
+					overlay:true,
+					preloadNext: true
+				});
+
+				jQuery('.trigger-gallery-<?php echo $i; ?>').on('click', function () {
+					gallery<?php echo $i; ?>.startImageLightbox();
+				});
+			<?php endwhile; ?>
+			</script>
+		<?php endif;
+	}
+}
