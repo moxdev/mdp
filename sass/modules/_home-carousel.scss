@@ -33,17 +33,17 @@
 }
 
 #home-carousel span {
+  @include font-smooth;
   position:absolute;
   z-index:10;
+  top:4em;
+  left:2em;
   font-size:1.8em;
   font-family: $font__bold;
   text-align: left;
   line-height:1;
   color:#FFF;
   text-shadow:2px 2px 4px rgba(0, 0, 0, 1);
-  @include font-smooth;
-  top:4em;
-  left:2em;
 }
 
 #home-carousel ul li img {
@@ -57,11 +57,11 @@ ol.carousel-nav {
 }
 
 #home-carousel ol {
-  text-align:center;
+  // text-align:center;
   position:absolute;
   bottom:2.5em;
   left:2em;
-  right:2em;
+  // right:2em;
   z-index:30;
 }
 
@@ -79,17 +79,15 @@ ol.carousel-nav li:last-of-type {
 }
 
 ol.carousel-nav li a {
-  text-decoration:none;
-  padding:.25em;
-  background-color:#000;
-  display:block;
-  transition:background-color 2s;
   display:block;
   overflow:hidden;
-  text-indent:-9999em;
-  width:81px;
-  height:22px;
+  width:60px;
+  height:20px;
   transform: skewX(20deg);
+  text-decoration:none;
+  background-color:#000;
+  text-indent:-9999em;
+  transition:background-color 2s;
 }
 
 ol.carousel-nav li.active a {
@@ -100,25 +98,57 @@ ol.carousel-nav li.active a:hover {
   cursor:text;
 }
 
-@include respond-to(small) {
+@media screen and (min-width:375px) {
   #home-carousel span {
-    font-size:2.2em;
-    top:1.7em;
+    top: 4.5em;
+  }
+}
+
+@include respond-to(small) {
+  #home-carousel {
+    min-height:250px;
   }
 
-  #home-carousel ol {
-    bottom:1.5em;
+  #home-carousel span {
+    font-size:2em;
+    top:5em;
+  }
+}
+
+@include respond-to(med-small) {
+  #home-carousel span {
+    font-size:2.2em;
+    top:4.5em;
+    padding-right: 2.5em;
+  }
+}
+
+@media screen and (min-width:700px) {
+  #home-carousel {
+    min-height:400px;
+  }
+
+  #home-carousel span {
+    font-size:2.5em;
+    top:7em;
+    padding-right: 3em;
   }
 }
 
 @include respond-to(tablet) {
   #home-carousel {
-    min-height:375px;
+    min-height:500px;
+  }
+  #home-carousel span {
+    font-size:3em;
+    top:4em;
+    left: 6em;
+    padding-right: 1em;
   }
 
-  #home-carousel span {
-    font-size:2.8em;
-    top:1.7em;
+  #home-carousel ol {
+    bottom:7em;
+    left:18em;
   }
 
   ol.carousel-nav {
@@ -128,7 +158,7 @@ ol.carousel-nav li.active a:hover {
 
 @include respond-to(medium) {
   #home-carousel {
-    min-height:450px;
+    // min-height:450px;
   }
 
   #home-carousel span {

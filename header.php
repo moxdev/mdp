@@ -71,12 +71,13 @@
 			<?php }else {  ?>
 
 				<nav id="site-navigation" class="main-navigation page-desktop-navigation" role="navigation">
+
 					<?php wp_nav_menu( array( 'theme_location' => 'page-nav', 'menu_id' => 'page-desktop-menu', 'container' => '' ) ); ?>
 				</nav><!-- page-desktop-navigation -->
 
 			<?php } ?>
 
-		</div>
+		</div><!-- masthead-wrapper -->
 
 	</header><!-- #masthead -->
 
