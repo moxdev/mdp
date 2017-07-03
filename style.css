@@ -746,15 +746,10 @@ textarea {
 /* line 1, sass/navigation/_masthead.scss */
 #masthead {
   background-color: #ffffff;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-@media (min-width: 450px) {
-  /* line 1, sass/navigation/_masthead.scss */
-  #masthead {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 /* line 25, sass/mixins/_mixins-master.scss */
 #masthead a {
@@ -772,7 +767,7 @@ textarea {
 #masthead a:active {
   color: #81bc00;
 }
-/* line 9, sass/navigation/_masthead.scss */
+/* line 10, sass/navigation/_masthead.scss */
 #masthead .masthead-wrapper {
   position: relative;
   display: -webkit-box;
@@ -785,51 +780,62 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 19, sass/navigation/_masthead.scss */
-#masthead .site-branding .logo-link svg {
-  max-width: 100px;
+/* line 17, sass/navigation/_masthead.scss */
+#masthead a[rel="home"] {
+  display: table;
+}
+/* line 21, sass/navigation/_masthead.scss */
+#masthead .site-branding {
+  display: inline-block;
 }
 /* line 26, sass/navigation/_masthead.scss */
-#masthead .mobile-menu-wrapper {
+#masthead .site-branding .logo-link svg {
   display: block;
+  width: 110px;
 }
-/* line 29, sass/navigation/_masthead.scss */
-#masthead .mobile-menu-wrapper .slant-btn {
-  -webkit-transform: skew(30deg);
-      -ms-transform: skew(30deg);
-          transform: skew(30deg);
-  display: inline-block;
+/* line 33, sass/navigation/_masthead.scss */
+#masthead .mobile-menu-wrapper {
+  text-align: center;
 }
-/* line 34, sass/navigation/_masthead.scss */
-#masthead .mobile-menu-wrapper .unslant {
-  -webkit-transform: skew(-30deg);
-      -ms-transform: skew(-30deg);
-          transform: skew(-30deg);
-  display: inline-block;
+/* line 36, sass/navigation/_masthead.scss */
+#masthead .mobile-menu-wrapper a span, #masthead .mobile-menu-wrapper button span {
+  font-size: .8em;
 }
 /* line 40, sass/navigation/_masthead.scss */
+#masthead .mobile-menu-wrapper .slant-btn {
+  -webkit-transform: skew(25deg);
+      -ms-transform: skew(25deg);
+          transform: skew(25deg);
+  display: inline-block;
+}
+/* line 45, sass/navigation/_masthead.scss */
+#masthead .mobile-menu-wrapper .unslant {
+  -webkit-transform: skew(-25deg);
+      -ms-transform: skew(-25deg);
+          transform: skew(-25deg);
+  display: inline-block;
+}
+/* line 51, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper .call-btn {
-  background-color: #111111;
+  display: block;
+  width: 105px;
   color: #fff;
+  background-color: #111111;
   text-decoration: none;
   padding: 0 15px;
-  text-align: center;
-  font-size: .8em;
-  float: right;
+  margin-left: auto;
+  margin-right: 15px;
 }
-/* line 50, sass/navigation/_masthead.scss */
+/* line 62, sass/navigation/_masthead.scss */
 #masthead .mobile-menu-wrapper #mobile-toggle {
-  float: right;
-  clear: both;
-  border: none;
-  border-radius: 0;
+  display: block;
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-size: .8em;
+  width: 105px;
+  margin-left: auto;
   margin-top: 10px;
-  padding-left: 27px;
-  padding-right: 27px;
+  border: none;
+  border-radius: 0;
 }
 
 /*--------------------------------------------------------------

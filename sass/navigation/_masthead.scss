@@ -1,10 +1,11 @@
 #masthead {
   background-color: $color__brand-2;
-  @include padding-left-right;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: .5em;
+  padding-bottom: .5em;
 
-  @include linx($color__brand-1,$color__brand-1,$color__brand-1,$color__brand-1);
+  @include linx($color__brand-1,$color__brand-1,$color__brand-1,$color__brand-1); // remove when finished
 
   .masthead-wrapper {
     position: relative;
@@ -13,53 +14,60 @@
     align-items: center;
   }
 
+  a[rel="home"] {
+      display: table;
+  }
+
   .site-branding {
+    display: inline-block;
+
     .logo-link {
 
       svg {
-        max-width: 100px;
+        display: block;
+        width: 110px;
       }
-
     }
   }
 
   .mobile-menu-wrapper {
-    display: block;
+    text-align: center;
+
+    a span, button span {
+      font-size: .8em;
+    }
 
     .slant-btn {
-      transform: skew(30deg);
+      transform: skew(25deg);
       display: inline-block;
     }
 
     .unslant {
-      transform: skew(-30deg);
+      transform: skew(-25deg);
       display: inline-block;
 
     }
 
     .call-btn {
-      background-color: $color__brand-3;
+      display: block;
+      width: 105px;
       color: #fff;
+      background-color: $color__brand-3;
       text-decoration: none;
       padding: 0 15px;
-      text-align: center;
-      font-size: .8em;
-      float: right;
+      margin-left: auto;
+      margin-right: 15px;
     }
 
     #mobile-toggle {
-      float: right;
-      clear: both;
+      display: block;
+      @include reset;
+      width: 105px;
+      margin-left: auto;
+      margin-top: 10px;
       border: none;
       border-radius: 0;
-      @include reset;
-      text-align: center;
-      font-size: .8em;
-      margin-top: 10px;
-      padding-left: 27px;
-      padding-right: 27px;
     }
-
   }
 
   // .home-desktop-navigation {
