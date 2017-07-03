@@ -874,13 +874,24 @@ textarea {
     margin: 0;
     padding: 0;
     text-align: center;
-    margin: 0 auto;
   }
-  /* line 110, sass/navigation/_masthead.scss */
+  /* line 109, sass/navigation/_masthead.scss */
+  #masthead .site-branding {
+    display: block;
+    position: absolute;
+    top: 3em;
+    left: 2.5em;
+    z-index: 30000;
+  }
+  /* line 116, sass/navigation/_masthead.scss */
+  #masthead .site-branding svg {
+    width: 170px;
+  }
+  /* line 121, sass/navigation/_masthead.scss */
   #masthead .mobile-menu-wrapper {
     display: block;
   }
-  /* line 113, sass/navigation/_masthead.scss */
+  /* line 124, sass/navigation/_masthead.scss */
   #masthead .mobile-menu-wrapper .call-btn {
     margin: 0;
     padding: 0;
@@ -892,25 +903,36 @@ textarea {
     top: 22em;
     left: 4em;
   }
-  /* line 124, sass/navigation/_masthead.scss */
+  /* line 135, sass/navigation/_masthead.scss */
   #masthead .mobile-menu-wrapper #mobile-toggle {
     display: none;
   }
-  /* line 129, sass/navigation/_masthead.scss */
-  #masthead .site-branding {
-    display: block;
-    position: absolute;
-    top: 3em;
-    left: 2.5em;
-    z-index: 30000;
-  }
-  /* line 136, sass/navigation/_masthead.scss */
-  #masthead .site-branding svg {
-    width: 170px;
-  }
-  /* line 141, sass/navigation/_masthead.scss */
+  /* line 140, sass/navigation/_masthead.scss */
   #masthead .home-desktop-navigation {
     display: block;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 148, sass/navigation/_masthead.scss */
+  #masthead .site-branding svg {
+    width: 200px;
+    margin-left: 20px;
+  }
+  /* line 155, sass/navigation/_masthead.scss */
+  #masthead .mobile-menu-wrapper .call-btn {
+    width: 155px;
+    font-size: 1.2em;
+    top: 25em;
+    left: 5em;
+  }
+  /* line 163, sass/navigation/_masthead.scss */
+  #masthead .home-desktop-navigation {
+    width: 300px;
+    height: 600px;
+  }
+  /* line 171, sass/navigation/_masthead.scss */
+  #masthead .home-desktop-navigation ul li a {
+    font-size: 1.4em;
   }
 }
 
@@ -1881,18 +1903,30 @@ ol.carousel-nav li.active a:hover {
   #home-carousel span {
     font-size: 3.5em;
   }
+
+  /* line 168, sass/modules/_home-carousel.scss */
+  #home-carousel ol {
+    bottom: 4em;
+    left: 21em;
+  }
 }
 @media (min-width: 1190px) {
-  /* line 170, sass/modules/_home-carousel.scss */
+  /* line 175, sass/modules/_home-carousel.scss */
   #home-carousel {
-    min-height: 525px;
+    min-height: 600px;
   }
 
-  /* line 174, sass/modules/_home-carousel.scss */
+  /* line 179, sass/modules/_home-carousel.scss */
   #home-carousel span {
     font-size: 4em;
-    left: 2em;
+    left: 6em;
     right: 2em;
+    padding-right: 0;
+  }
+
+  /* line 186, sass/modules/_home-carousel.scss */
+  #home-carousel ol {
+    left: 24.5em;
   }
 }
 /*--------------------------------------------------------------

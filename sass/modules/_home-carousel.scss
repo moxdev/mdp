@@ -164,16 +164,26 @@ ol.carousel-nav li.active a:hover {
   #home-carousel span {
     font-size:3.5em;
   }
+
+  #home-carousel ol {
+    bottom:4em;
+    left:21em;
+  }
 }
 
 @include respond-to(large) {
   #home-carousel {
-    min-height:525px;
+    min-height:600px;
   }
 
   #home-carousel span {
     font-size:4em;
-    left:2em;
-    right:2em;
+    left:6em;
+    right: 2em;
+    padding-right: 0;
+  }
+
+  #home-carousel ol {
+    left:24.5em;
   }
 }

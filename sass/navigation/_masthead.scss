@@ -105,7 +105,18 @@
   @include respond-to(tablet) {
     @include reset;
     text-align: center;
-    margin: 0 auto;
+
+    .site-branding {
+      display: block;
+      position: absolute;
+      top: 3em;
+      left: 2.5em;
+      z-index: 30000;
+
+      svg {
+        width: 170px;
+      }
+    }
 
     .mobile-menu-wrapper {
       display: block;
@@ -126,20 +137,42 @@
       }
     }
 
-    .site-branding {
+    .home-desktop-navigation {
       display: block;
-      position: absolute;
-      top: 3em;
-      left: 2.5em;
-      z-index: 30000;
+    }
+  }
 
+  @include respond-to(large) {
+
+    .site-branding {
       svg {
-        width: 170px;
+        width: 200px;
+        margin-left: 20px;
+      }
+    }
+
+    .mobile-menu-wrapper {
+      .call-btn {
+        width: 155px;
+        font-size: 1.2em;
+        top: 25em;
+        left: 5em;
       }
     }
 
     .home-desktop-navigation {
-      display: block;
+      width: 300px;
+      height: 600px;
+
+      ul {
+
+        li {
+
+          a {
+            font-size: 1.4em;
+          }
+        }
+      }
     }
   }
 
