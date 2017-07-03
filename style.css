@@ -374,11 +374,6 @@ textarea {
   }
 }
 
-/* line 31, sass/typography/_typography.scss */
-.wysiwyg-bold-font {
-  font-family: "SourceSansPro-Bold";
-}
-
 /* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -1026,6 +1021,11 @@ textarea {
     padding-right: 2.75rem;
   }
 }
+/* line 17, sass/site/_site.scss */
+.site-content .wysiwyg-bold-font {
+  font-family: "SourceSansPro-Bold";
+  line-height: 1;
+}
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1613,7 +1613,7 @@ object {
 --------------------------------------------------------------*/
 /* line 1, sass/modules/_home-carousel.scss */
 #home-carousel {
-  min-height: 300px;
+  min-height: 200px;
   position: relative;
 }
 
@@ -1655,27 +1655,25 @@ object {
 #home-carousel span {
   position: absolute;
   z-index: 10;
-  font-size: 1.7em;
+  font-size: 1.8em;
   font-family: "SourceSansPro-Bold";
+  text-align: left;
+  line-height: 1;
+  color: #FFF;
+  text-shadow: 2px 2px 4px black;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.1;
-  color: #FFF;
-  text-shadow: 2px 2px 4px black;
-  top: 3em;
-  left: 1em;
-  right: 1em;
-  font-weight: 700;
-  text-align: center;
+  top: 4em;
+  left: 2em;
 }
 
-/* line 51, sass/modules/_home-carousel.scss */
+/* line 49, sass/modules/_home-carousel.scss */
 #home-carousel ul li img {
   max-width: none;
 }
 
-/* line 55, sass/modules/_home-carousel.scss */
+/* line 53, sass/modules/_home-carousel.scss */
 ol.carousel-nav {
   display: none;
   opacity: 0;
@@ -1683,7 +1681,7 @@ ol.carousel-nav {
   transition: opacity 2s ease-in-out;
 }
 
-/* line 61, sass/modules/_home-carousel.scss */
+/* line 59, sass/modules/_home-carousel.scss */
 #home-carousel ol {
   text-align: center;
   position: absolute;
@@ -1693,23 +1691,23 @@ ol.carousel-nav {
   z-index: 30;
 }
 
-/* line 70, sass/modules/_home-carousel.scss */
+/* line 68, sass/modules/_home-carousel.scss */
 ol.carousel-nav.active {
   opacity: 1;
 }
 
-/* line 74, sass/modules/_home-carousel.scss */
+/* line 72, sass/modules/_home-carousel.scss */
 ol.carousel-nav li {
   display: inline-block;
   margin: 0 1em 0 0;
 }
 
-/* line 79, sass/modules/_home-carousel.scss */
+/* line 77, sass/modules/_home-carousel.scss */
 ol.carousel-nav li:last-of-type {
   margin: 0;
 }
 
-/* line 83, sass/modules/_home-carousel.scss */
+/* line 81, sass/modules/_home-carousel.scss */
 ol.carousel-nav li a {
   text-decoration: none;
   padding: .25em;
@@ -1727,63 +1725,63 @@ ol.carousel-nav li a {
           transform: skewX(20deg);
 }
 
-/* line 97, sass/modules/_home-carousel.scss */
+/* line 95, sass/modules/_home-carousel.scss */
 ol.carousel-nav li.active a {
   background-color: #81bc00;
 }
 
-/* line 101, sass/modules/_home-carousel.scss */
+/* line 99, sass/modules/_home-carousel.scss */
 ol.carousel-nav li.active a:hover {
   cursor: text;
 }
 
 @media (min-width: 450px) {
-  /* line 106, sass/modules/_home-carousel.scss */
+  /* line 104, sass/modules/_home-carousel.scss */
   #home-carousel span {
     font-size: 2.2em;
     top: 1.7em;
   }
 
-  /* line 111, sass/modules/_home-carousel.scss */
+  /* line 109, sass/modules/_home-carousel.scss */
   #home-carousel ol {
     bottom: 1.5em;
   }
 }
 @media (min-width: 750px) {
-  /* line 117, sass/modules/_home-carousel.scss */
+  /* line 115, sass/modules/_home-carousel.scss */
   #home-carousel {
     min-height: 375px;
   }
 
-  /* line 121, sass/modules/_home-carousel.scss */
+  /* line 119, sass/modules/_home-carousel.scss */
   #home-carousel span {
     font-size: 2.8em;
     top: 1.7em;
   }
 
-  /* line 126, sass/modules/_home-carousel.scss */
+  /* line 124, sass/modules/_home-carousel.scss */
   ol.carousel-nav {
     display: block;
   }
 }
 @media (min-width: 950px) {
-  /* line 132, sass/modules/_home-carousel.scss */
+  /* line 130, sass/modules/_home-carousel.scss */
   #home-carousel {
     min-height: 450px;
   }
 
-  /* line 136, sass/modules/_home-carousel.scss */
+  /* line 134, sass/modules/_home-carousel.scss */
   #home-carousel span {
     font-size: 3.5em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 142, sass/modules/_home-carousel.scss */
+  /* line 140, sass/modules/_home-carousel.scss */
   #home-carousel {
     min-height: 525px;
   }
 
-  /* line 146, sass/modules/_home-carousel.scss */
+  /* line 144, sass/modules/_home-carousel.scss */
   #home-carousel span {
     font-size: 4em;
     left: 2em;
@@ -1799,10 +1797,10 @@ ol.carousel-nav li.active a:hover {
 /* line 3, sass/page-templates/_frontpage.scss */
 .page-template-front-page .site-content {
   background-color: #fff;
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines-small.svg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg");
   background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: -12px -10px;
+  background-size: 400%;
+  background-position: -118px -27px;
 }
 /* line 12, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary {

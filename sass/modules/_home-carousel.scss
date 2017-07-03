@@ -1,5 +1,5 @@
 #home-carousel {
-  min-height:300px;
+  min-height:200px;
   position:relative;
 }
 
@@ -35,17 +35,15 @@
 #home-carousel span {
   position:absolute;
   z-index:10;
-  font-size:1.7em;
+  font-size:1.8em;
   font-family: $font__bold;
-  @include font-smooth;
-  line-height:1.1;
+  text-align: left;
+  line-height:1;
   color:#FFF;
   text-shadow:2px 2px 4px rgba(0, 0, 0, 1);
-  top:3em;
-  left:1em;
-  right:1em;
-  font-weight:700;
-  text-align:center;
+  @include font-smooth;
+  top:4em;
+  left:2em;
 }
 
 #home-carousel ul li img {

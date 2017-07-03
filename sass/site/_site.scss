@@ -13,6 +13,11 @@
     @include container;
     @include padding-left-right;
   }
+
+  .wysiwyg-bold-font {
+      font-family: $font__bold;
+      line-height: 1;
+  }
 }
 
 /*--------------------------------------------------------------
