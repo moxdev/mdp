@@ -688,45 +688,49 @@ textarea {
 }
 
 /* line 24, sass/navigation/_menus.scss */
-#site-navigation {
+#mobile-navigation {
   display: none;
 }
 
 /* line 28, sass/navigation/_menus.scss */
-#site-navigation.active {
+#mobile-navigation.active {
   display: block;
   position: absolute;
+  z-index: 9999999;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: #fff;
   width: 100%;
+  height: 100%;
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
-/* line 42, sass/navigation/_menus.scss */
-#site-navigation.active ul {
+/* line 45, sass/navigation/_menus.scss */
+#mobile-navigation.active ul {
   list-style-type: none;
+  overflow: hidden;
 }
 
-/* line 60, sass/navigation/_menus.scss */
+/* line 55, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 65, sass/navigation/_menus.scss */
+/* line 60, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 70, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {

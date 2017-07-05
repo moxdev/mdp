@@ -1,6 +1,6 @@
 var activeClass = 'active';
 var btn = document.querySelector('#mobile-toggle');
-var nav = document.querySelector('#site-navigation');
+var nav = document.querySelector('#mobile-navigation');
 
 btn.addEventListener('click', function() {
 	if(this.classList.contains(activeClass)) {

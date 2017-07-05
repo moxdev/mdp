@@ -54,7 +54,7 @@
             return false;
         },
 
-        hasCssTransitionSupport = cssTransitionSupport() !== false,
+        isCssTransitionSupport = cssTransitionSupport() !== false,
 
         cssTransitionTranslateX = function (element, positionX, speed) {
             var options = {}, prefix = cssTransitionSupport();
@@ -84,16 +84,7 @@
             }
 
             return false;
-        },
-
-        fullscreenSupport = function () {
-            return !!(document.fullscreenEnabled ||
-            document.webkitFullscreenEnabled ||
-            document.mozFullScreenEnabled ||
-            document.msFullscreenEnabled);
-
-        },
-        hasFullscreenSupport = fullscreenSupport() !== false;
+        };
 
     $.fn.imageLightbox = function (opts) {
         var options = $.extend({
@@ -106,9 +97,6 @@
                 button:         false,
                 caption:        false,
                 enableKeyboard: true,
-                fullscreen:     false,
-                gutter:         10,     // percentage of client height
-                offsetY:        0,    // percentage of gutter
                 lockBody:       false,
                 navigation:     false,
                 overlay:        false,
@@ -211,12 +199,13 @@
                     }
                     var $navItems = $navObject.children('a');
                     $navItems.eq(targets.index(target)).addClass('active');
+
                     //
                     $wrapper.on('previous.ilb2 next.ilb2', function () {
                         $navItems.removeClass('active').eq(targets.index(target)).addClass('active');
                     });
                     $wrapper.append($navObject);
-                    //
+                    ////
                     $navObject
                         .on('click.ilb7 touchend.ilb7', function () {
                             return false;
@@ -238,7 +227,6 @@
             arrowsOn = function () {
                 $wrapper.append($arrows);
                 $arrows.on('click.ilb7 touchend.ilb7', function (e) {
-                    e.stopImmediatePropagation();
                     e.preventDefault();
                     if ($(this).hasClass('imagelightbox-arrow-left')) {
                         _previousTarget();
@@ -262,7 +250,7 @@
                 var allowedTypes = options.allowedTypes;
 
                 //test that RegExp is restricted to disjunction format
-                var isGoodRE = /^(?!\|)[\w|]+(?!\|)$/.test(allowedTypes);
+                var isGoodRE = /^(?!\|)[\w\|]+(?!\|)$/.test(allowedTypes);
                 //
                 if (!isGoodRE) {
                     //allowedTypes = 'png|jpg|jpeg|gif';
@@ -311,11 +299,11 @@
                 if (!image.length) {
                     return true;
                 }
-                var captionHeight = options.caption ? $captionObject.outerHeight() : 0;
+                var captionHeight = $captionObject.outerHeight();
 
-                var screenWidth = $(window).width(),
-                    screenHeight = $(window).height() - captionHeight,
-                    gutterFactor = Math.abs(1 - options.gutter/100),
+                var screenWidth = $(window).width() * 0.8,
+                    wHeight = ((window.innerHeight) ? window.innerHeight : $(window).height()) - captionHeight,
+                    screenHeight = wHeight * 0.9,
                     tmpImage = new Image();
 
                 tmpImage.src = image.attr('src');
@@ -328,16 +316,12 @@
                         imageWidth /= ratio;
                         imageHeight /= ratio;
                     }
-                    var cssHeight = imageHeight*gutterFactor,
-                        cssWidth = imageWidth*gutterFactor,
-                        cssTop = (1 + options.offsetY/100)*(imageHeight - cssHeight)/2,
-                        cssLeft = ($(window).width() - cssWidth ) / 2;
 
                     image.css({
-                        'width': cssWidth + 'px',
-                        'height': cssHeight + 'px',
-                        'top': cssTop + 'px',
-                        'left':  cssLeft + 'px'
+                        'width': imageWidth + 'px',
+                        'height': imageHeight + 'px',
+                        'top': ( wHeight - imageHeight ) / 2 + 'px',
+                        'left': ( $(window).width() - imageWidth ) / 2 + 'px'
                     });
                 };
             },
@@ -349,7 +333,7 @@
 
                 if (image.length) {
                     var params = {'opacity': 0};
-                    if (hasCssTransitionSupport) {
+                    if (isCssTransitionSupport) {
                         cssTransitionTranslateX(image, ( 100 * direction ) - swipeDiff + 'px', options.animationSpeed / 1000);
                     }
                     else {
@@ -372,12 +356,13 @@
                     image = $('<img id="' + options.id + '" />')
                         .attr('src', imgPath)
                         .on('load.ilb7', function () {
+                            $wrapper.trigger('loaded.ilb2');
                             var params = {'opacity': 1};
 
                             image.appendTo($wrapper);
                             _setImage();
                             image.css('opacity', 0);
-                            if (hasCssTransitionSupport) {
+                            if (isCssTransitionSupport) {
                                 cssTransitionTranslateX(image, -100 * direction + 'px', 0);
                                 setTimeout(function () {
                                     cssTransitionTranslateX(image, 0 + 'px', options.animationSpeed / 1000);
@@ -399,7 +384,6 @@
                                 }
                                 $('<img />').attr('src', nextTarget.attr('href'));
                             }
-                            $wrapper.trigger('loaded.ilb2');
                         })
                         .on('error.ilb7', function () {
                             _onLoadEnd();
@@ -429,7 +413,7 @@
                             if (!wasTouched(e.originalEvent) || options.quitOnImgClick) {
                                 return true;
                             }
-                            if (hasCssTransitionSupport) {
+                            if (isCssTransitionSupport) {
                                 imagePosLeft = parseInt(image.css('left'));
                             }
                             swipeStart = e.originalEvent.pageX || e.originalEvent.touches[0].pageX;
@@ -441,7 +425,7 @@
                             e.preventDefault();
                             swipeEnd = e.originalEvent.pageX || e.originalEvent.touches[0].pageX;
                             swipeDiff = swipeStart - swipeEnd;
-                            if (hasCssTransitionSupport) {
+                            if (isCssTransitionSupport) {
                                 cssTransitionTranslateX(image, -swipeDiff + 'px', 0);
                             } else {
                                 image.css('left', imagePosLeft - swipeDiff + 'px');
@@ -458,7 +442,7 @@
                                     _nextTarget();
                                 }
                             } else {
-                                if (hasCssTransitionSupport) {
+                                if (isCssTransitionSupport) {
                                     cssTransitionTranslateX(image, 0 + 'px', options.animationSpeed / 1000);
                                 } else {
                                     image.animate({'left': imagePosLeft + 'px'}, options.animationSpeed / 2);
@@ -483,10 +467,7 @@
                 inProgress = false;
                 target = $target;
                 _onStart();
-                $('body')
-                    .append($wrapper)
-                    .addClass('imagelightbox-disable-select');
-
+                $('body').append($wrapper);
                 if (options.lockBody) {
                     $('body').addClass('imagelightbox-scroll-lock');
                 }
@@ -496,7 +477,6 @@
 
             _quitImageLightbox = function () {
                 $wrapper.trigger('quit.ilb2');
-                $('body').removeClass('imagelightbox-disable-select');
                 if (options.lockBody) {
                     $('body').removeClass('imagelightbox-scroll-lock');
                 }
@@ -539,13 +519,6 @@
         $(window).on('resize.ilb7', _setImage);
 
         $(document).ready(function() {
-            // prevent overloading
-            $(document).on('keydown.ilb7', function (e) {
-                if ([13].indexOf(e.which) > -1) {
-                    e.preventDefault();
-                }});
-
-
             if (options.quitOnDocClick) {
                 $(document).on(hasTouch ? 'touchend.ilb7' : 'click.ilb7', function (e) {
                     if (image.length && !$(e.target).is(image)) {
@@ -555,16 +528,14 @@
                 });
             }
 
-            if (options.lockBody || (options.fullscreen && hasFullscreenSupport)) {
+            if (options.lockBody) {
                 $(document).on('keydown.ilb7', function (e) {
                     if (!image.length) {
                         return true;
                     }
                     if([9,32,38,40].indexOf(e.which) > -1) {
                         e.preventDefault();
-                    }
-                    if ([13].indexOf(e.which) > -1) {
-                        toggleFullScreen();
+                        return false;
                     }
                 });
             }
@@ -586,36 +557,6 @@
                 });
             }
         });
-
-        function launchIntoFullscreen(element) {
-            if(element.requestFullscreen) {
-                element.requestFullscreen();
-            } else if(element.mozRequestFullScreen) {
-                element.mozRequestFullScreen();
-            } else if(element.webkitRequestFullscreen) {
-                element.webkitRequestFullscreen();
-            } else if(element.msRequestFullscreen) {
-                element.msRequestFullscreen();
-            }
-            return false;
-        }
-
-        function exitFullscreen() {
-            if(document.exitFullscreen) {
-                document.exitFullscreen();
-            } else if(document.mozCancelFullScreen) {
-                document.mozCancelFullScreen();
-            } else if(document.webkitExitFullscreen) {
-                document.webkitExitFullscreen();
-            }
-            return false;
-        }
-
-
-        function toggleFullScreen() {
-            launchIntoFullscreen(document.getElementById(options.id).parentElement) ||
-            exitFullscreen();
-        }
 
         $(document).off('click', options.selector);
 

@@ -29,8 +29,6 @@
       md_partitions_project_listing();
   } ?>
 
-  <?php // if( function_exists('md_partitions_project_listing') ): md_partitions_project_listing(); endif; ?>
-
   <?php if ( is_page_template('page-projects.php') && function_exists( 'md_partitions_projects_other_section' ) ) {
       md_partitions_projects_other_section();
   } ?>

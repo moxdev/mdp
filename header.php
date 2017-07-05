@@ -64,20 +64,23 @@
 
 			<?php if ( is_page_template( 'front-page.php' ) ) {  ?>
 
-				<nav id="site-navigation" class="main-navigation home-desktop-navigation" role="navigation">
+				<nav id="main-navigation" class="home-desktop-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'home-nav', 'menu_id' => 'home-desktop-menu', 'container' => '' ) ); ?>
-				</nav><!-- home-desktop-navigation -->
+				</nav><!-- main-navigation -->
 
 			<?php }else {  ?>
 
-				<nav id="site-navigation" class="main-navigation page-desktop-navigation" role="navigation">
-
+				<nav id="alt-navigation" class="main-navigation page-desktop-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'page-nav', 'menu_id' => 'page-desktop-menu', 'container' => '' ) ); ?>
-				</nav><!-- page-desktop-navigation -->
+				</nav><!-- alt-navigation -->
 
 			<?php } ?>
 
 		</div><!-- masthead-wrapper -->
+
+		<nav id="mobile-navigation" class="mobile-navigation" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'mobile-nav', 'menu_id' => 'mobile-desktop-menu', 'container' => '' ) ); ?>
+		</nav><!-- mobile-navigation -->
 
 	</header><!-- #masthead -->
 
