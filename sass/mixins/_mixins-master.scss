@@ -2,6 +2,30 @@
     border: 1px solid red;
 }
 
+@mixin skew($side: right, $deg: -20deg, $right: -15px, $left: -15px, $width: 30px, $bg: #fff) {
+    position: relative;
+
+    &:before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        @if $side == right {
+            right: $right;
+        }
+        @else if $side == left {
+            left: $left;
+        }
+
+        display: block;
+        width: $width;
+        background: $bg;
+        transform: skew($deg);
+    }
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
     font-size: ($sizeValue * 16) * 1px;

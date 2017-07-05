@@ -1,9 +1,6 @@
 #masthead {
   background-color: $color__brand-2;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding: 1em;
   position: relative;
 
   .masthead-wrapper {
@@ -15,6 +12,6 @@
   }
 
   @include respond-to(tablet) {
-    @include reset;
+    padding: 0;
   }
 }

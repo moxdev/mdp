@@ -570,19 +570,19 @@ table {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-/* line 25, sass/mixins/_mixins-master.scss */
+/* line 49, sass/mixins/_mixins-master.scss */
 a {
   color: #81bc00;
 }
-/* line 27, sass/mixins/_mixins-master.scss */
+/* line 51, sass/mixins/_mixins-master.scss */
 a:visited {
   color: #fff;
 }
-/* line 30, sass/mixins/_mixins-master.scss */
+/* line 54, sass/mixins/_mixins-master.scss */
 a:hover {
   color: #fff;
 }
-/* line 33, sass/mixins/_mixins-master.scss */
+/* line 57, sass/mixins/_mixins-master.scss */
 a:active {
   color: #81bc00;
 }
@@ -684,20 +684,16 @@ textarea {
 /* line 1, sass/navigation/_masthead.scss */
 #masthead {
   background-color: #ffffff;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding: 1em;
   position: relative;
 }
-/* line 13, sass/navigation/_masthead.scss */
+/* line 10, sass/navigation/_masthead.scss */
 #masthead a[rel="home"] {
   display: table;
 }
 @media (min-width: 750px) {
   /* line 1, sass/navigation/_masthead.scss */
   #masthead {
-    margin: 0;
     padding: 0;
   }
 }
@@ -718,19 +714,19 @@ ul {
   padding: 0;
 }
 
-/* line 25, sass/mixins/_mixins-master.scss */
+/* line 49, sass/mixins/_mixins-master.scss */
 .main-navigation ul a {
   color: #81bc00;
 }
-/* line 27, sass/mixins/_mixins-master.scss */
+/* line 51, sass/mixins/_mixins-master.scss */
 .main-navigation ul a:visited {
   color: #81bc00;
 }
-/* line 30, sass/mixins/_mixins-master.scss */
+/* line 54, sass/mixins/_mixins-master.scss */
 .main-navigation ul a:hover {
   color: #81bc00;
 }
-/* line 33, sass/mixins/_mixins-master.scss */
+/* line 57, sass/mixins/_mixins-master.scss */
 .main-navigation ul a:active {
   color: #81bc00;
 }
@@ -925,15 +921,46 @@ ul {
 .alt-nav-wrapper .alt-mobile-menu-wrapper {
   text-align: center;
 }
-/* line 16, sass/navigation/_alt-navigation.scss */
+/* line 49, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a {
+  color: #fff;
+}
+/* line 51, sass/mixins/_mixins-master.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper a:visited {
   color: #fff;
 }
-/* line 21, sass/navigation/_alt-navigation.scss */
+/* line 54, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a:hover {
+  color: #fff;
+}
+/* line 57, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a:active {
+  color: #fff;
+}
+/* line 16, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper a span, .alt-nav-wrapper .alt-mobile-menu-wrapper button span {
   font-size: .8em;
 }
-/* line 25, sass/navigation/_alt-navigation.scss */
+/* line 20, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper .left-skew {
+  position: relative;
+}
+/* line 8, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper .left-skew:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -28px;
+  display: block;
+  width: 100px;
+  background: #81bc00;
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+/* line 24, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
   display: block;
   width: 105px;
@@ -944,54 +971,36 @@ ul {
   margin-left: auto;
   margin-right: 15px;
 }
-/* line 36, sass/navigation/_alt-navigation.scss */
+/* line 35, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
   display: block;
   margin: 0;
   padding: 0;
   width: 105px;
-  margin-left: auto;
   margin-top: 10px;
+  margin-left: 14px;
   border: none;
   border-radius: 0;
 }
-/* line 47, sass/navigation/_alt-navigation.scss */
+/* line 46, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation {
-  display: none;
-  position: relative;
-  border-bottom: 40px solid #81bc00;
-  border-left: 25px solid transparent;
-}
-/* line 67, sass/navigation/_alt-navigation.scss */
-.alt-nav-wrapper #alt-navigation ul {
-  position: relative;
-  margin-left: 40px;
   z-index: 20;
+  display: none;
+  background-color: #81bc00;
+  padding: 5px 0;
+  margin-top: 15px;
+}
+/* line 53, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation ul {
   list-style-type: none;
 }
-/* line 25, sass/mixins/_mixins-master.scss */
-.alt-nav-wrapper #alt-navigation ul a {
-  color: #000;
-}
-/* line 27, sass/mixins/_mixins-master.scss */
-.alt-nav-wrapper #alt-navigation ul a:visited {
-  color: #000;
-}
-/* line 30, sass/mixins/_mixins-master.scss */
-.alt-nav-wrapper #alt-navigation ul a:hover {
-  color: #000;
-}
-/* line 33, sass/mixins/_mixins-master.scss */
-.alt-nav-wrapper #alt-navigation ul a:active {
-  color: #000;
-}
-/* line 74, sass/navigation/_alt-navigation.scss */
+/* line 57, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-/* line 77, sass/navigation/_alt-navigation.scss */
+/* line 60, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul li a {
   font-size: 1em;
   text-decoration: none;
@@ -999,16 +1008,22 @@ ul {
   font-family: "SourceSansPro-Bold";
   text-transform: uppercase;
 }
+@media (min-width: 750px) {
+  /* line 3, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper {
+    padding: 1em 1em;
+  }
+}
 @media (min-width: 950px) {
   /* line 3, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper {
-    padding-top: 1em;
+    padding: 1em 0 0;
   }
-  /* line 92, sass/navigation/_alt-navigation.scss */
+  /* line 79, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
     display: none;
   }
-  /* line 97, sass/navigation/_alt-navigation.scss */
+  /* line 84, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper #alt-navigation {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1353,19 +1368,19 @@ ul {
     padding-right: 2.75rem;
   }
 }
-/* line 25, sass/mixins/_mixins-master.scss */
+/* line 49, sass/mixins/_mixins-master.scss */
 .site-footer a {
   color: #fff;
 }
-/* line 27, sass/mixins/_mixins-master.scss */
+/* line 51, sass/mixins/_mixins-master.scss */
 .site-footer a:visited {
   color: #fff;
 }
-/* line 30, sass/mixins/_mixins-master.scss */
+/* line 54, sass/mixins/_mixins-master.scss */
 .site-footer a:hover {
   color: #fff;
 }
-/* line 33, sass/mixins/_mixins-master.scss */
+/* line 57, sass/mixins/_mixins-master.scss */
 .site-footer a:active {
   color: #fff;
 }
