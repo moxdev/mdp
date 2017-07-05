@@ -712,6 +712,12 @@ svg {
   height: auto;
 }
 
+/* line 7, sass/navigation/_menus.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* line 25, sass/mixins/_mixins-master.scss */
 .main-navigation ul a {
   color: #81bc00;
@@ -729,7 +735,7 @@ svg {
   color: #81bc00;
 }
 
-/* line 13, sass/navigation/_menus.scss */
+/* line 17, sass/navigation/_menus.scss */
 .slant-btn {
   -webkit-transform: skew(25deg);
       -ms-transform: skew(25deg);
@@ -737,7 +743,7 @@ svg {
   display: inline-block;
 }
 
-/* line 18, sass/navigation/_menus.scss */
+/* line 22, sass/navigation/_menus.scss */
 .unslant {
   -webkit-transform: skew(-25deg);
       -ms-transform: skew(-25deg);
@@ -952,6 +958,62 @@ svg {
 /* line 47, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation {
   display: none;
+  position: relative;
+  border-bottom: 40px solid #81bc00;
+  border-left: 25px solid transparent;
+}
+/* line 67, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation ul {
+  position: relative;
+  margin-left: 40px;
+  z-index: 20;
+  list-style-type: none;
+}
+/* line 25, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper #alt-navigation ul a {
+  color: #000;
+}
+/* line 27, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper #alt-navigation ul a:visited {
+  color: #000;
+}
+/* line 30, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper #alt-navigation ul a:hover {
+  color: #000;
+}
+/* line 33, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper #alt-navigation ul a:active {
+  color: #000;
+}
+/* line 74, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+/* line 77, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation ul li a {
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "SourceSansPro-Bold";
+  text-transform: uppercase;
+}
+@media (min-width: 950px) {
+  /* line 3, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper {
+    padding-top: 1em;
+  }
+  /* line 92, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
+    display: none;
+  }
+  /* line 97, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -989,7 +1051,7 @@ svg {
 /*--------------------------------------------------------------
 ### Mobile Toggle Button Styles
 --------------------------------------------------------------*/
-/* line 41, sass/navigation/_menus.scss */
+/* line 45, sass/navigation/_menus.scss */
 #mobile-toggle {
   display: inline-block;
   color: white;
@@ -1002,21 +1064,21 @@ svg {
 /*--------------------------------------------------------------
 ### Page/Post Nav Styles
 --------------------------------------------------------------*/
-/* line 57, sass/navigation/_menus.scss */
+/* line 61, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 62, sass/navigation/_menus.scss */
+/* line 66, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 67, sass/navigation/_menus.scss */
+/* line 71, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {

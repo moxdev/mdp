@@ -107,12 +107,12 @@
 						} ?>
 
 						<button id="mobile-toggle" class="slant-btn" aria-controls="site-navigation" aria-expanded="false" aria-label="Menu"><span class="unslant"><?php esc_html_e( 'Menu', 'md_partitions' ); ?></span></button>
+
+						<nav id="alt-navigation" class="main-navigation page-desktop-navigation" role="navigation">
+							<?php wp_nav_menu( array( 'theme_location' => 'page-nav', 'menu_id' => 'page-desktop-menu', 'container' => '' ) ); ?>
+						</nav><!-- alt-navigation -->
+
 					</div><!-- alt-mobile-menu-wrapper -->
-
-					<nav id="alt-navigation" class="main-navigation page-desktop-navigation" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'page-nav', 'menu_id' => 'page-desktop-menu', 'container' => '' ) ); ?>
-					</nav><!-- alt-navigation -->
-
 				</div><!-- alt-nav-wrapper -->
 
 			<?php } ?>
