@@ -19,8 +19,10 @@ function md_partitions_frontpage_sidebar() {
 			<div class="image-wrapper">
 				<img src="<?php echo $img['url']; ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" description="<?php echo esc_attr( $img['description'] ); ?>">
 			</div>
+			<div class="cert-link-wrapper">
+				<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $text ); ?></a>
+			</div>
 
-			<a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $text ); ?></a>
 
 		</aside><!-- #frontpage-secondary -->
 

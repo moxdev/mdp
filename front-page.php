@@ -30,6 +30,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<?php if ( is_page_template('front-page.php') && function_exists( 'md_partitions_frontpage_sidebar' ) ) {
+	  md_partitions_frontpage_sidebar();
+	} ?>
+
 <?php
 
 get_footer();

@@ -130,3 +130,4 @@
 	} ?>
 
 	<div id="content" class="site-content">
+		<div class="site-content-wrapper">

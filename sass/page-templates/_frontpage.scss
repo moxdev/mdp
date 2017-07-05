@@ -2,18 +2,46 @@
 
   .site-content {
     background-color: #fff;
-    // background-image: url('/wp-content/themes/md_partitions/img/background-lines.svg');
+  }
+
+  .site-content-wrapper {
     background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg');
     background-repeat: no-repeat;
     background-size: 400%;
-    background-position: -118px -27px;
+    background-position: -118px -72px;
+    margin-bottom: -20px;
+
+    @include respond-to(med-small) {
+      // background-size: 300%;
+    }
+
+    @include respond-to(tablet) {
+      background-size: 400%;
+      background-position: -78px -187px;
+    }
+
+    @media (min-width:1100px) {
+      background-position: -78px -218px;
+    }
+
+    // @include respond-to(large) {
+    //   background-size: 400%;
+    //   background-position: -135px -100px;
+    // }
   }
 
   #frontpage-secondary {
     display: none;
+    @include linx($color__brand-1, $color__brand-1, $color__brand-1, $color__brand-1);
 
-    @include respond-to(tablet) {
-      display: block;
+    a {
+      text-decoration: none;
+      font-family: $font__bold;
+    }
+
+    .cert-link-wrapper {
+      width: 200px;
+      @include margin-auto;
     }
   }
 
@@ -59,11 +87,19 @@
           padding: 5px 0;
           line-height:1;
           transition:opacity .35s ease-in-out, padding .35s ease-in-out;
+        }
 
+        .span-text {
+          color:#FFF;
+          font-size:1.6em;
+          font-family: $font__regular;
+        }
+      }
+
+      @include respond-to(small) {
+        .highlight-box {
           .span-text {
-            color:#FFF;
-            font-size:1.6em;
-            font-family: $font__regular;
+            font-size: 2.5em;
           }
         }
       }
@@ -75,42 +111,80 @@
 
         .highlight-box {
           flex: 1 1 0%;
-        }
 
-        .highlight-box span {
-          font-size:1.5em;
-          top:.35em;
+          .span-text {
+            font-size:1em;
+          }
         }
       }
 
       @include respond-to(tablet) {
-        .highlight-box span {
-            font-size:2em;
-            // padding:1.25em .5em;
-            top:0;
+        .highlight-box {
+          .span-text {
+            font-size:1.3em;
           }
-
+        }
       }
 
       @include respond-to(medium) {
-        .highlight-box span {
-            font-size:2.75em;
-            // padding:1.25em .75em;
+        .highlight-box {
+          .span-text {
+            font-size:1.7em;
           }
-
+        }
       }
 
-      @include respond-to(large) {
-        .highlight-box span {
-            font-size:3em;
-            // padding:1.5em 1em;
-          }
+      // @include respond-to(medium) {
+      //   .highlight-box span {
+      //       font-size:2.75em;
+      //       // padding:1.25em .75em;
+      //     }
+      // }
 
+      // @include respond-to(large) {
+      //   .highlight-box span {
+      //       font-size:3em;
+      //       // padding:1.5em 1em;
+      //     }
+      // }
+
+      // @include respond-to(x-large) {
+      // }
+    }
+  }
+
+  @include respond-to(medium) {
+    .site-content-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #primary {
+      flex: 2;
+      padding-right: 2em;
+    }
+
+    #frontpage-secondary {
+      display: block;
+      flex: 1;
+
+      .image-wrapper {
+        width: 300px;
+
+        img {
+          width: 300px;
+        }
       }
+    }
+  }
 
-      @include respond-to(x-large) {
+  @include respond-to(large) {
 
-      }
+    #primary {
+      flex: 3;
+      padding-right: 3em;
     }
   }
 }
