@@ -1,0 +1,51 @@
+// Alt Page Nav Styles
+
+.alt-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .alt-site-branding {
+    display: inline-block;
+  }
+
+  .alt-mobile-menu-wrapper {
+    text-align: center;
+
+    a {
+      &:visited {
+        color: #fff;
+      }
+    }
+
+    a span, button span {
+      font-size: .8em;
+    }
+
+    .alt-call-btn {
+      display: block;
+      width: 105px;
+      color: #fff;
+      background-color: $color__brand-3;
+      text-decoration: none;
+      padding: 0 15px;
+      margin-left: auto;
+      margin-right: 15px;
+    }
+
+    #mobile-toggle {
+      display: block;
+      @include reset;
+      width: 105px;
+      margin-left: auto;
+      margin-top: 10px;
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  #alt-navigation {
+    display: none;
+  }
+}
+

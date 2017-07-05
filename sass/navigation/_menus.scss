@@ -1,16 +1,43 @@
-.home-desktop-menu {
-
+svg {
+  display: block;
+  width: 110px;
+  height: auto;
 }
 
-.page-desktop-menu {
-
+.main-navigation {
+  ul {
+    @include linx($color__brand-1,$color__brand-1,$color__brand-1,$color__brand-1); // remove when finished
+  }
 }
 
-.mobile-menu {
-
+.slant-btn {
+  transform: skew(25deg);
+  display: inline-block;
 }
 
-/* Moble Menu. */
+.unslant {
+  transform: skew(-25deg);
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+### Main Navigation Menu Styles
+--------------------------------------------------------------*/
+@import "main-navigation";
+
+/*--------------------------------------------------------------
+### Alt Navigation Menu Styles
+--------------------------------------------------------------*/
+@import "alt-navigation";
+
+/*--------------------------------------------------------------
+### Mobile Navigation Menu Styles
+--------------------------------------------------------------*/
+@import "mobile-navigation";
+
+/*--------------------------------------------------------------
+### Mobile Toggle Button Styles
+--------------------------------------------------------------*/
 #mobile-toggle {
   display: inline-block;
   color: white;
@@ -18,36 +45,11 @@
   text-align: center;
   padding: 5px 20px;
   margin: 10px;
-  // transform: skewX(20deg);
 }
 
-#mobile-navigation {
-	display: none;
-}
-
-#mobile-navigation.active {
-	display: block;
-	position: absolute;
-	z-index: 9999999;
-	top: 0;
-	right:0;
-	bottom: 0;
-	left:0;
-	background: #fff;
-	width: 100%;
-	height: 100%;
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-
-	ul {
-		list-style-type: none;
-		overflow: hidden;
-	}
-}
-
+/*--------------------------------------------------------------
+### Page/Post Nav Styles
+--------------------------------------------------------------*/
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
