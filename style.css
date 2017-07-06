@@ -427,19 +427,40 @@ h2.section-header {
   background-color: #81bc00;
   margin: 0;
   padding: 0;
+  color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
   font-family: "SourceSansPro-Regular";
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   line-height: 1.1;
   text-transform: uppercase;
   text-align: center;
   padding: .5em 0;
+  font-size: 1.5em;
+}
+@media (min-width: 575px) {
+  /* line 27, sass/typography/_headings.scss */
+  h2.section-header {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 750px) {
+  /* line 27, sass/typography/_headings.scss */
+  h2.section-header {
+    font-size: 2em;
+    padding: .25em 0;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 27, sass/typography/_headings.scss */
+  h2.section-header {
+    font-size: 2.2em;
+    padding: .2em 0;
+  }
 }
 
-/* line 40, sass/typography/_headings.scss */
+/* line 54, sass/typography/_headings.scss */
 h3.product-header {
   font-family: "SourceSansPro-Bold";
   margin: .5em 0;
@@ -718,54 +739,35 @@ textarea {
   padding: 1em;
   position: relative;
 }
-/* line 6, sass/navigation/_masthead.scss */
-#masthead ul {
-  margin: 0;
-  padding: 0;
-}
-/* line 14, sass/navigation/_masthead.scss */
+/* line 10, sass/navigation/_masthead.scss */
 #masthead a[rel="home"] {
   display: table;
 }
-/* line 18, sass/navigation/_masthead.scss */
+/* line 14, sass/navigation/_masthead.scss */
 #masthead svg {
   display: block;
   width: 140px;
   height: auto;
 }
 @media (min-width: 450px) {
-  /* line 18, sass/navigation/_masthead.scss */
+  /* line 14, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 160px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 18, sass/navigation/_masthead.scss */
+  /* line 14, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 200px;
     padding-bottom: 14px;
   }
 }
 @media (min-width: 1490px) {
-  /* line 18, sass/navigation/_masthead.scss */
+  /* line 14, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 220px;
     padding-bottom: 14px;
   }
-}
-/* line 38, sass/navigation/_masthead.scss */
-#masthead .slant-btn {
-  -webkit-transform: skew(25deg);
-      -ms-transform: skew(25deg);
-          transform: skew(25deg);
-  display: inline-block;
-}
-/* line 43, sass/navigation/_masthead.scss */
-#masthead .unslant {
-  -webkit-transform: skew(-25deg);
-      -ms-transform: skew(-25deg);
-          transform: skew(-25deg);
-  display: inline-block;
 }
 @media (min-width: 750px) {
   /* line 1, sass/navigation/_masthead.scss */
@@ -792,6 +794,22 @@ textarea {
 /* line 57, sass/mixins/_mixins-master.scss */
 .main-navigation ul a:active {
   color: #81bc00;
+}
+
+/* line 7, sass/navigation/_menus.scss */
+.slant-btn {
+  -webkit-transform: skew(25deg);
+      -ms-transform: skew(25deg);
+          transform: skew(25deg);
+  display: inline-block;
+}
+
+/* line 12, sass/navigation/_menus.scss */
+.unslant {
+  -webkit-transform: skew(-25deg);
+      -ms-transform: skew(-25deg);
+          transform: skew(-25deg);
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -1102,22 +1120,27 @@ textarea {
     padding: 8px 0;
     margin-top: 25px;
   }
+  /* line 114, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation ul {
+    margin: 0;
+    padding: 0;
+  }
 }
 @media (min-width: 1190px) {
-  /* line 118, sass/navigation/_alt-navigation.scss */
+  /* line 122, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper a {
     font-size: 1.1em;
   }
-  /* line 121, sass/navigation/_alt-navigation.scss */
+  /* line 125, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
     width: 170px;
   }
-  /* line 126, sass/navigation/_alt-navigation.scss */
+  /* line 130, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper #alt-navigation {
     padding: 10px 0;
     margin-top: 25px;
   }
-  /* line 131, sass/navigation/_alt-navigation.scss */
+  /* line 135, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper #alt-navigation ul li a {
     font-size: 1em;
   }
@@ -1158,7 +1181,7 @@ textarea {
 /*--------------------------------------------------------------
 ### Mobile Toggle Button Styles
 --------------------------------------------------------------*/
-/* line 25, sass/navigation/_menus.scss */
+/* line 35, sass/navigation/_menus.scss */
 #mobile-toggle {
   display: inline-block;
   color: white;
@@ -1171,21 +1194,21 @@ textarea {
 /*--------------------------------------------------------------
 ### Page/Post Nav Styles
 --------------------------------------------------------------*/
-/* line 41, sass/navigation/_menus.scss */
+/* line 51, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 46, sass/navigation/_menus.scss */
+/* line 56, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 51, sass/navigation/_menus.scss */
+/* line 61, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1420,6 +1443,9 @@ textarea {
 }
 /* line 12, sass/site/_site.scss */
 .site-content #primary {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.75rem;
@@ -1452,70 +1478,10 @@ textarea {
     padding-bottom: 1.5em;
   }
 }
-/* line 22, sass/site/_site.scss */
+/* line 23, sass/site/_site.scss */
 .site-content .wysiwyg-bold-font {
   font-family: "SourceSansPro-Bold";
   line-height: 1;
-}
-@media (min-width: 575px) {
-  /* line 28, sass/site/_site.scss */
-  .site-content .site-content-wrapper {
-    background-position: -71px -60px;
-  }
-  /* line 33, sass/site/_site.scss */
-  .site-content .drill-page-sidebar .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media (min-width: 950px) {
-  /* line 40, sass/site/_site.scss */
-  .site-content .site-content-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
-  /* line 45, sass/site/_site.scss */
-  .site-content #primary {
-    padding-bottom: 0;
-    max-width: 800px;
-  }
-  /* line 51, sass/site/_site.scss */
-  .site-content .drill-page-sidebar .wrapper {
-    display: block;
-  }
-}
-@media (min-width: 1190px) {
-  /* line 58, sass/site/_site.scss */
-  .site-content #primary {
-    background-size: 110%;
-    background-position: -160px -60px;
-    padding-top: 3em;
-  }
-}
-@media (min-width: 1490px) {
-  /* line 66, sass/site/_site.scss */
-  .site-content #primary {
-    max-width: 1200px;
-    padding-left: 11em;
-    background-size: 100%;
-    background-position: -47px -113px;
-  }
-}
-@media (min-width: 1890px) {
-  /* line 75, sass/site/_site.scss */
-  .site-content #primary {
-    padding-left: 14em;
-    background-size: 90%;
-    background-position: -47px -113px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -2538,13 +2504,107 @@ ol.carousel-nav li.active a:hover {
 /*--------------------------------------------------------------
 ## Drill Page with Sidebar Template
 --------------------------------------------------------------*/
-/* line 3, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 9, sass/page-templates/_drill-page-sidebar-page.scss */
+.page-template-page-drill-page-sidebar .site-content #primary {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: -12px 0px;
+}
+@media (min-width: 750px) {
+  /* line 9, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media (min-width: 950px) {
+  /* line 9, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 9, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+@media (min-width: 575px) {
+  /* line 20, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content .site-content-wrapper {
+    background-position: -71px -60px;
+  }
+  /* line 25, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content .drill-page-sidebar .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 950px) {
+  /* line 32, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content .site-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  /* line 37, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    padding-bottom: 0;
+    max-width: 800px;
+  }
+  /* line 43, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content .drill-page-sidebar .wrapper {
+    display: block;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 50, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    background-size: 110%;
+    background-position: -160px -60px;
+    padding-top: 3em;
+  }
+}
+@media (min-width: 1490px) {
+  /* line 58, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    max-width: 1200px;
+    padding-left: 11em;
+    background-size: 100%;
+    background-position: -47px -113px;
+  }
+}
+@media (min-width: 1890px) {
+  /* line 67, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    padding-left: 14em;
+    background-size: 90%;
+    background-position: -47px -113px;
+  }
+}
+/* line 75, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section {
   background-color: #fff;
   margin: 0;
   padding: 0;
 }
-/* line 8, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 80, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .products {
   max-width: 1200px;
   margin-left: auto;
@@ -2555,48 +2615,48 @@ ol.carousel-nav li.active a:hover {
   padding-right: 1.75rem;
 }
 @media (min-width: 950px) {
-  /* line 8, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 80, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 8, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 80, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
 @media (min-width: 750px) {
-  /* line 8, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 80, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 14, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 86, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper {
   padding-bottom: 1.5em;
 }
-/* line 17, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 89, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper {
   text-align: center;
 }
-/* line 20, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 92, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
   max-width: 200px;
 }
-/* line 25, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 97, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .price {
   color: #81bc00;
 }
-/* line 30, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 102, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section {
   background-color: #000;
   color: #fff;
 }
-/* line 34, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 106, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section a {
   text-decoration: none;
   font-family: "SourceSansPro-Bold";
@@ -2605,7 +2665,7 @@ ol.carousel-nav li.active a:hover {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.5em;
 }
-/* line 41, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 113, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
   max-width: 1200px;
   margin-left: auto;
@@ -2616,36 +2676,36 @@ ol.carousel-nav li.active a:hover {
   padding-right: 1.75rem;
 }
 @media (min-width: 950px) {
-  /* line 41, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 113, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 41, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 113, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
 @media (min-width: 750px) {
-  /* line 41, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 113, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 46, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 118, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper {
   text-align: center;
 }
-/* line 49, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 121, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
   max-width: 200px;
 }
 @media (min-width: 750px) {
-  /* line 41, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 113, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2654,18 +2714,18 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 59, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 131, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper {
     text-align: left;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 62, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 134, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
     max-width: 200px;
   }
-  /* line 67, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 139, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .content-wrapper {
     -webkit-box-flex: 2;
         -ms-flex: 2;
@@ -2674,24 +2734,24 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 950px) {
-  /* line 77, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 149, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
     max-width: 300px;
   }
-  /* line 82, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 154, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .content-wrapper {
     padding-left: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 41, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 113, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-top: 2em;
     padding-bottom: 2em;
   }
 }
 @media (min-width: 575px) {
-  /* line 97, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 169, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2704,7 +2764,7 @@ ol.carousel-nav li.active a:hover {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
-  /* line 105, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 177, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45%;
@@ -2712,13 +2772,13 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 750px) {
-  /* line 111, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 183, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  /* line 115, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 187, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.33%;
@@ -2728,18 +2788,18 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 950px) {
-  /* line 126, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 198, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
     max-width: 250px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 136, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 208, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
     max-width: 300px;
   }
 }
-/* line 144, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 216, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .site-footer {
   border-top: 1px solid #fff;
 }

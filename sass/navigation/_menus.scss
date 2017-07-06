@@ -4,6 +4,16 @@
   }
 }
 
+.slant-btn {
+  transform: skew(25deg);
+  display: inline-block;
+}
+
+.unslant {
+  transform: skew(-25deg);
+  display: inline-block;
+}
+
 /*--------------------------------------------------------------
 ### Main Navigation Menu Styles
 --------------------------------------------------------------*/

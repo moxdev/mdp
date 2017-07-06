@@ -27,14 +27,28 @@ h1.entry-title {
 h2.section-header {
   background-color: $color__brand-1;
   @include reset;
-  @include font-smooth;
   color: #fff;
+  @include font-smooth;
   font-family: $font__regular;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   line-height: 1.1;
   text-transform: uppercase;
   text-align: center;
   padding: .5em 0;
+  font-size: 1.5em;
+
+  @include respond-to(med-small) {
+    font-size: 1.7em;
+  }
+  @include respond-to(tablet) {
+    font-size: 2em;
+    padding: .25em 0;
+  }
+  @include respond-to(large) {
+    font-size: 2.2em;
+    padding: .2em 0;
+  }
+
 }
 
 h3.product-header {

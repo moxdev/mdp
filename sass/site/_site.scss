@@ -10,6 +10,7 @@
   }
 
   #primary {
+    @include container;
     @include margin-auto;
     @include padding-left-right;
     @include section-padding;
@@ -24,60 +25,60 @@
       line-height: 1;
   }
 
-  @include respond-to(med-small) {
-    .site-content-wrapper {
-      background-position: -71px -60px;
-    }
+  // @include respond-to(med-small) {
+  //   .site-content-wrapper {
+  //     background-position: -71px -60px;
+  //   }
 
-    .drill-page-sidebar {
-      .wrapper {
-        display: flex;
-      }
-    }
-  }
+  //   .drill-page-sidebar {
+  //     .wrapper {
+  //       display: flex;
+  //     }
+  //   }
+  // }
 
-  @include respond-to(medium) {
-    .site-content-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-    }
-    #primary {
-      padding-bottom: 0;
-      max-width: 800px;
-    }
+  // @include respond-to(medium) {
+  //   .site-content-wrapper {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: stretch;
+  //   }
+  //   #primary {
+  //     padding-bottom: 0;
+  //     max-width: 800px;
+  //   }
 
-    .drill-page-sidebar {
-      .wrapper {
-        display: block;
-      }
-    }
-  }
+  //   .drill-page-sidebar {
+  //     .wrapper {
+  //       display: block;
+  //     }
+  //   }
+  // }
 
-  @include respond-to(large) {
-    #primary {
-      background-size: 110%;
-      background-position: -160px -60px;
-      padding-top: 3em;
-    }
-  }
+  // @include respond-to(large) {
+  //   #primary {
+  //     background-size: 110%;
+  //     background-position: -160px -60px;
+  //     padding-top: 3em;
+  //   }
+  // }
 
-  @include respond-to(x-large) {
-    #primary {
-      max-width: 1200px;
-      padding-left: 11em;
-      background-size: 100%;
-      background-position: -47px -113px;
-    }
-  }
+  // @include respond-to(x-large) {
+  //   #primary {
+  //     max-width: 1200px;
+  //     padding-left: 11em;
+  //     background-size: 100%;
+  //     background-position: -47px -113px;
+  //   }
+  // }
 
-  @include respond-to(xx-large) {
-    #primary {
-      padding-left: 14em;
-      background-size: 90%;
-      background-position: -47px -113px;
-    }
-  }
+  // @include respond-to(xx-large) {
+  //   #primary {
+  //     padding-left: 14em;
+  //     background-size: 90%;
+  //     background-position: -47px -113px;
+  //   }
+  // }
 }
 
 /*--------------------------------------------------------------
