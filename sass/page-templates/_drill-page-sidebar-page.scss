@@ -1,0 +1,147 @@
+.page-template-page-drill-page-sidebar {
+
+  .product-section {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+
+    .products {
+      @include container;
+      @include section-padding;
+      @include padding-left-right;
+    }
+
+    .product-wrapper {
+      padding-bottom: 1.5em;
+
+      .image-wrapper{
+        text-align: center;
+
+        img {
+          max-width: 200px;
+        }
+      }
+
+      .price {
+        color: $color__brand-1;
+      }
+    }
+
+    .callout-section {
+      background-color: #000;
+      color: #fff;
+
+      a {
+        text-decoration: none;
+        font-family: $font__bold;
+        @include font-smooth;
+        font-size: 1.5em;
+      }
+
+      .callout-wrapper {
+        @include container;
+        @include section-padding;
+        @include padding-left-right;
+
+        .image-wrapper{
+          text-align: center;
+
+          img {
+            max-width: 200px;
+          }
+        }
+
+        @include respond-to(tablet) {
+          display: flex;
+          // justify-content: space-between;
+          align-items: center;
+
+          .image-wrapper{
+            text-align: left;
+            flex: 1;
+            img {
+              max-width: 200px;
+            }
+          }
+
+          .content-wrapper {
+            flex: 2;
+            font-size: .9em;
+
+          }
+        }
+
+        @include respond-to(medium) {
+          .image-wrapper{
+
+            img {
+              max-width: 300px;
+            }
+          }
+
+          .content-wrapper {
+            padding-left: 3em;
+
+          }
+        }
+
+        @include respond-to(large) {
+          padding-top: 2em;
+          padding-bottom: 2em;
+
+        }
+      }
+    }
+
+    @include respond-to(med-small) {
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+      }
+
+      .product-wrapper {
+        flex: 0 1 45%;
+      }
+    }
+
+    @include respond-to(tablet) {
+      .products {
+        justify-content: flex-start;
+      }
+
+      .product-wrapper {
+        flex: 0 1 33.33%;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+
+    @include respond-to(medium) {
+
+      .product-wrapper {
+        .image-wrapper{
+          img {
+            max-width: 250px;
+          }
+        }
+      }
+    }
+
+    @include respond-to(large) {
+      .product-wrapper {
+        .image-wrapper{
+          img {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .site-footer {
+    border-top: 1px solid #fff;
+  }
+}

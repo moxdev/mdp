@@ -5,8 +5,12 @@ html {
         @include font-size(1);
     }
 
-    @include respond-to(large) {
+    @include respond-to(medium) {
         @include font-size(1.05);
+    }
+
+    @include respond-to(large) {
+        @include font-size(1.09);
     }
 
     @include respond-to(x-large) {
