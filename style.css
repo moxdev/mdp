@@ -346,22 +346,22 @@ html {
 @media (min-width: 950px) {
   /* line 1, sass/typography/_typography.scss */
   html {
-    font-size: 16.8px;
-    font-size: 1.05rem;
+    font-size: 17.44px;
+    font-size: 1.09rem;
   }
 }
 @media (min-width: 1190px) {
   /* line 1, sass/typography/_typography.scss */
   html {
-    font-size: 17.44px;
-    font-size: 1.09rem;
+    font-size: 17.76px;
+    font-size: 1.11rem;
   }
 }
 @media (min-width: 1490px) {
   /* line 1, sass/typography/_typography.scss */
   html {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 19.376px;
+    font-size: 1.211rem;
   }
 }
 
@@ -734,6 +734,20 @@ textarea {
     width: 160px;
   }
 }
+@media (min-width: 1190px) {
+  /* line 14, sass/navigation/_masthead.scss */
+  #masthead svg {
+    width: 200px;
+    padding-bottom: 14px;
+  }
+}
+@media (min-width: 1490px) {
+  /* line 14, sass/navigation/_masthead.scss */
+  #masthead svg {
+    width: 220px;
+    padding-bottom: 14px;
+  }
+}
 @media (min-width: 750px) {
   /* line 1, sass/navigation/_masthead.scss */
   #masthead {
@@ -1032,34 +1046,38 @@ ul {
   padding: 5px 0;
   margin-top: 15px;
 }
-/* line 57, sass/navigation/_alt-navigation.scss */
+/* line 58, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation .current-menu-item a {
+  color: #000;
+}
+/* line 63, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul {
   list-style-type: none;
 }
-/* line 61, sass/navigation/_alt-navigation.scss */
+/* line 67, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-/* line 64, sass/navigation/_alt-navigation.scss */
+/* line 70, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul li a {
-  font-size: 1em;
+  font-size: .8em;
   text-decoration: none;
   margin-right: 10px;
   font-family: "SourceSansPro-Bold";
   text-transform: uppercase;
 }
 @media (min-width: 450px) {
-  /* line 77, sass/navigation/_alt-navigation.scss */
+  /* line 83, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper a {
     font-size: 1em;
   }
-  /* line 80, sass/navigation/_alt-navigation.scss */
+  /* line 86, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
     width: 130px;
   }
-  /* line 84, sass/navigation/_alt-navigation.scss */
+  /* line 90, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
     width: 130px;
   }
@@ -1073,17 +1091,38 @@ ul {
 @media (min-width: 950px) {
   /* line 3, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper {
-    padding: 1em 0 0;
+    padding: 1em 0 0 1em;
   }
-  /* line 98, sass/navigation/_alt-navigation.scss */
+  /* line 104, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
     display: none;
   }
-  /* line 103, sass/navigation/_alt-navigation.scss */
+  /* line 109, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper #alt-navigation {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    padding: 8px 0;
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 118, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper a {
+    font-size: 1.1em;
+  }
+  /* line 121, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
+    width: 170px;
+  }
+  /* line 126, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation {
+    padding: 10px 0;
+    margin-top: 25px;
+  }
+  /* line 131, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation ul li a {
+    font-size: 1em;
   }
 }
 
@@ -1298,19 +1337,13 @@ ul {
 @media (min-width: 950px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    max-width: 600px;
+    max-width: 700px;
   }
 }
 @media (min-width: 1190px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
     max-width: 500px;
-  }
-}
-@media (min-width: 1890px) {
-  /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
-  #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    max-width: 600px;
   }
 }
 /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
@@ -1370,14 +1403,9 @@ ul {
   }
 }
 @media (min-width: 1490px) {
-  /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
-  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
-    right: 22%;
-    left: 22%;
-  }
   /* line 101, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 }
 
@@ -1395,7 +1423,6 @@ ul {
 }
 /* line 12, sass/site/_site.scss */
 .site-content #primary {
-  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.75rem;
@@ -1428,17 +1455,17 @@ ul {
     padding-bottom: 1.5em;
   }
 }
-/* line 23, sass/site/_site.scss */
+/* line 22, sass/site/_site.scss */
 .site-content .wysiwyg-bold-font {
   font-family: "SourceSansPro-Bold";
   line-height: 1;
 }
 @media (min-width: 575px) {
-  /* line 29, sass/site/_site.scss */
+  /* line 28, sass/site/_site.scss */
   .site-content .site-content-wrapper {
     background-position: -71px -60px;
   }
-  /* line 34, sass/site/_site.scss */
+  /* line 33, sass/site/_site.scss */
   .site-content .drill-page-sidebar .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1446,7 +1473,7 @@ ul {
   }
 }
 @media (min-width: 950px) {
-  /* line 41, sass/site/_site.scss */
+  /* line 40, sass/site/_site.scss */
   .site-content .site-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1458,9 +1485,10 @@ ul {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  /* line 46, sass/site/_site.scss */
+  /* line 45, sass/site/_site.scss */
   .site-content #primary {
     padding-bottom: 0;
+    max-width: 800px;
   }
   /* line 51, sass/site/_site.scss */
   .site-content .drill-page-sidebar .wrapper {
@@ -1478,13 +1506,16 @@ ul {
 @media (min-width: 1490px) {
   /* line 66, sass/site/_site.scss */
   .site-content #primary {
+    max-width: 1200px;
+    padding-left: 11em;
     background-size: 100%;
     background-position: -47px -113px;
   }
 }
 @media (min-width: 1890px) {
-  /* line 73, sass/site/_site.scss */
+  /* line 75, sass/site/_site.scss */
   .site-content #primary {
+    padding-left: 14em;
     background-size: 90%;
     background-position: -47px -113px;
   }

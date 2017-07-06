@@ -10,7 +10,6 @@
   }
 
   #primary {
-    max-width: 800px;
     @include margin-auto;
     @include padding-left-right;
     @include section-padding;
@@ -45,6 +44,7 @@
     }
     #primary {
       padding-bottom: 0;
+      max-width: 800px;
     }
 
     .drill-page-sidebar {
@@ -64,6 +64,8 @@
 
   @include respond-to(x-large) {
     #primary {
+      max-width: 1200px;
+      padding-left: 11em;
       background-size: 100%;
       background-position: -47px -113px;
     }
@@ -71,6 +73,7 @@
 
   @include respond-to(xx-large) {
     #primary {
+      padding-left: 14em;
       background-size: 90%;
       background-position: -47px -113px;
     }

@@ -27,7 +27,7 @@
         transition:opacity .5s ease-in-out;
 
         @include respond-to(medium) {
-          max-width: 600px;
+          max-width: 700px;
         }
 
         @include respond-to(large) {
@@ -35,7 +35,7 @@
         }
 
         @include respond-to(xx-large) {
-          max-width: 600px;
+          // max-width: 600px;
         }
       }
 
@@ -95,11 +95,11 @@
         }
 
         @include respond-to(x-large) {
-          right: 22%;
-          left: 22%;
+          // right: 22%;
+          // left: 22%;
 
           .span-text {
-            font-size: 2.2em;
+            font-size: 2em;
           }
         }
       }

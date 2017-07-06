@@ -54,6 +54,12 @@
     padding: 5px 0;
     margin-top: 15px;
 
+    .current-menu-item {
+      a {
+        color: #000;
+      }
+    }
+
     ul {
       list-style-type: none;
 
@@ -62,7 +68,7 @@
         display: inline-flex;
 
         a {
-          font-size: 1em;
+          font-size: .8em;
           text-decoration: none;
           margin-right: 10px;
           font-family: $font__bold;
@@ -92,7 +98,7 @@
   }
 
   @include respond-to(medium) {
-    padding: 1em 0 0;
+    padding: 1em 0 0 1em;
 
     .alt-mobile-menu-wrapper {
       #mobile-toggle {
@@ -102,8 +108,31 @@
 
     #alt-navigation {
       display: inline-flex;
+      padding: 8px 0;
+      margin-top: 25px;
+    }
+  }
 
+  @include respond-to(large) {
+    .alt-mobile-menu-wrapper {
+      a {
+        font-size: 1.1em;
+      }
+      .alt-call-btn {
+        width: 170px;
+      }
+    }
 
+    #alt-navigation {
+      padding: 10px 0;
+      margin-top: 25px;
+      ul {
+        li {
+          a {
+            font-size: 1em;
+          }
+        }
+      }
     }
   }
 }

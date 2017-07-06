@@ -6,15 +6,15 @@ html {
     }
 
     @include respond-to(medium) {
-        @include font-size(1.05);
-    }
-
-    @include respond-to(large) {
         @include font-size(1.09);
     }
 
+    @include respond-to(large) {
+        @include font-size(1.11);
+    }
+
     @include respond-to(x-large) {
-        @include font-size(1.125);
+        @include font-size(1.211);
     }
 }
 
