@@ -403,7 +403,26 @@ h1 {
   margin-bottom: .25em;
 }
 
-/* line 15, sass/typography/_headings.scss */
+@media (min-width: 575px) {
+  /* line 15, sass/typography/_headings.scss */
+  h1.entry-title {
+    font-size: 2.3em;
+  }
+}
+@media (min-width: 950px) {
+  /* line 15, sass/typography/_headings.scss */
+  h1.entry-title {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 15, sass/typography/_headings.scss */
+  h1.entry-title {
+    font-size: 2.5em;
+  }
+}
+
+/* line 27, sass/typography/_headings.scss */
 h2.section-header {
   background-color: #81bc00;
   margin: 0;
@@ -420,7 +439,7 @@ h2.section-header {
   padding: .5em 0;
 }
 
-/* line 28, sass/typography/_headings.scss */
+/* line 40, sass/typography/_headings.scss */
 h3.product-header {
   font-family: "SourceSansPro-Bold";
   margin: .5em 0;
@@ -703,6 +722,18 @@ textarea {
 #masthead a[rel="home"] {
   display: table;
 }
+/* line 14, sass/navigation/_masthead.scss */
+#masthead svg {
+  display: block;
+  width: 140px;
+  height: auto;
+}
+@media (min-width: 450px) {
+  /* line 14, sass/navigation/_masthead.scss */
+  #masthead svg {
+    width: 160px;
+  }
+}
 @media (min-width: 750px) {
   /* line 1, sass/navigation/_masthead.scss */
   #masthead {
@@ -714,13 +745,6 @@ textarea {
 ## Menus
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_menus.scss */
-svg {
-  display: block;
-  width: 110px;
-  height: auto;
-}
-
-/* line 7, sass/navigation/_menus.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -743,7 +767,7 @@ ul {
   color: #81bc00;
 }
 
-/* line 17, sass/navigation/_menus.scss */
+/* line 11, sass/navigation/_menus.scss */
 .slant-btn {
   -webkit-transform: skew(25deg);
       -ms-transform: skew(25deg);
@@ -751,7 +775,7 @@ ul {
   display: inline-block;
 }
 
-/* line 22, sass/navigation/_menus.scss */
+/* line 16, sass/navigation/_menus.scss */
 .unslant {
   -webkit-transform: skew(-25deg);
       -ms-transform: skew(-25deg);
@@ -951,9 +975,15 @@ ul {
 }
 /* line 16, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper a span, .alt-nav-wrapper .alt-mobile-menu-wrapper button span {
-  font-size: .8em;
+  font-size: .9em;
 }
-/* line 20, sass/navigation/_alt-navigation.scss */
+@media (min-width: 575px) {
+  /* line 16, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper a span, .alt-nav-wrapper .alt-mobile-menu-wrapper button span {
+    font-size: 1em;
+  }
+}
+/* line 24, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper .left-skew {
   position: relative;
 }
@@ -972,7 +1002,7 @@ ul {
       -ms-transform: skew(-20deg);
           transform: skew(-20deg);
 }
-/* line 24, sass/navigation/_alt-navigation.scss */
+/* line 28, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
   display: block;
   width: 105px;
@@ -983,7 +1013,7 @@ ul {
   margin-left: auto;
   margin-right: 15px;
 }
-/* line 35, sass/navigation/_alt-navigation.scss */
+/* line 39, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
   display: block;
   margin: 0;
@@ -994,7 +1024,7 @@ ul {
   border: none;
   border-radius: 0;
 }
-/* line 46, sass/navigation/_alt-navigation.scss */
+/* line 50, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation {
   z-index: 20;
   display: none;
@@ -1002,17 +1032,17 @@ ul {
   padding: 5px 0;
   margin-top: 15px;
 }
-/* line 53, sass/navigation/_alt-navigation.scss */
+/* line 57, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul {
   list-style-type: none;
 }
-/* line 57, sass/navigation/_alt-navigation.scss */
+/* line 61, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-/* line 60, sass/navigation/_alt-navigation.scss */
+/* line 64, sass/navigation/_alt-navigation.scss */
 .alt-nav-wrapper #alt-navigation ul li a {
   font-size: 1em;
   text-decoration: none;
@@ -1020,10 +1050,24 @@ ul {
   font-family: "SourceSansPro-Bold";
   text-transform: uppercase;
 }
+@media (min-width: 450px) {
+  /* line 77, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper a {
+    font-size: 1em;
+  }
+  /* line 80, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
+    width: 130px;
+  }
+  /* line 84, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
+    width: 130px;
+  }
+}
 @media (min-width: 750px) {
   /* line 3, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper {
-    padding: 1em 1em;
+    padding: 1rem 2.75rem;
   }
 }
 @media (min-width: 950px) {
@@ -1031,11 +1075,11 @@ ul {
   .alt-nav-wrapper {
     padding: 1em 0 0;
   }
-  /* line 79, sass/navigation/_alt-navigation.scss */
+  /* line 98, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
     display: none;
   }
-  /* line 84, sass/navigation/_alt-navigation.scss */
+  /* line 103, sass/navigation/_alt-navigation.scss */
   .alt-nav-wrapper #alt-navigation {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1078,7 +1122,7 @@ ul {
 /*--------------------------------------------------------------
 ### Mobile Toggle Button Styles
 --------------------------------------------------------------*/
-/* line 45, sass/navigation/_menus.scss */
+/* line 39, sass/navigation/_menus.scss */
 #mobile-toggle {
   display: inline-block;
   color: white;
@@ -1091,21 +1135,21 @@ ul {
 /*--------------------------------------------------------------
 ### Page/Post Nav Styles
 --------------------------------------------------------------*/
-/* line 61, sass/navigation/_menus.scss */
+/* line 55, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 66, sass/navigation/_menus.scss */
+/* line 60, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 71, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1254,10 +1298,16 @@ ul {
 @media (min-width: 950px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    max-width: 900px;
+    max-width: 600px;
   }
 }
 @media (min-width: 1190px) {
+  /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1890px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
     max-width: 600px;
@@ -1285,18 +1335,6 @@ ul {
   font-family: "SourceSansPro-Regular";
   text-shadow: 2px 2px 4px black;
 }
-@media (min-width: 575px) {
-  /* line 55, sass/site/secondary/_drill-page-sidebar.scss */
-  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
-    font-size: 1.9em;
-  }
-}
-@media (min-width: 750px) {
-  /* line 55, sass/site/secondary/_drill-page-sidebar.scss */
-  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
-    font-size: 2em;
-  }
-}
 @media (min-width: 450px) {
   /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
@@ -1312,10 +1350,12 @@ ul {
   /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
     padding: 10px 0;
+    right: 15%;
+    left: 15%;
   }
-  /* line 81, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 83, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
-    font-size: 2.8em;
+    font-size: 1.8em;
   }
 }
 @media (min-width: 750px) {
@@ -1324,7 +1364,7 @@ ul {
     right: 20%;
     left: 20%;
   }
-  /* line 90, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 92, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
     font-size: 1.9em;
   }
@@ -1335,7 +1375,7 @@ ul {
     right: 22%;
     left: 22%;
   }
-  /* line 99, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 101, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
     font-size: 2.2em;
   }
@@ -1353,51 +1393,52 @@ ul {
   padding: 0;
   background-color: #E3E3E3;
 }
-/* line 8, sass/site/_site.scss */
-.site-content .site-content-wrapper {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg");
-  background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: -12px 0px;
-}
-/* line 15, sass/site/_site.scss */
+/* line 12, sass/site/_site.scss */
 .site-content #primary {
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: -12px 0px;
 }
-@media (min-width: 450px) {
-  /* line 15, sass/site/_site.scss */
+@media (min-width: 750px) {
+  /* line 12, sass/site/_site.scss */
   .site-content #primary {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
 @media (min-width: 950px) {
-  /* line 15, sass/site/_site.scss */
+  /* line 12, sass/site/_site.scss */
   .site-content #primary {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 15, sass/site/_site.scss */
+  /* line 12, sass/site/_site.scss */
   .site-content #primary {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 21, sass/site/_site.scss */
+/* line 23, sass/site/_site.scss */
 .site-content .wysiwyg-bold-font {
   font-family: "SourceSansPro-Bold";
   line-height: 1;
 }
-@media (min-width: 750px) {
-  /* line 28, sass/site/_site.scss */
+@media (min-width: 575px) {
+  /* line 29, sass/site/_site.scss */
+  .site-content .site-content-wrapper {
+    background-position: -71px -60px;
+  }
+  /* line 34, sass/site/_site.scss */
   .site-content .drill-page-sidebar .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1405,7 +1446,7 @@ ul {
   }
 }
 @media (min-width: 950px) {
-  /* line 35, sass/site/_site.scss */
+  /* line 41, sass/site/_site.scss */
   .site-content .site-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1417,9 +1458,35 @@ ul {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  /* line 45, sass/site/_site.scss */
+  /* line 46, sass/site/_site.scss */
+  .site-content #primary {
+    padding-bottom: 0;
+  }
+  /* line 51, sass/site/_site.scss */
   .site-content .drill-page-sidebar .wrapper {
     display: block;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 58, sass/site/_site.scss */
+  .site-content #primary {
+    background-size: 110%;
+    background-position: -160px -60px;
+    padding-top: 3em;
+  }
+}
+@media (min-width: 1490px) {
+  /* line 66, sass/site/_site.scss */
+  .site-content #primary {
+    background-size: 100%;
+    background-position: -47px -113px;
+  }
+}
+@media (min-width: 1890px) {
+  /* line 73, sass/site/_site.scss */
+  .site-content #primary {
+    background-size: 90%;
+    background-position: -47px -113px;
   }
 }
 
@@ -1487,7 +1554,7 @@ ul {
   padding-top: 1em;
   padding-bottom: 4em;
 }
-@media (min-width: 450px) {
+@media (min-width: 750px) {
   /* line 1, sass/site/footer/_footer.scss */
   .site-footer {
     padding-left: 2.75rem;
@@ -2244,7 +2311,7 @@ ol.carousel-nav li.active a:hover {
   background-position: -118px -72px;
   margin-bottom: -20px;
 }
-@media (min-width: 450px) {
+@media (min-width: 750px) {
   /* line 7, sass/page-templates/_frontpage.scss */
   .page-template-front-page .site-content-wrapper {
     padding-left: 2.75rem;
@@ -2472,7 +2539,7 @@ ol.carousel-nav li.active a:hover {
     padding-bottom: 1.5em;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 750px) {
   /* line 8, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     padding-left: 2.75rem;
@@ -2533,7 +2600,7 @@ ol.carousel-nav li.active a:hover {
     padding-bottom: 1.5em;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 750px) {
   /* line 41, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-left: 2.75rem;
@@ -2679,7 +2746,7 @@ ol.carousel-nav li.active a:hover {
     padding-bottom: 1.5em;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 750px) {
   /* line 6, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .featured-projects .featured-projects-wrapper {
     padding-left: 2.75rem;
@@ -2729,7 +2796,7 @@ ol.carousel-nav li.active a:hover {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-@media (min-width: 450px) {
+@media (min-width: 750px) {
   /* line 59, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .other-projects-section .other-projects-wrapper {
     padding-left: 2.75rem;
@@ -2772,7 +2839,7 @@ ol.carousel-nav li.active a:hover {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-@media (min-width: 450px) {
+@media (min-width: 750px) {
   /* line 6, sass/page-templates/_about-us-page.scss */
   .page-template-page-about .certification-section .certification-wrapper {
     padding-left: 2.75rem;

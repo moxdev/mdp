@@ -27,15 +27,15 @@
         transition:opacity .5s ease-in-out;
 
         @include respond-to(medium) {
-          max-width: 900px;
-        }
-
-        @include respond-to(large) {
           max-width: 600px;
         }
 
-        @include respond-to(x-large) {
-          // max-width: 600px;
+        @include respond-to(large) {
+          max-width: 500px;
+        }
+
+        @include respond-to(xx-large) {
+          max-width: 600px;
         }
       }
 
@@ -59,11 +59,11 @@
           text-shadow:2px 2px 4px rgba(0, 0, 0, 1);
 
           @include respond-to(med-small) {
-            font-size: 1.9em;
+            // font-size: 1.9em;
           }
 
           @include respond-to(tablet) {
-            font-size: 2em;
+            // font-size: 2em;
           }
         }
 
@@ -78,8 +78,10 @@
 
         @include respond-to(med-small) {
           padding: 10px 0;
+          right: 15%;
+          left: 15%;
           .span-text {
-            font-size: 2.8em;
+            font-size: 1.8em;
           }
         }
 
