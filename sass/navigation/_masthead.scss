@@ -3,6 +3,10 @@
   padding: 1em;
   position: relative;
 
+  ul {
+    @include reset;
+  }
+
   .masthead-wrapper {
     // position: relative;
   }
@@ -29,6 +33,16 @@
       width: 220px;
       padding-bottom: 14px;
     }
+  }
+
+  .slant-btn {
+    transform: skew(25deg);
+    display: inline-block;
+  }
+
+  .unslant {
+    transform: skew(-25deg);
+    display: inline-block;
   }
 
   @include respond-to(tablet) {

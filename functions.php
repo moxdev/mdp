@@ -277,7 +277,7 @@ function md_partitions_project_listing() {
 	if(function_exists('get_field')) {
 		if( have_rows('project_listing') ):
 			// You will probably want to change this path to a minified version of the script
-			wp_enqueue_script( 'md-partitions-lightbox', get_template_directory_uri() . '/js/min/lightbox-min.js', array( 'jquery'), NULL, TRUE );
+			wp_enqueue_script( 'md-partitions-lightbox', get_template_directory_uri() . '/js/lightbox.js', array( 'jquery'), NULL, TRUE );
 			$i = 0; ?>
 			<section class="featured-projects">
 				<h2 class="section-header">Featured Projects</h2>

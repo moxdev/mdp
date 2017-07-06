@@ -1,21 +1,7 @@
-ul {
-	@include reset;
-}
-
 .main-navigation {
   ul {
     @include linx($color__brand-1,$color__brand-1,$color__brand-1,$color__brand-1); // remove when finished
   }
-}
-
-.slant-btn {
-  transform: skew(25deg);
-  display: inline-block;
-}
-
-.unslant {
-  transform: skew(-25deg);
-  display: inline-block;
 }
 
 /*--------------------------------------------------------------

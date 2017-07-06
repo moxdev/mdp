@@ -718,35 +718,54 @@ textarea {
   padding: 1em;
   position: relative;
 }
-/* line 10, sass/navigation/_masthead.scss */
+/* line 6, sass/navigation/_masthead.scss */
+#masthead ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 14, sass/navigation/_masthead.scss */
 #masthead a[rel="home"] {
   display: table;
 }
-/* line 14, sass/navigation/_masthead.scss */
+/* line 18, sass/navigation/_masthead.scss */
 #masthead svg {
   display: block;
   width: 140px;
   height: auto;
 }
 @media (min-width: 450px) {
-  /* line 14, sass/navigation/_masthead.scss */
+  /* line 18, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 160px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 14, sass/navigation/_masthead.scss */
+  /* line 18, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 200px;
     padding-bottom: 14px;
   }
 }
 @media (min-width: 1490px) {
-  /* line 14, sass/navigation/_masthead.scss */
+  /* line 18, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 220px;
     padding-bottom: 14px;
   }
+}
+/* line 38, sass/navigation/_masthead.scss */
+#masthead .slant-btn {
+  -webkit-transform: skew(25deg);
+      -ms-transform: skew(25deg);
+          transform: skew(25deg);
+  display: inline-block;
+}
+/* line 43, sass/navigation/_masthead.scss */
+#masthead .unslant {
+  -webkit-transform: skew(-25deg);
+      -ms-transform: skew(-25deg);
+          transform: skew(-25deg);
+  display: inline-block;
 }
 @media (min-width: 750px) {
   /* line 1, sass/navigation/_masthead.scss */
@@ -758,12 +777,6 @@ textarea {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-/* line 1, sass/navigation/_menus.scss */
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 /* line 49, sass/mixins/_mixins-master.scss */
 .main-navigation ul a {
   color: #81bc00;
@@ -779,22 +792,6 @@ ul {
 /* line 57, sass/mixins/_mixins-master.scss */
 .main-navigation ul a:active {
   color: #81bc00;
-}
-
-/* line 11, sass/navigation/_menus.scss */
-.slant-btn {
-  -webkit-transform: skew(25deg);
-      -ms-transform: skew(25deg);
-          transform: skew(25deg);
-  display: inline-block;
-}
-
-/* line 16, sass/navigation/_menus.scss */
-.unslant {
-  -webkit-transform: skew(-25deg);
-      -ms-transform: skew(-25deg);
-          transform: skew(-25deg);
-  display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -1161,7 +1158,7 @@ ul {
 /*--------------------------------------------------------------
 ### Mobile Toggle Button Styles
 --------------------------------------------------------------*/
-/* line 39, sass/navigation/_menus.scss */
+/* line 25, sass/navigation/_menus.scss */
 #mobile-toggle {
   display: inline-block;
   color: white;
@@ -1174,21 +1171,21 @@ ul {
 /*--------------------------------------------------------------
 ### Page/Post Nav Styles
 --------------------------------------------------------------*/
-/* line 55, sass/navigation/_menus.scss */
+/* line 41, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 60, sass/navigation/_menus.scss */
+/* line 46, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 65, sass/navigation/_menus.scss */
+/* line 51, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1840,8 +1837,8 @@ object {
 /* WITH OVERLAY */
 /* line 62, sass/media/_lightbox.scss */
 .imagelightbox-overlay {
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
   position: fixed;
   z-index: 9998;
   top: 0;
@@ -1858,7 +1855,7 @@ object {
   /* 40 */
   height: 2.5em;
   /* 40 */
-  background-color: #666;
+  background-color: #81bc00;
   position: fixed;
   z-index: 10002;
   top: 2.5em;
@@ -1872,7 +1869,7 @@ object {
 
 /* line 88, sass/media/_lightbox.scss */
 .imagelightbox-close:hover {
-  background-color: #111;
+  background-color: #666;
 }
 
 /* line 92, sass/media/_lightbox.scss */
@@ -1963,8 +1960,7 @@ object {
   /* 60 */
   height: 7.5em;
   /* 120 */
-  background-color: #444;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   vertical-align: middle;
   display: none;
   position: fixed;
@@ -1972,33 +1968,35 @@ object {
   top: 50%;
   margin-top: -3.75em;
   /* 60 */
+  border: none;
+  outline: none;
 }
 
-/* line 170, sass/media/_lightbox.scss */
+/* line 173, sass/media/_lightbox.scss */
 .imagelightbox-arrow:hover,
 .imagelightbox-arrow:focus {
-  background-color: #666;
   background-color: rgba(0, 0, 0, 0.75);
+  background-color: transparent;
 }
 
-/* line 175, sass/media/_lightbox.scss */
+/* line 179, sass/media/_lightbox.scss */
 .imagelightbox-arrow:active {
-  background-color: #111;
+  border: none;
 }
 
-/* line 178, sass/media/_lightbox.scss */
+/* line 183, sass/media/_lightbox.scss */
 .imagelightbox-arrow-left {
   left: 2.5em;
   /* 40 */
 }
 
-/* line 181, sass/media/_lightbox.scss */
+/* line 186, sass/media/_lightbox.scss */
 .imagelightbox-arrow-right {
   right: 2.5em;
   /* 40 */
 }
 
-/* line 184, sass/media/_lightbox.scss */
+/* line 189, sass/media/_lightbox.scss */
 .imagelightbox-arrow:before {
   width: 0;
   height: 0;
@@ -2009,23 +2007,23 @@ object {
   /* 2 */
 }
 
-/* line 192, sass/media/_lightbox.scss */
+/* line 197, sass/media/_lightbox.scss */
 .imagelightbox-arrow-left:before {
   border-left: none;
-  border-right-color: #fff;
+  border-right-color: #81bc00;
   margin-left: -0.313em;
   /* 5 */
 }
 
-/* line 197, sass/media/_lightbox.scss */
+/* line 202, sass/media/_lightbox.scss */
 .imagelightbox-arrow-right:before {
   border-right: none;
-  border-left-color: #fff;
+  border-left-color: #81bc00;
   margin-right: -0.313em;
   /* 5 */
 }
 
-/* line 203, sass/media/_lightbox.scss */
+/* line 208, sass/media/_lightbox.scss */
 .imagelightbox-loading,
 .imagelightbox-overlay,
 .imagelightbox-close,
@@ -2054,12 +2052,12 @@ object {
 }
 @media only screen and (max-width: 41.25em) {
   /* 660 */
-  /* line 217, sass/media/_lightbox.scss */
+  /* line 222, sass/media/_lightbox.scss */
   #container {
     width: 100%;
   }
 
-  /* line 220, sass/media/_lightbox.scss */
+  /* line 225, sass/media/_lightbox.scss */
   .imagelightbox-close {
     top: 1.25em;
     /* 20 */
@@ -2067,7 +2065,7 @@ object {
     /* 20 */
   }
 
-  /* line 224, sass/media/_lightbox.scss */
+  /* line 229, sass/media/_lightbox.scss */
   .imagelightbox-arrow {
     width: 2.5em;
     /* 40 */
@@ -2077,13 +2075,13 @@ object {
     /* 30 */
   }
 
-  /* line 229, sass/media/_lightbox.scss */
+  /* line 234, sass/media/_lightbox.scss */
   .imagelightbox-arrow-left {
     left: 1.25em;
     /* 20 */
   }
 
-  /* line 232, sass/media/_lightbox.scss */
+  /* line 237, sass/media/_lightbox.scss */
   .imagelightbox-arrow-right {
     right: 1.25em;
     /* 20 */
@@ -2091,12 +2089,12 @@ object {
 }
 @media only screen and (max-width: 20em) {
   /* 320 */
-  /* line 238, sass/media/_lightbox.scss */
+  /* line 243, sass/media/_lightbox.scss */
   .imagelightbox-arrow-left {
     left: 0;
   }
 
-  /* line 241, sass/media/_lightbox.scss */
+  /* line 246, sass/media/_lightbox.scss */
   .imagelightbox-arrow-right {
     right: 0;
   }
@@ -2816,44 +2814,138 @@ ol.carousel-nav li.active a:hover {
   margin-left: 7px;
   color: #81bc00;
 }
-/* line 56, sass/page-templates/_projects-page.scss */
+@media (min-width: 575px) {
+  /* line 52, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* line 57, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+@media (min-width: 750px) {
+  /* line 65, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul .image-wrapper {
+    max-width: 300px;
+  }
+}
+@media (min-width: 950px) {
+  /* line 72, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  /* line 75, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul .image-wrapper {
+    max-width: 250px;
+  }
+  /* line 79, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.33%;
+            flex: 0 1 33.33%;
+    padding: 1em .5em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 87, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  /* line 90, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul .image-wrapper {
+    max-width: 300px;
+  }
+  /* line 94, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .featured-projects .featured-projects-wrapper ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.33%;
+            flex: 0 1 33.33%;
+    padding: 1em 0;
+  }
+}
+/* line 103, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section {
   background-color: #fff;
 }
-/* line 59, sass/page-templates/_projects-page.scss */
+/* line 106, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section .other-projects-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 @media (min-width: 750px) {
-  /* line 59, sass/page-templates/_projects-page.scss */
+  /* line 106, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .other-projects-section .other-projects-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
 @media (min-width: 950px) {
-  /* line 59, sass/page-templates/_projects-page.scss */
+  /* line 106, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .other-projects-section .other-projects-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 59, sass/page-templates/_projects-page.scss */
+  /* line 106, sass/page-templates/_projects-page.scss */
   .page-template-page-projects .other-projects-section .other-projects-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 63, sass/page-templates/_projects-page.scss */
+/* line 111, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section .other-projects-wrapper h3 {
   font-family: "SourceSansPro-Bold";
   margin: 0;
   padding: 0;
   margin-bottom: .2em;
+}
+@media (min-width: 575px) {
+  /* line 106, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .other-projects-section .other-projects-wrapper {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+@media screen and (min-width: 955px) {
+  /* line 123, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .other-projects-section .other-projects-wrapper .column-spacer {
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 955px) and (min-width: 950px) {
+  /* line 106, sass/page-templates/_projects-page.scss */
+  .page-template-page-projects .other-projects-section .other-projects-wrapper {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
