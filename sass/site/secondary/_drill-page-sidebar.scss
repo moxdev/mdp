@@ -25,6 +25,18 @@
         opacity:.6;
         width:100%;
         transition:opacity .5s ease-in-out;
+
+        @include respond-to(medium) {
+          max-width: 900px;
+        }
+
+        @include respond-to(large) {
+          max-width: 600px;
+        }
+
+        @include respond-to(x-large) {
+          // max-width: 600px;
+        }
       }
 
       .span-wrapper {
@@ -35,18 +47,60 @@
         top: 0;
         right:15%;
         left:15%;
-        margin-top: 20%;
+        margin-top: 25%;
         padding: 5px 0;
         line-height:1;
         transition:opacity .35s ease-in-out, padding .35s ease-in-out;
 
         .span-text {
           color:#FFF;
-          font-size:1.6em;
+          font-size:1.8em;
           font-family: $font__regular;
+          text-shadow:2px 2px 4px rgba(0, 0, 0, 1);
+
+          @include respond-to(med-small) {
+            font-size: 1.9em;
+          }
+
+          @include respond-to(tablet) {
+            font-size: 2em;
+          }
+        }
+
+        @include respond-to(small) {
+          right: 20%;
+          left: 20%;
+
+          .span-text {
+            font-size: 2.3em;
+          }
+        }
+
+        @include respond-to(med-small) {
+          padding: 10px 0;
+          .span-text {
+            font-size: 2.8em;
+          }
+        }
+
+        @include respond-to(tablet) {
+          right: 20%;
+          left: 20%;
+
+          .span-text {
+            font-size: 1.9em;
+          }
+        }
+
+        @include respond-to(x-large) {
+          right: 22%;
+          left: 22%;
+
+          .span-text {
+            font-size: 2.2em;
+          }
         }
       }
     }
   }
-
 }

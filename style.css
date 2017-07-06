@@ -1242,7 +1242,19 @@ ul {
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
-/* line 30, sass/site/secondary/_drill-page-sidebar.scss */
+@media (min-width: 950px) {
+  /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
+    max-width: 600px;
+  }
+}
+/* line 42, sass/site/secondary/_drill-page-sidebar.scss */
 #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
   display: block;
   position: absolute;
@@ -1251,17 +1263,73 @@ ul {
   top: 0;
   right: 15%;
   left: 15%;
-  margin-top: 20%;
+  margin-top: 25%;
   padding: 5px 0;
   line-height: 1;
   -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
-/* line 43, sass/site/secondary/_drill-page-sidebar.scss */
+/* line 55, sass/site/secondary/_drill-page-sidebar.scss */
 #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
   color: #FFF;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-family: "SourceSansPro-Regular";
+  text-shadow: 2px 2px 4px black;
+}
+@media (min-width: 575px) {
+  /* line 55, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
+    font-size: 1.9em;
+  }
+}
+@media (min-width: 750px) {
+  /* line 55, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
+    font-size: 2em;
+  }
+}
+@media (min-width: 450px) {
+  /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
+    right: 20%;
+    left: 20%;
+  }
+  /* line 74, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
+    font-size: 2.3em;
+  }
+}
+@media (min-width: 575px) {
+  /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
+    padding: 10px 0;
+  }
+  /* line 81, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 750px) {
+  /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
+    right: 20%;
+    left: 20%;
+  }
+  /* line 90, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
+    font-size: 1.9em;
+  }
+}
+@media (min-width: 1490px) {
+  /* line 42, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
+    right: 22%;
+    left: 22%;
+  }
+  /* line 99, sass/site/secondary/_drill-page-sidebar.scss */
+  #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
+    font-size: 2.2em;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1274,32 +1342,76 @@ ul {
 .site-content {
   margin: 0;
   padding: 0;
+  background-color: #E3E3E3;
 }
-/* line 7, sass/site/_site.scss */
+/* line 8, sass/site/_site.scss */
 .site-content .site-content-wrapper {
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -12px 0px;
+}
+/* line 15, sass/site/_site.scss */
+.site-content #primary {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-  background-color: #E3E3E3;
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg");
-  background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: -12px 0px;
-  background-color: #fff;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 @media (min-width: 450px) {
-  /* line 7, sass/site/_site.scss */
-  .site-content .site-content-wrapper {
+  /* line 15, sass/site/_site.scss */
+  .site-content #primary {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 23, sass/site/_site.scss */
+@media (min-width: 950px) {
+  /* line 15, sass/site/_site.scss */
+  .site-content #primary {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 15, sass/site/_site.scss */
+  .site-content #primary {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+/* line 21, sass/site/_site.scss */
 .site-content .wysiwyg-bold-font {
   font-family: "SourceSansPro-Bold";
   line-height: 1;
+}
+@media (min-width: 750px) {
+  /* line 28, sass/site/_site.scss */
+  .site-content .drill-page-sidebar .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 950px) {
+  /* line 35, sass/site/_site.scss */
+  .site-content .site-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  /* line 46, sass/site/_site.scss */
+  .site-content .drill-page-sidebar .wrapper {
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2112,11 +2224,23 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 7, sass/page-templates/_frontpage.scss */
 .page-template-front-page .site-content-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg");
   background-repeat: no-repeat;
   background-size: 400%;
   background-position: -118px -72px;
   margin-bottom: -20px;
+}
+@media (min-width: 450px) {
+  /* line 7, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .site-content-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
 }
 @media (min-width: 750px) {
   /* line 7, sass/page-templates/_frontpage.scss */
@@ -2131,7 +2255,12 @@ ol.carousel-nav li.active a:hover {
     background-position: -78px -218px;
   }
 }
-/* line 33, sass/page-templates/_frontpage.scss */
+/* line 35, sass/page-templates/_frontpage.scss */
+.page-template-front-page #primary {
+  margin: 0;
+  padding: 0;
+}
+/* line 39, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary {
   display: none;
 }
@@ -2151,38 +2280,38 @@ ol.carousel-nav li.active a:hover {
 .page-template-front-page #frontpage-secondary a:active {
   color: #81bc00;
 }
-/* line 37, sass/page-templates/_frontpage.scss */
+/* line 43, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary a {
   text-decoration: none;
   font-family: "SourceSansPro-Bold";
 }
-/* line 42, sass/page-templates/_frontpage.scss */
+/* line 48, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary .cert-link-wrapper {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 52, sass/page-templates/_frontpage.scss */
+/* line 58, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box {
   position: relative;
   text-align: center;
   background-color: #000;
 }
-/* line 57, sass/page-templates/_frontpage.scss */
+/* line 63, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 61, sass/page-templates/_frontpage.scss */
+/* line 67, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a:hover img {
   opacity: 1;
 }
-/* line 65, sass/page-templates/_frontpage.scss */
+/* line 71, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a:hover span {
   opacity: 0;
   padding-top: 1em;
 }
-/* line 71, sass/page-templates/_frontpage.scss */
+/* line 77, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box img {
   display: block;
   opacity: .6;
@@ -2190,7 +2319,7 @@ ol.carousel-nav li.active a:hover {
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
-/* line 78, sass/page-templates/_frontpage.scss */
+/* line 84, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-wrapper {
   display: block;
   position: absolute;
@@ -2205,20 +2334,20 @@ ol.carousel-nav li.active a:hover {
   -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
-/* line 92, sass/page-templates/_frontpage.scss */
+/* line 98, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
   color: #FFF;
   font-size: 1.6em;
   font-family: "SourceSansPro-Regular";
 }
 @media (min-width: 450px) {
-  /* line 101, sass/page-templates/_frontpage.scss */
+  /* line 107, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
     font-size: 2.5em;
   }
 }
 @media (min-width: 575px) {
-  /* line 50, sass/page-templates/_frontpage.scss */
+  /* line 56, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2230,31 +2359,31 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  /* line 112, sass/page-templates/_frontpage.scss */
+  /* line 118, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0%;
             flex: 1 1 0%;
   }
-  /* line 115, sass/page-templates/_frontpage.scss */
+  /* line 121, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
     font-size: 1em;
   }
 }
 @media (min-width: 750px) {
-  /* line 123, sass/page-templates/_frontpage.scss */
+  /* line 129, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
     font-size: 1.3em;
   }
 }
 @media (min-width: 950px) {
-  /* line 131, sass/page-templates/_frontpage.scss */
+  /* line 137, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
     font-size: 1.7em;
   }
 }
 @media (min-width: 950px) {
-  /* line 157, sass/page-templates/_frontpage.scss */
+  /* line 163, sass/page-templates/_frontpage.scss */
   .page-template-front-page .site-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2268,31 +2397,31 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 164, sass/page-templates/_frontpage.scss */
+  /* line 170, sass/page-templates/_frontpage.scss */
   .page-template-front-page #primary {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
     padding-right: 2em;
   }
-  /* line 169, sass/page-templates/_frontpage.scss */
+  /* line 175, sass/page-templates/_frontpage.scss */
   .page-template-front-page #frontpage-secondary {
     display: block;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 173, sass/page-templates/_frontpage.scss */
+  /* line 179, sass/page-templates/_frontpage.scss */
   .page-template-front-page #frontpage-secondary .image-wrapper {
     width: 300px;
   }
-  /* line 176, sass/page-templates/_frontpage.scss */
+  /* line 182, sass/page-templates/_frontpage.scss */
   .page-template-front-page #frontpage-secondary .image-wrapper img {
     width: 300px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 185, sass/page-templates/_frontpage.scss */
+  /* line 191, sass/page-templates/_frontpage.scss */
   .page-template-front-page #primary {
     -webkit-box-flex: 3;
         -ms-flex: 3;

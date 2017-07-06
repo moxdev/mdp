@@ -3,26 +3,50 @@
 --------------------------------------------------------------*/
 .site-content {
   @include reset;
+  background-color: $color__background-alt-body;
 
   .site-content-wrapper {
-    @include container;
-    @include padding-left-right;
-    background-color: $color__background-alt-body;
-    // background-image: url('/wp-content/themes/md_partitions/img/background-lines.svg');
     background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg');
     background-repeat: no-repeat;
     background-size: 200%;
     background-position: -12px 0px;
-    background-color: #fff;
   }
 
   #primary {
-
+    @include container;
+    @include padding-left-right;
+    @include section-padding;
   }
 
   .wysiwyg-bold-font {
       font-family: $font__bold;
       line-height: 1;
+  }
+
+  @include respond-to(tablet) {
+    .drill-page-sidebar {
+      .wrapper {
+        display: flex;
+      }
+    }
+  }
+
+  @include respond-to(medium) {
+    .site-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+    #primary {
+      // float: left;
+      // width: 59%;
+    }
+
+    .drill-page-sidebar {
+      .wrapper {
+        display: block;
+      }
+    }
   }
 }
 

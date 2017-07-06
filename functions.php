@@ -42,7 +42,7 @@ function md_partitions_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 		add_image_size('home-highlight', 475, 430, true);
-		add_image_size( 'drill-page-sidebar', 450, 240, true );
+		add_image_size( 'drill-page-sidebar', 1250, 750, true );
 		add_image_size( 'product-image', 300, 300, true );
 		add_image_size( 'featured-project-image', 300, 300, true );
 		add_image_size( 'callout-image', 300, 9999, false );

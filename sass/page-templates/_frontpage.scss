@@ -5,6 +5,8 @@
   }
 
   .site-content-wrapper {
+    @include container;
+    @include padding-left-right;
     background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg');
     background-repeat: no-repeat;
     background-size: 400%;
@@ -28,6 +30,10 @@
     //   background-size: 400%;
     //   background-position: -135px -100px;
     // }
+  }
+
+  #primary {
+    @include reset;
   }
 
   #frontpage-secondary {
