@@ -105,8 +105,8 @@
         .span-wrapper {
           display:block;
           position:absolute;
-          border-top: 1px solid #fff;
-          border-bottom: 1px solid #fff;
+          border-top: 2px solid #fff;
+          border-bottom: 2px solid #fff;
           top: 0;
           right:15%;
           left:15%;
@@ -125,6 +125,11 @@
 
       @include respond-to(small) {
         .highlight-box {
+          .span-wrapper {
+            // padding: 10px 0;
+            left: 15%;
+            right: 15%;
+          }
           .span-text {
             font-size: 2.3em;
           }
@@ -165,12 +170,6 @@
 
       @include respond-to(tablet) {
         .highlight-box {
-
-          .span-wrapper {
-            // right:20%;
-            // left:20%;
-          }
-
           .span-text {
             font-size:1.5em;
           }
@@ -180,27 +179,58 @@
       @include respond-to(medium) {
         .highlight-box {
           .span-text {
-            font-size:1.7em;
+            font-size:1.8em;
           }
         }
       }
 
-      // @include respond-to(medium) {
-      //   .highlight-box span {
-      //       font-size:2.75em;
-      //       // padding:1.25em .75em;
-      //     }
-      // }
+      @include respond-to(large) {
+        .highlight-box {
 
-      // @include respond-to(large) {
-      //   .highlight-box span {
-      //       font-size:3em;
-      //       // padding:1.5em 1em;
-      //     }
-      // }
+          .span-wrapper {
+            padding: 10px 0;
+            left: 15%;
+            right: 15%;
+          }
+          .span-text {
+            font-size:1.9em;
+          }
+        }
+      }
 
-      // @include respond-to(x-large) {
-      // }
+      @include respond-to(x-large) {
+        .highlight-box {
+
+          .span-wrapper {
+            left: 20%;
+            right: 20%;
+          }
+        }
+      }
+
+      @include respond-to(xx-large) {
+        .highlight-box {
+
+          .span-wrapper {
+            left: 25%;
+            right: 25%;
+          }
+        }
+      }
+
+      @include respond-to(xxx-large) {
+        .highlight-box {
+
+          .span-wrapper {
+            // left: 30%;
+            // right: 30%;
+          }
+
+          .span-text {
+            font-size:2.5em;
+          }
+        }
+      }
     }
   }
 

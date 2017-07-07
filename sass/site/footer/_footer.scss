@@ -2,11 +2,12 @@
   color: #fff;
   text-align: center;
   @include padding-left-right;
-  @include container;
+  max-width: 1000px;
+  @include margin-auto;
   font-family: $font__bold;
   font-size: .9em;
   padding-top: 1em;
-  padding-bottom: 4em;
+  padding-bottom: 5em;
 
   @include linx(#fff, #fff, #fff, #fff);
 
