@@ -628,11 +628,11 @@ a {
 }
 /* line 51, sass/mixins/_mixins-master.scss */
 a:visited {
-  color: #fff;
+  color: #000;
 }
 /* line 54, sass/mixins/_mixins-master.scss */
 a:hover {
-  color: #fff;
+  color: #000;
 }
 /* line 57, sass/mixins/_mixins-master.scss */
 a:active {
@@ -897,7 +897,7 @@ textarea {
   font-size: 1.2em;
   text-transform: uppercase;
 }
-@media (min-width: 750px) {
+@media (min-width: 950px) {
   /* line 3, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper {
     text-align: center;
@@ -912,7 +912,7 @@ textarea {
   }
   /* line 86, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .site-branding svg {
-    width: 170px;
+    width: 190px !important;
   }
   /* line 91, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .mobile-menu-wrapper {
@@ -924,42 +924,52 @@ textarea {
     padding: 0;
     position: absolute;
     z-index: 50000;
-    width: 135px;
+    width: 150px;
     background-color: #81bc00;
-    font-size: 1.2em;
-    top: 22em;
+    top: 24em;
     left: 4em;
   }
-  /* line 105, sass/navigation/_main-navigation.scss */
+  /* line 103, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper .call-btn span {
+    font-size: .8em;
+  }
+  /* line 108, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .mobile-menu-wrapper #mobile-toggle {
     display: none;
   }
-  /* line 110, sass/navigation/_main-navigation.scss */
+  /* line 113, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .home-desktop-navigation {
     display: block;
   }
+  /* line 117, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation ul li a {
+    font-size: 1em;
+  }
 }
 @media (min-width: 1190px) {
-  /* line 118, sass/navigation/_main-navigation.scss */
+  /* line 128, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .site-branding svg {
-    width: 200px;
-    margin-left: 20px;
+    width: 220px !important;
   }
-  /* line 125, sass/navigation/_main-navigation.scss */
+  /* line 135, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .mobile-menu-wrapper .call-btn {
-    width: 155px;
-    font-size: 1.2em;
-    top: 25em;
-    left: 5em;
+    width: 175px;
+    font-size: 1.1em;
+    top: 26em;
+    left: 3.5em;
   }
-  /* line 133, sass/navigation/_main-navigation.scss */
+  /* line 143, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .home-desktop-navigation {
-    width: 300px;
+    width: 250px;
     height: 600px;
   }
-  /* line 141, sass/navigation/_main-navigation.scss */
+  /* line 147, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation ul {
+    margin-top: 9em;
+  }
+  /* line 151, sass/navigation/_main-navigation.scss */
   .main-nav-wrapper .home-desktop-navigation ul li a {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 
@@ -1543,6 +1553,9 @@ textarea {
   text-align: center;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "SourceSansPro-Bold";
   font-size: .9em;
   padding-top: 1em;
@@ -1571,21 +1584,21 @@ textarea {
 .site-footer a:active {
   color: #fff;
 }
-/* line 12, sass/site/footer/_footer.scss */
+/* line 13, sass/site/footer/_footer.scss */
 .site-footer .footer-message {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 16, sass/site/footer/_footer.scss */
+/* line 17, sass/site/footer/_footer.scss */
 .site-footer .contact-information {
   font-family: "SourceSansPro-Light";
 }
-/* line 19, sass/site/footer/_footer.scss */
+/* line 20, sass/site/footer/_footer.scss */
 .site-footer .contact-information a {
   text-decoration: none;
 }
-/* line 23, sass/site/footer/_footer.scss */
+/* line 24, sass/site/footer/_footer.scss */
 .site-footer .contact-information .company-name {
   font-family: "SourceSansPro-Bold";
   color: #81bc00;
@@ -2222,55 +2235,56 @@ ol.carousel-nav li.active a:hover {
 
   /* line 131, sass/modules/_home-carousel.scss */
   #home-carousel span {
-    font-size: 2.5em;
-    top: 7em;
+    font-size: 2.7em;
+    top: 6em;
     padding-right: 3em;
   }
 }
 @media (min-width: 750px) {
   /* line 139, sass/modules/_home-carousel.scss */
+  #home-carousel span {
+    padding-right: 3.5em;
+  }
+}
+@media (min-width: 950px) {
+  /* line 145, sass/modules/_home-carousel.scss */
   #home-carousel {
     min-height: 500px;
   }
 
-  /* line 142, sass/modules/_home-carousel.scss */
+  /* line 149, sass/modules/_home-carousel.scss */
   #home-carousel span {
-    font-size: 3em;
-    top: 4em;
-    left: 6em;
-    padding-right: 1em;
+    font-size: 3.5em;
+    top: 3.3em;
+    left: 5em;
+    padding-right: 1.5em;
+    max-width: 700px;
   }
 
-  /* line 149, sass/modules/_home-carousel.scss */
+  /* line 157, sass/modules/_home-carousel.scss */
   #home-carousel ol {
-    bottom: 7em;
+    bottom: 4em;
     left: 18em;
   }
 
-  /* line 154, sass/modules/_home-carousel.scss */
+  /* line 161, sass/modules/_home-carousel.scss */
   ol.carousel-nav {
     display: block;
   }
 }
-@media (min-width: 950px) {
-  /* line 164, sass/modules/_home-carousel.scss */
+@media screen and (min-width: 1010px) {
+  /* line 167, sass/modules/_home-carousel.scss */
   #home-carousel span {
-    font-size: 3.5em;
-  }
-
-  /* line 168, sass/modules/_home-carousel.scss */
-  #home-carousel ol {
-    bottom: 4em;
-    left: 21em;
+    padding-right: 2em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 175, sass/modules/_home-carousel.scss */
+  /* line 173, sass/modules/_home-carousel.scss */
   #home-carousel {
     min-height: 600px;
   }
 
-  /* line 179, sass/modules/_home-carousel.scss */
+  /* line 177, sass/modules/_home-carousel.scss */
   #home-carousel span {
     font-size: 4em;
     left: 6em;
@@ -2278,7 +2292,7 @@ ol.carousel-nav li.active a:hover {
     padding-right: 0;
   }
 
-  /* line 186, sass/modules/_home-carousel.scss */
+  /* line 184, sass/modules/_home-carousel.scss */
   #home-carousel ol {
     left: 24.5em;
   }
@@ -2300,10 +2314,12 @@ ol.carousel-nav li.active a:hover {
   margin-right: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg");
   background-repeat: no-repeat;
   background-size: 400%;
-  background-position: -118px -72px;
+  background-position: -180px -72px;
   margin-bottom: -20px;
 }
 @media (min-width: 750px) {
@@ -2311,6 +2327,20 @@ ol.carousel-nav li.active a:hover {
   .page-template-front-page .site-content-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
+  }
+}
+@media (min-width: 950px) {
+  /* line 7, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .site-content-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 7, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .site-content-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
 }
 @media (min-width: 750px) {
@@ -2326,12 +2356,12 @@ ol.carousel-nav li.active a:hover {
     background-position: -78px -218px;
   }
 }
-/* line 35, sass/page-templates/_frontpage.scss */
+/* line 31, sass/page-templates/_frontpage.scss */
 .page-template-front-page #primary {
   margin: 0;
   padding: 0;
 }
-/* line 39, sass/page-templates/_frontpage.scss */
+/* line 35, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary {
   display: none;
 }
@@ -2351,38 +2381,38 @@ ol.carousel-nav li.active a:hover {
 .page-template-front-page #frontpage-secondary a:active {
   color: #81bc00;
 }
-/* line 43, sass/page-templates/_frontpage.scss */
+/* line 39, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary a {
   text-decoration: none;
   font-family: "SourceSansPro-Bold";
 }
-/* line 48, sass/page-templates/_frontpage.scss */
+/* line 44, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary .cert-link-wrapper {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 58, sass/page-templates/_frontpage.scss */
+/* line 54, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box {
   position: relative;
   text-align: center;
   background-color: #000;
 }
-/* line 63, sass/page-templates/_frontpage.scss */
+/* line 59, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 67, sass/page-templates/_frontpage.scss */
+/* line 63, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a:hover img {
   opacity: 1;
 }
-/* line 71, sass/page-templates/_frontpage.scss */
+/* line 67, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box a:hover span {
   opacity: 0;
   padding-top: 1em;
 }
-/* line 77, sass/page-templates/_frontpage.scss */
+/* line 73, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box img {
   display: block;
   opacity: .6;
@@ -2390,7 +2420,7 @@ ol.carousel-nav li.active a:hover {
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
-/* line 84, sass/page-templates/_frontpage.scss */
+/* line 80, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-wrapper {
   display: block;
   position: absolute;
@@ -2405,56 +2435,68 @@ ol.carousel-nav li.active a:hover {
   -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
-/* line 98, sass/page-templates/_frontpage.scss */
+/* line 94, sass/page-templates/_frontpage.scss */
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
   color: #FFF;
   font-size: 1.6em;
   font-family: "SourceSansPro-Regular";
 }
 @media (min-width: 450px) {
-  /* line 107, sass/page-templates/_frontpage.scss */
+  /* line 103, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 }
 @media (min-width: 575px) {
-  /* line 56, sass/page-templates/_frontpage.scss */
+  /* line 52, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  /* line 118, sass/page-templates/_frontpage.scss */
+  /* line 113, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 0%;
-            flex: 1 1 0%;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  /* line 116, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-wrapper {
+    right: 10%;
+    left: 10%;
   }
   /* line 121, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
-    font-size: 1em;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 700px) {
+  /* line 130, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-wrapper {
+    right: 10%;
+    left: 10%;
+  }
+  /* line 135, sass/page-templates/_frontpage.scss */
+  .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
+    font-size: 1.4em;
   }
 }
 @media (min-width: 750px) {
-  /* line 129, sass/page-templates/_frontpage.scss */
+  /* line 149, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 @media (min-width: 950px) {
-  /* line 137, sass/page-templates/_frontpage.scss */
+  /* line 157, sass/page-templates/_frontpage.scss */
   .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
     font-size: 1.7em;
   }
 }
 @media (min-width: 950px) {
-  /* line 163, sass/page-templates/_frontpage.scss */
+  /* line 183, sass/page-templates/_frontpage.scss */
   .page-template-front-page .site-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2468,31 +2510,31 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 170, sass/page-templates/_frontpage.scss */
+  /* line 190, sass/page-templates/_frontpage.scss */
   .page-template-front-page #primary {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
     padding-right: 2em;
   }
-  /* line 175, sass/page-templates/_frontpage.scss */
+  /* line 195, sass/page-templates/_frontpage.scss */
   .page-template-front-page #frontpage-secondary {
     display: block;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 179, sass/page-templates/_frontpage.scss */
+  /* line 199, sass/page-templates/_frontpage.scss */
   .page-template-front-page #frontpage-secondary .image-wrapper {
     width: 300px;
   }
-  /* line 182, sass/page-templates/_frontpage.scss */
+  /* line 202, sass/page-templates/_frontpage.scss */
   .page-template-front-page #frontpage-secondary .image-wrapper img {
     width: 300px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 191, sass/page-templates/_frontpage.scss */
+  /* line 211, sass/page-templates/_frontpage.scss */
   .page-template-front-page #primary {
     -webkit-box-flex: 3;
         -ms-flex: 3;

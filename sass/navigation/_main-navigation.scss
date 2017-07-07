@@ -73,7 +73,7 @@
     }
   }
 
-  @include respond-to(tablet) {
+  @include respond-to(medium) {
     text-align: center;
 
     .site-branding {
@@ -84,7 +84,7 @@
       z-index: 30000;
 
       svg {
-        width: 170px;
+        width: 190px !important;
       }
     }
 
@@ -95,11 +95,14 @@
         @include reset;
         position: absolute;
         z-index: 50000;
-        width: 135px;
+        width: 150px;
         background-color: $color__brand-1;
-        font-size: 1.2em;
-        top: 22em;
+        top: 24em;
         left: 4em;
+
+        span {
+          font-size: .8em;
+        }
       }
 
       #mobile-toggle {
@@ -109,6 +112,13 @@
 
     .home-desktop-navigation {
       display: block;
+      ul {
+        li {
+          a {
+            font-size: 1em;
+          }
+        }
+      }
     }
   }
 
@@ -116,30 +126,30 @@
 
     .site-branding {
       svg {
-        width: 200px;
-        margin-left: 20px;
+        width: 220px !important;
+        // margin-left: 20px;
       }
     }
 
     .mobile-menu-wrapper {
       .call-btn {
-        width: 155px;
-        font-size: 1.2em;
-        top: 25em;
-        left: 5em;
+        width: 175px;
+        font-size: 1.1em;
+        top: 26em;
+        left: 3.5em;
       }
     }
 
     .home-desktop-navigation {
-      width: 300px;
+      width: 250px;
       height: 600px;
 
       ul {
-
+          margin-top: 9em;
         li {
 
           a {
-            font-size: 1.4em;
+            font-size: 1.3em;
           }
         }
       }
