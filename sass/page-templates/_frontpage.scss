@@ -43,7 +43,9 @@
   }
 
   .site-content-wrapper {
-    @include container;
+    // @include container;
+    max-width: 1400px;
+    margin: 0 auto;
     @include padding-left-right;
     @include section-padding;
   }

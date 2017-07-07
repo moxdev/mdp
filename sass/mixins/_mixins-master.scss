@@ -91,7 +91,7 @@
 }
 
 @mixin font-smooth {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    // text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -100,16 +100,6 @@
 @mixin section-padding {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-
-    @include respond-to(medium) {
-        padding-top: 3em;
-        padding-bottom: 3em;
-    }
-
-    @include respond-to(large) {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-    }
 }
 
 // Clearfix
