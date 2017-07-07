@@ -175,13 +175,57 @@ ol.carousel-nav li.active a:hover {
   }
 
   #home-carousel span {
+    max-width: 650px;
     font-size:4em;
-    left:6em;
+    top: 3.6em;
+    left:5em;
     right: 2em;
     padding-right: 0;
   }
 
   #home-carousel ol {
+    left:20.5em;
+  }
+}
+
+@include respond-to(x-large) {
+  #home-carousel {
+    min-height:700px;
+  }
+
+  #home-carousel span {
+    max-width: 725px;
+    font-size:4em;
+    top: 4em;
+    left:5em;
+    right: 2em;
+    padding-right: 0;
+  }
+
+  #home-carousel ol {
+    left:20.5em;
+    bottom: 5em;
+  }
+}
+
+@include respond-to(xx-large) {
+
+  #home-carousel span {
+    left:6em;
+  }
+
+  #home-carousel ol {
     left:24.5em;
+  }
+}
+
+@include respond-to(mdx-large) {
+
+  #home-carousel span {
+    left:7em;
+  }
+
+  #home-carousel ol {
+    left:28.5em;
   }
 }

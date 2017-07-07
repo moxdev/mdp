@@ -8,7 +8,7 @@
     @include container;
     @include padding-left-right;
     @include section-padding;
-    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg');
+    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/frt-bkg-2500x2500.svg');
     background-repeat: no-repeat;
     background-size: 400%;
     background-position: -180px -72px;
@@ -23,9 +23,23 @@
       background-position: -78px -187px;
     }
 
-    @media (min-width:1100px) {
-      background-position: -78px -218px;
+    @include respond-to(medium) {
+      background-position: -78px -74px;
     }
+
+    @include respond-to(large) {
+
+      background-position: -155px -230px;
+    }
+
+    @include respond-to(x-large) {
+      // background-size: 300%;
+      background-position: 245px -230px;
+    }
+
+    // @media (min-width:1100px) {
+    //   background-position: -78px -74px;
+    // }
   }
 
   #primary {
@@ -210,6 +224,50 @@
 
     #primary {
       flex: 3;
+      padding-right: 3em;
+    }
+  }
+
+  @include respond-to(x-large) {
+    .site-content-wrapper {
+      @include xl-container;
+    }
+
+    #primary {
+      flex: 4;
+      padding-right: 3em;
+    }
+  }
+
+  @include respond-to(xx-large) {
+    .site-content-wrapper {
+      @include xxl-container;
+    }
+
+    #primary {
+      flex: 4;
+      padding-right: 3em;
+    }
+  }
+
+  @include respond-to(xxx-large) {
+    .site-content-wrapper {
+      @include xxxl-container;
+    }
+
+    #primary {
+      flex: 4;
+      padding-right: 3em;
+    }
+  }
+
+  @include respond-to(xxxx-large) {
+    .site-content-wrapper {
+      @include xxxxl-container;
+    }
+
+    #primary {
+      flex: 4;
       padding-right: 3em;
     }
   }

@@ -123,6 +123,7 @@
   }
 
   @include respond-to(large) {
+    // @include container;
 
     .site-branding {
       svg {
@@ -153,6 +154,78 @@
           }
         }
       }
+    }
+  }
+
+  @include respond-to(x-large) {
+
+    .site-branding {
+      svg {
+        width: 230px !important;
+        // margin-left: 20px;
+      }
+    }
+
+    .mobile-menu-wrapper {
+      .call-btn {
+        width: 175px;
+        font-size: 1.1em;
+        top: 28em;
+        left: 4em;
+      }
+    }
+
+    .home-desktop-navigation {
+      width: 275px;
+      height: 700px;
+
+      ul {
+          margin-top: 9em;
+        li {
+
+          a {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to(xx-large) {
+
+    .site-branding {
+      svg {
+        margin-left: 50px;
+      }
+    }
+
+    .mobile-menu-wrapper {
+      .call-btn {
+        left: 6em;
+      }
+    }
+
+    .home-desktop-navigation {
+      margin-left: 4em;
+    }
+  }
+
+  @include respond-to(mdx-large) {
+
+    .site-branding {
+      svg {
+        margin-left: 120px;
+      }
+    }
+
+    .mobile-menu-wrapper {
+      .call-btn {
+        left: 9.5em;
+      }
+    }
+
+    .home-desktop-navigation {
+      margin-left: 8em;
     }
   }
 }

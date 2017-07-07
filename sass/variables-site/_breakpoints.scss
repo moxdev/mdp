@@ -8,8 +8,12 @@ $breakpoints: (
   'x-large'   : ( min-width: 1490px ),
   'xx-large'  : ( min-width: 1890px ),
   'mdx-large' : ( min-width: 2000px ),
-  'xxx-large' : ( min-width: 2200px )
+  'xxx-large' : ( min-width: 2200px ),
+  'xxxx-large' : ( min-width: 2400px )
 );
 
 $width_max-content-width: 1200px;
-$width_max-content-width-lg: 1500px;
+$width_max-content-width-xlg: 1500px;
+$width_max-content-width-xxlg: 1800px;
+$width_max-content-width-xxxlg: 2000px;
+$width_max-content-width-xxxxlg: 2200px;
