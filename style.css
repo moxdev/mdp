@@ -739,31 +739,31 @@ textarea {
   padding: 1em;
   position: relative;
 }
-/* line 10, sass/navigation/_masthead.scss */
+/* line 9, sass/navigation/_masthead.scss */
 #masthead a[rel="home"] {
   display: table;
 }
-/* line 14, sass/navigation/_masthead.scss */
+/* line 13, sass/navigation/_masthead.scss */
 #masthead svg {
   display: block;
   width: 140px;
   height: auto;
 }
 @media (min-width: 450px) {
-  /* line 14, sass/navigation/_masthead.scss */
+  /* line 13, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 160px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 14, sass/navigation/_masthead.scss */
+  /* line 13, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 200px;
     padding-bottom: 14px;
   }
 }
 @media (min-width: 1490px) {
-  /* line 14, sass/navigation/_masthead.scss */
+  /* line 13, sass/navigation/_masthead.scss */
   #masthead svg {
     width: 220px;
     padding-bottom: 14px;
@@ -3011,44 +3011,204 @@ ol.carousel-nav li.active a:hover {
 /*--------------------------------------------------------------
 ## About Us Page Template
 --------------------------------------------------------------*/
-/* line 3, sass/page-templates/_about-us-page.scss */
+/* line 9, sass/page-templates/_about-us-page.scss */
+.page-template-page-about .site-content #primary {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: -12px 0px;
+}
+@media (min-width: 750px) {
+  /* line 9, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content #primary {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media (min-width: 950px) {
+  /* line 9, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content #primary {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 9, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content #primary {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+@media (min-width: 575px) {
+  /* line 20, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content .site-content-wrapper {
+    background-position: -71px -60px;
+  }
+  /* line 25, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content .drill-page-sidebar .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 950px) {
+  /* line 32, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content .site-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  /* line 37, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content #primary {
+    padding-bottom: 0;
+    max-width: 800px;
+  }
+  /* line 43, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content .drill-page-sidebar .wrapper {
+    display: block;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 50, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content #primary {
+    background-size: 110%;
+    background-position: -160px -60px;
+    padding-top: 3em;
+  }
+}
+@media (min-width: 1490px) {
+  /* line 58, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content #primary {
+    max-width: 1200px;
+    padding-left: 11em;
+    background-size: 100%;
+    background-position: -47px -113px;
+  }
+}
+@media (min-width: 1890px) {
+  /* line 67, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .site-content #primary {
+    padding-left: 14em;
+    background-size: 90%;
+    background-position: -47px -113px;
+  }
+}
+/* line 75, sass/page-templates/_about-us-page.scss */
 .page-template-page-about .certification-section {
   background-color: #fff;
 }
-/* line 6, sass/page-templates/_about-us-page.scss */
+/* line 78, sass/page-templates/_about-us-page.scss */
 .page-template-page-about .certification-section .certification-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 @media (min-width: 750px) {
-  /* line 6, sass/page-templates/_about-us-page.scss */
+  /* line 78, sass/page-templates/_about-us-page.scss */
   .page-template-page-about .certification-section .certification-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
 @media (min-width: 950px) {
-  /* line 6, sass/page-templates/_about-us-page.scss */
+  /* line 78, sass/page-templates/_about-us-page.scss */
   .page-template-page-about .certification-section .certification-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 6, sass/page-templates/_about-us-page.scss */
+  /* line 78, sass/page-templates/_about-us-page.scss */
   .page-template-page-about .certification-section .certification-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 10, sass/page-templates/_about-us-page.scss */
+/* line 83, sass/page-templates/_about-us-page.scss */
 .page-template-page-about .certification-section .certification-wrapper h3 {
   font-family: "SourceSansPro-Bold";
   margin: 0;
   padding: 0;
   margin-bottom: .2em;
+}
+/* line 89, sass/page-templates/_about-us-page.scss */
+.page-template-page-about .certification-section .certification-wrapper .certification-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media (min-width: 950px) {
+  /* line 89, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper .certification-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 89, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper .certification-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+/* line 93, sass/page-templates/_about-us-page.scss */
+.page-template-page-about .certification-section .certification-wrapper .cert-image-wrapper {
+  margin-bottom: 1em;
+}
+@media (min-width: 575px) {
+  /* line 98, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper .cert-image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 103, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper .cert-image-wrapper .image-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 750px) {
+  /* line 122, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper .cert-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 126, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper .col-1,
+  .page-template-page-about .certification-section .certification-wrapper .col-2,
+  .page-template-page-about .certification-section .certification-wrapper .col-3 {
+    padding: 0 .5em;
+  }
+}
+@media (min-width: 1490px) {
+  /* line 78, sass/page-templates/_about-us-page.scss */
+  .page-template-page-about .certification-section .certification-wrapper {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

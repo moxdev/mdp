@@ -1,9 +1,82 @@
 .page-template-page-about {
 
+  .site-content {
+
+    .site-content-wrapper {
+
+    }
+
+    #primary {
+      @include margin-auto;
+      @include padding-left-right;
+      @include section-padding;
+      background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg');
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-position: -12px 0px;
+    }
+
+    @include respond-to(med-small) {
+      .site-content-wrapper {
+        background-position: -71px -60px;
+      }
+
+      .drill-page-sidebar {
+        .wrapper {
+          display: flex;
+        }
+      }
+    }
+
+    @include respond-to(medium) {
+      .site-content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+      }
+      #primary {
+        padding-bottom: 0;
+        max-width: 800px;
+      }
+
+      .drill-page-sidebar {
+        .wrapper {
+          display: block;
+        }
+      }
+    }
+
+    @include respond-to(large) {
+      #primary {
+        background-size: 110%;
+        background-position: -160px -60px;
+        padding-top: 3em;
+      }
+    }
+
+    @include respond-to(x-large) {
+      #primary {
+        max-width: 1200px;
+        padding-left: 11em;
+        background-size: 100%;
+        background-position: -47px -113px;
+      }
+    }
+
+    @include respond-to(xx-large) {
+      #primary {
+        padding-left: 14em;
+        background-size: 90%;
+        background-position: -47px -113px;
+      }
+    }
+  }
+
   .certification-section {
     background-color: #fff;
 
     .certification-wrapper {
+      @include container;
       @include padding-left-right;
       @include section-padding;
 
@@ -13,15 +86,52 @@
         margin-bottom: .2em;
       }
 
-      .col-1 {
-
+      .certification-wrapper {
+        @include section-padding;
       }
 
-      .col-2 {
-
+      .cert-image-wrapper {
+        margin-bottom: 1em;
       }
 
-      .col-3 {
+      @include respond-to(med-small) {
+        .cert-image-wrapper {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .image-wrapper {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+
+        }
+      }
+
+      @include respond-to(tablet) {
+        // .cert-image-wrapper {
+        //   display: flex;
+        //   justify-content: space-between;
+        //   align-items: center;
+
+        //   .image-wrapper {
+        //     padding-left: 10px;
+        //     padding-right: 10px;
+        //   }
+        // }
+        .cert-content-wrapper {
+          display: flex;
+        }
+
+        .col-1,
+        .col-2,
+        .col-3 {
+          padding: 0 .5em;
+        }
+      }
+
+      @include respond-to(x-large) {
+        @include xl-container;
 
       }
     }

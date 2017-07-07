@@ -44,6 +44,7 @@ function md_partitions_setup() {
 		add_image_size('home-highlight', 475, 430, true);
 		add_image_size( 'drill-page-sidebar', 1250, 750, true );
 		add_image_size( 'product-image', 300, 300, true );
+		add_image_size( 'certification-image', 500, 9999, false );
 		add_image_size( 'featured-project-image', 300, 300, true );
 		add_image_size( 'callout-image', 300, 9999, false );
 	// add_image_size( 'frontpage-highlight', 500, 500, true );
