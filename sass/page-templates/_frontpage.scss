@@ -2,15 +2,9 @@
 
   .site-content {
     background-color: #fff;
-  }
-
-  .site-content-wrapper {
-    @include container;
-    @include padding-left-right;
-    @include section-padding;
-    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/frt-bkg-2500x2500.svg');
+    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg');
     background-repeat: no-repeat;
-    background-size: 400%;
+    background-size: 500%;
     background-position: -180px -72px;
     margin-bottom: -20px;
 
@@ -20,7 +14,7 @@
 
     @include respond-to(tablet) {
       background-size: 400%;
-      background-position: -78px -187px;
+      background-position: -217px -187px;
     }
 
     @include respond-to(medium) {
@@ -33,13 +27,25 @@
     }
 
     @include respond-to(x-large) {
-      // background-size: 300%;
+      background-size: 300%;
       background-position: 245px -230px;
     }
 
-    // @media (min-width:1100px) {
-    //   background-position: -78px -74px;
-    // }
+    @include respond-to(xx-large) {
+      background-size: 200%;
+      background-position: 245px -330px;
+    }
+
+    @include respond-to(xxx-large) {
+      // background-size: 200%;
+      background-position: 245px -430px;
+    }
+  }
+
+  .site-content-wrapper {
+    @include container;
+    @include padding-left-right;
+    @include section-padding;
   }
 
   #primary {
@@ -57,6 +63,11 @@
 
     .cert-link-wrapper {
       width: 200px;
+      @include margin-auto;
+      line-height: 1.2;
+    }
+
+    .image-wrapper {
       @include margin-auto;
     }
   }
@@ -217,6 +228,10 @@
           width: 300px;
         }
       }
+
+      a {
+        font-size: 1.2em;
+      }
     }
   }
 
@@ -234,8 +249,27 @@
     }
 
     #primary {
-      flex: 4;
+      flex: 3;
       padding-right: 3em;
+    }
+
+    #frontpage-secondary {
+      .image-wrapper {
+        width: 350px;
+
+        img {
+          width: 350px;
+        }
+      }
+
+      a {
+        font-size: 1.3em;
+      }
+
+      .cert-link-wrapper {
+        width: 250px;
+        line-height: 1.1;
+      }
     }
   }
 
@@ -245,8 +279,14 @@
     }
 
     #primary {
-      flex: 4;
+      flex: 2;
       padding-right: 3em;
+    }
+  }
+
+  @include respond-to(xx-large) {
+    #primary {
+      padding-right: 0;
     }
   }
 
@@ -254,21 +294,11 @@
     .site-content-wrapper {
       @include xxxl-container;
     }
-
-    #primary {
-      flex: 4;
-      padding-right: 3em;
-    }
   }
 
   @include respond-to(xxxx-large) {
     .site-content-wrapper {
       @include xxxxl-container;
-    }
-
-    #primary {
-      flex: 4;
-      padding-right: 3em;
     }
   }
 }
