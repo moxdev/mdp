@@ -2,15 +2,11 @@
 
   .site-content {
     background-color: #fff;
-    background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/front-background-lines.svg');
+    background-image: url('/wp-content/themes/md_partitions/img/front-background-lines.svg');
     background-repeat: no-repeat;
     background-size: 500%;
     background-position: -180px -72px;
     margin-bottom: -20px;
-
-    @include respond-to(med-small) {
-      // background-size: 300%;
-    }
 
     @include respond-to(tablet) {
       background-size: 400%;
@@ -37,13 +33,11 @@
     }
 
     @include respond-to(xxx-large) {
-      // background-size: 200%;
       background-position: 245px -430px;
     }
   }
 
   .site-content-wrapper {
-    // @include container;
     max-width: 1400px;
     margin: 0 auto;
     @include padding-left-right;

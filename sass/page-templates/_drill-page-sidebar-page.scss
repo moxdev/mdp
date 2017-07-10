@@ -52,6 +52,7 @@
     background-color: #fff;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid #fff;
 
     .products {
       @include container;
@@ -76,8 +77,10 @@
     }
 
     .callout-section {
-      background-color: #000;
+      background-color: $color__brand-3;
       color: #fff;
+
+      @include linx($color__brand-1, $color__brand-1, $color__brand-1, $color__brand-1);
 
       a {
         text-decoration: none;
@@ -187,9 +190,5 @@
         }
       }
     }
-  }
-
-  .site-footer {
-    border-top: 1px solid #fff;
   }
 }
