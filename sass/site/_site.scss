@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: -126px -53px;
-    // background-position: center center;
   }
 
   #primary {
@@ -33,14 +32,12 @@
 
   @include respond-to(tablet) {
     .site-content-wrapper {
-      // background-position: -30px -60px;
       min-height: 300px;
     }
   }
 
   @include respond-to(medium) {
     .site-content-wrapper {
-      // background-position: -30px -60px;
       min-height: 300px;
     }
   }
@@ -55,52 +52,8 @@
   @include respond-to(x-large) {
     .site-content-wrapper {
       background-position: center right;
-      // background-attachment:
     }
   }
-
-  // @include respond-to(medium) {
-  //   .site-content-wrapper {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: stretch;
-  //   }
-  //   #primary {
-  //     padding-bottom: 0;
-  //     max-width: 800px;
-  //   }
-
-  //   .drill-page-sidebar {
-  //     .wrapper {
-  //       display: block;
-  //     }
-  //   }
-  // }
-
-  // @include respond-to(large) {
-  //   #primary {
-  //     background-size: 110%;
-  //     background-position: -160px -60px;
-  //     padding-top: 3em;
-  //   }
-  // }
-
-  // @include respond-to(x-large) {
-  //   #primary {
-  //     max-width: 1200px;
-  //     padding-left: 11em;
-  //     background-size: 100%;
-  //     background-position: -47px -113px;
-  //   }
-  // }
-
-  // @include respond-to(xx-large) {
-  //   #primary {
-  //     padding-left: 14em;
-  //     background-size: 90%;
-  //     background-position: -47px -113px;
-  //   }
-  // }
 }
 
 /*--------------------------------------------------------------

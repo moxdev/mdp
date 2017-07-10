@@ -1,23 +1,19 @@
-var activeClass = 'active';
-var btn = document.querySelector('#mobile-toggle');
-var nav = document.querySelector('#mobile-navigation');
+(function() {
+	var x = 0;
+	var btn = document.getElementById('mobile-toggle');
+	var nav = document.getElementById('mobile-navigation');
 
-btn.addEventListener('click', function() {
-	if(this.classList.contains(activeClass)) {
-		this.classList.remove(activeClass);
-		this.setAttribute( 'aria-expanded', 'false' );
-
-		nav.style.height = 0;
-		nav.setAttribute( 'aria-expanded', 'false' );
-		setTimeout(function() {
-			nav.classList.remove(activeClass);
-		}, 500);
-	} else {
-		this.classList.add(activeClass);
-		this.setAttribute( 'aria-expanded', 'true' );
-
-		nav.classList.add(activeClass);
-		nav.setAttribute( 'aria-expanded', 'true' );
-		nav.style.height = (nav.scrollHeight + 10) + 'px';
-	}
-});
+	btn.addEventListener('click', function() {
+		if(x === 0) {
+			nav.classList.add('active');
+			nav.setAttribute('aria-expanded', 'true');
+			this.setAttribute('aria-expanded', 'true');
+			x = 1;
+		} else {
+			nav.classList.remove('active');
+			nav.setAttribute('aria-expanded', 'false');
+			this.setAttribute('aria-expanded', 'false');
+			x = 0;
+		}
+	});
+})();

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em;
 
   .alt-site-branding {
     display: inline-block;
@@ -113,6 +114,17 @@
 
       ul {
         @include reset;
+      }
+    }
+  }
+
+  @media screen and (min-width:1300px) {
+    #alt-navigation {
+
+      ul {
+        li {
+          margin-right: 10px;
+        }
       }
     }
   }
