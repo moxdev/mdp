@@ -13,7 +13,7 @@
       background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/alt-background-lines.svg');
       background-repeat: no-repeat;
       background-size: 150%;
-      background-position: -12px 0px;
+      background-position: -80px -38px;
     }
 
     @include respond-to(med-small) {
@@ -37,6 +37,8 @@
       #primary {
         padding-bottom: 0;
         max-width: 800px;
+        background-size: 150% !important;
+        background-position: -73px 6px;
       }
 
       .drill-page-sidebar {
