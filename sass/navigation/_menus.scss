@@ -1,4 +1,4 @@
-.main-navigation {
+#main-navigation.home-desktop-menu {
   ul {
     @include linx($color__brand-1,$color__brand-1,$color__brand-1,$color__brand-1); // remove when finished
   }

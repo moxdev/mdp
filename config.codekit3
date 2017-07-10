@@ -280,6 +280,12 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
+	"\/header-copy.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header-copy.php",
+		"oF": 0
+		},
 	"\/header.php": {
 		"ft": 8192,
 		"oA": 2,

@@ -1,23 +1,23 @@
 // Alt Page Nav Styles
 
-.alt-nav-wrapper {
+.main-nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
 
-  .alt-site-branding {
+  .site-branding {
     display: inline-block;
   }
 
-  .alt-mobile-menu-wrapper {
+  .mobile-menu-wrapper {
     text-align: center;
     @include linx(#fff, #fff, #fff, #fff);
 
     a span, button span {
       font-size: .9em;
-
       @include respond-to(med-small) {
+
         font-size: 1em;
       }
     }
@@ -26,7 +26,7 @@
       @include skew($side: left, $bg: $color__brand-1, $deg: -20deg, $left: -28px, $width: 100px);
     }
 
-    .alt-call-btn {
+    .call-btn {
       display: block;
       width: 105px;
       color: #fff;
@@ -48,7 +48,7 @@
     }
   }
 
-  #alt-navigation {
+  #main-navigation {
     z-index: 20;
     display: none;
     background-color: $color__brand-1;
@@ -80,11 +80,11 @@
   }
 
   @include respond-to(small) {
-    .alt-mobile-menu-wrapper {
+    .mobile-menu-wrapper {
       a {
         font-size: 1em;
       }
-      .alt-call-btn {
+      .call-btn {
         width: 130px;
       }
 
@@ -101,18 +101,18 @@
   @include respond-to(medium) {
     padding: 1em 0 0 1em;
 
-    .alt-mobile-menu-wrapper {
+    .mobile-menu-wrapper {
       #mobile-toggle {
         display: none;
       }
 
-      .alt-call-btn {
+      .call-btn {
         width: 175px;
         margin-right: 20px;
       }
     }
 
-    #alt-navigation {
+    #main-navigation {
       display: inline-flex;
       padding: 8px 0;
       margin-top: 25px;
@@ -124,16 +124,16 @@
   }
 
   @include respond-to(large) {
-    .alt-mobile-menu-wrapper {
+    .mobile-menu-wrapper {
       a {
         font-size: 1.1em;
       }
-      .alt-call-btn {
+      .call-btn {
         width: 200px;
       }
     }
 
-    #alt-navigation {
+    #main-navigation {
       padding: 10px 0;
       margin-top: 25px;
       ul {
@@ -147,12 +147,12 @@
   }
 
   @media screen and (min-width:1300px) {
-    .alt-mobile-menu-wrapper {
-      .alt-call-btn {
+    .mobile-menu-wrapper {
+      .call-btn {
         margin-right: 30px;
       }
     }
-    #alt-navigation {
+    #main-navigation {
 
       ul {
         li {
