@@ -1491,28 +1491,23 @@ textarea {
 @media (min-width: 950px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    width: 750px;
+    width: 420px;
+    max-width: 750px;
   }
 }
 @media (min-width: 1190px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    width: 400px;
-  }
-}
-@media (min-width: 1490px) {
-  /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
-  #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    width: 475px;
+    width: 550px;
   }
 }
 @media (min-width: 1890px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    width: 450px;
+    width: 550px;
   }
 }
-/* line 46, sass/site/secondary/_drill-page-sidebar.scss */
+/* line 47, sass/site/secondary/_drill-page-sidebar.scss */
 #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
   display: block;
   position: absolute;
@@ -1526,7 +1521,7 @@ textarea {
   line-height: 1;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
-/* line 59, sass/site/secondary/_drill-page-sidebar.scss */
+/* line 60, sass/site/secondary/_drill-page-sidebar.scss */
 #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
   color: #FFF;
   font-size: 1.8em;
@@ -1534,41 +1529,41 @@ textarea {
   text-shadow: 2px 2px 4px black;
 }
 @media (min-width: 450px) {
-  /* line 46, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 47, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
     right: 20%;
     left: 20%;
   }
-  /* line 78, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 79, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
     font-size: 2.3em;
   }
 }
 @media (min-width: 575px) {
-  /* line 46, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 47, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
     padding: 10px 0;
     right: 15%;
     left: 15%;
   }
-  /* line 87, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 88, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
     font-size: 1.8em;
   }
 }
 @media (min-width: 750px) {
-  /* line 46, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 47, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper {
     right: 20%;
     left: 20%;
   }
-  /* line 96, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 97, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
     font-size: 1.9em;
   }
 }
 @media (min-width: 1490px) {
-  /* line 105, sass/site/secondary/_drill-page-sidebar.scss */
+  /* line 106, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
     font-size: 1.8em;
   }
@@ -2900,24 +2895,32 @@ ol.carousel-nav li.active a:hover {
 @media (min-width: 1490px) {
   /* line 38, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .site-content #primary {
-    max-width: 1200px;
+    max-width: 1000px;
     padding-left: 8em;
   }
 }
-@media (min-width: 1890px) {
+@media screen and (min-width: 1620px) {
   /* line 45, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .site-content #primary {
-    padding-left: 14em;
+    max-width: 1200px;
+    padding-left: 10em;
   }
 }
-/* line 51, sass/page-templates/_drill-page-sidebar-page.scss */
+@media (min-width: 1890px) {
+  /* line 52, sass/page-templates/_drill-page-sidebar-page.scss */
+  .page-template-page-drill-page-sidebar .site-content #primary {
+    padding-left: 20em;
+    padding-right: 4em;
+  }
+}
+/* line 59, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section {
   background-color: #fff;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #fff;
 }
-/* line 57, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 65, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .products {
   max-width: 1400px;
   margin-left: auto;
@@ -2928,29 +2931,29 @@ ol.carousel-nav li.active a:hover {
   padding-right: 1.75rem;
 }
 @media (min-width: 750px) {
-  /* line 57, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 65, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 63, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 71, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper {
   padding-bottom: 1.5em;
 }
-/* line 66, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 74, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper {
   text-align: center;
 }
-/* line 69, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 77, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
   max-width: 200px;
 }
-/* line 74, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 82, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .product-wrapper .price {
   color: #81bc00;
 }
-/* line 79, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 87, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section {
   background-color: #111111;
   color: #fff;
@@ -2971,7 +2974,7 @@ ol.carousel-nav li.active a:hover {
 .page-template-page-drill-page-sidebar .product-section .callout-section a:active {
   color: #81bc00;
 }
-/* line 85, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 93, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section a {
   text-decoration: none;
   font-family: "SourceSansPro-Bold";
@@ -2979,7 +2982,7 @@ ol.carousel-nav li.active a:hover {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.5em;
 }
-/* line 92, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 100, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
   max-width: 1400px;
   margin-left: auto;
@@ -2990,22 +2993,22 @@ ol.carousel-nav li.active a:hover {
   padding-right: 1.75rem;
 }
 @media (min-width: 750px) {
-  /* line 92, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 100, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 97, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 105, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper {
   text-align: center;
 }
-/* line 100, sass/page-templates/_drill-page-sidebar-page.scss */
+/* line 108, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
   max-width: 200px;
 }
 @media (min-width: 750px) {
-  /* line 92, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 100, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3014,18 +3017,18 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 110, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 118, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper {
     text-align: left;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 113, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 121, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
     max-width: 200px;
   }
-  /* line 118, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 126, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .content-wrapper {
     -webkit-box-flex: 2;
         -ms-flex: 2;
@@ -3034,24 +3037,24 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 950px) {
-  /* line 128, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 136, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .image-wrapper img {
     max-width: 300px;
   }
-  /* line 133, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 141, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper .content-wrapper {
     padding-left: 3em;
   }
 }
 @media (min-width: 1190px) {
-  /* line 92, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 100, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .callout-section .callout-wrapper {
     padding-top: 2em;
     padding-bottom: 2em;
   }
 }
 @media (min-width: 575px) {
-  /* line 148, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 156, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3064,7 +3067,7 @@ ol.carousel-nav li.active a:hover {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
-  /* line 156, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 164, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45%;
@@ -3072,13 +3075,13 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 750px) {
-  /* line 162, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 170, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .products {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  /* line 166, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 174, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.33%;
@@ -3088,13 +3091,13 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 950px) {
-  /* line 177, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 185, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
     max-width: 250px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 187, sass/page-templates/_drill-page-sidebar-page.scss */
+  /* line 195, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .product-section .product-wrapper .image-wrapper img {
     max-width: 300px;
   }

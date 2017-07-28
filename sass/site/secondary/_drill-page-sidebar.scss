@@ -27,19 +27,20 @@
         transition:opacity .5s ease-in-out;
 
         @include respond-to(medium) {
-          width: 750px;
+          width: 420px;
+          max-width: 750px;
         }
 
         @include respond-to(large) {
-          width: 400px;
+          width: 550px;
         }
 
         @include respond-to(x-large) {
-          width: 475px;
+          // width: 475px;
         }
 
         @include respond-to(xx-large) {
-          width: 450px;
+          width: 550px;
         }
       }
 
