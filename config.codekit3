@@ -7,7 +7,7 @@
 		"uuidString": "95435921-6443-456F-BEA0-8E4A03AA1032"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/*notes\/*notes.md": {
 		"cS": 0,
@@ -125,40 +125,6 @@
 		"oAP": "\/custom-editor-style-min.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/fonts\/SourceSansPro-BlackIt.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.eot",
-		"oF": 0
-		},
-	"\/fonts\/SourceSansPro-BlackIt.otf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.otf",
-		"oF": 0
-		},
-	"\/fonts\/SourceSansPro-BlackIt.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/SourceSansPro-BlackIt.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.ttf",
-		"oF": 0
-		},
-	"\/fonts\/SourceSansPro-BlackIt.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.woff",
-		"oF": 0
 		},
 	"\/fonts\/SourceSansPro-Bold.eot": {
 		"ft": 8192,
@@ -802,288 +768,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_about-us-page.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_about-us-page.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar-page.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar-page.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_frontpage.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_frontpage.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_page-templates.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_page-templates.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_projects-page.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_projects-page.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/17d65a8786232e57a2c60018cf64c3993beb5ee9\/_site.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/17d65a8786232e57a2c60018cf64c3993beb5ee9\/_site.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/1ca588c6e84bd72c1190dbcd4236ba8e81e86978\/_copy.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/1ca588c6e84bd72c1190dbcd4236ba8e81e86978\/_copy.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/1ca588c6e84bd72c1190dbcd4236ba8e81e86978\/_headings.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/1ca588c6e84bd72c1190dbcd4236ba8e81e86978\/_headings.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/1ca588c6e84bd72c1190dbcd4236ba8e81e86978\/_typography.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/1ca588c6e84bd72c1190dbcd4236ba8e81e86978\/_typography.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_alt-navigation.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_alt-navigation.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_frontpage-desktop-navigation.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_frontpage-desktop-navigation.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_links.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_links.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_main-navigation.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_main-navigation.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_masthead.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_masthead.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_menus.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_menus.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_mobile-navigation.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_mobile-navigation.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_navigation.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_navigation.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_elements.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_elements.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_links.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_links.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_lists.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_lists.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_tables.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40cec68262dfb242d1856472cdc7170ada655bc4\/_tables.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_captions.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_captions.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_galleries.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_galleries.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_lightbox.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_lightbox.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_media.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/5f62d38e81876899933535082c179920910b65ce\/_media.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/8013916d5c39a3893a7a35a9db2a43f01808a0a7\/_mixins-master.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/8013916d5c39a3893a7a35a9db2a43f01808a0a7\/_mixins-master.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_accessibility.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_accessibility.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_alignments.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_alignments.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_clearings.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_clearings.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_home-carousel.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_home-carousel.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_infinite-scroll.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/8498d4da4af3ed8d03aa793d7f6289469cc58b3c\/_infinite-scroll.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/951a72456a3ca0f5967a62c39c0824647023799e\/_comments.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/951a72456a3ca0f5967a62c39c0824647023799e\/_comments.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/951a72456a3ca0f5967a62c39c0824647023799e\/_posts-and-pages.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/951a72456a3ca0f5967a62c39c0824647023799e\/_posts-and-pages.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/aa10aa2a84a8a1144c83bad480df82a1741c12af\/_normalize.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/aa10aa2a84a8a1144c83bad480df82a1741c12af\/_normalize.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/aa10aa2a84a8a1144c83bad480df82a1741c12af\/style.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/.sass-cache\/aa10aa2a84a8a1144c83bad480df82a1741c12af\/style.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/addb5f35eabbafb450055e88e1f83f2caa7d580a\/_drill-page-sidebar.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/addb5f35eabbafb450055e88e1f83f2caa7d580a\/_drill-page-sidebar.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/addb5f35eabbafb450055e88e1f83f2caa7d580a\/_widgets.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/addb5f35eabbafb450055e88e1f83f2caa7d580a\/_widgets.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/d4cd715c5a8579eca4179a7d083a74389e2e0c52\/_footer.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/d4cd715c5a8579eca4179a7d083a74389e2e0c52\/_footer.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/e0c6f8d49b473d444c1d48bd20ac0c325880b8e1\/_buttons.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/e0c6f8d49b473d444c1d48bd20ac0c325880b8e1\/_buttons.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/e0c6f8d49b473d444c1d48bd20ac0c325880b8e1\/_fields.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/e0c6f8d49b473d444c1d48bd20ac0c325880b8e1\/_fields.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/e0c6f8d49b473d444c1d48bd20ac0c325880b8e1\/_forms.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/e0c6f8d49b473d444c1d48bd20ac0c325880b8e1\/_forms.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_breakpoints.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_breakpoints.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_colors.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_colors.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_structure.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_structure.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_typography.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_typography.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_variables-site.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/f4ef5e566eb8102f2208510d51a6dbbd72c186f6\/_variables-site.scssc",
-		"oF": 0
-		},
 	"\/sass\/_normalize.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1353,6 +1037,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/modules\/_wallop-home-carousel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/navigation\/_alt-navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/navigation\/_alt-navigation.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -3721,6 +3418,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

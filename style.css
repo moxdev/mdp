@@ -30,7 +30,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Navigation
 	## Menus
     ### Main Navigation Menu Styles
-    ### Frontpage Desktop Navigation Menu Styles
+    ### Alt Navigation Menu Styles
     ### Mobile Navigation Menu Styles
     ### Mobile Toggle Button Styles
     ### Page/Post Nav Styles
@@ -53,25 +53,37 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'SourceSansPro-BlackIt';
-  src: url("fonts/SourceSansPro-BlackIt.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-BlackIt.otf") format("opentype"), url("fonts/SourceSansPro-BlackIt.woff") format("woff"), url("fonts/SourceSansPro-BlackIt.ttf") format("truetype"), url("fonts/SourceSansPro-BlackIt.svg#SourceSansPro-BlackIt") format("svg");
+  src: url("fonts/SourceSansPro-BlackIt.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/SourceSansPro-BlackIt.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-BlackIt.woff") format("woff"), url("fonts/SourceSansPro-BlackIt.ttf") format("truetype"), url("fonts/SourceSansPro-BlackIt.svg#SourceSansPro-BlackIt") format("svg");
+  /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SourceSansPro-Bold';
-  src: url("fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Bold.otf") format("opentype"), url("fonts/SourceSansPro-Bold.woff") format("woff"), url("fonts/SourceSansPro-Bold.ttf") format("truetype"), url("fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
+  src: url("fonts/SourceSansPro-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Bold.woff") format("woff"), url("fonts/SourceSansPro-Bold.ttf") format("truetype"), url("fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
+  /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SourceSansPro-Regular';
-  src: url("fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Regular.otf") format("opentype"), url("fonts/SourceSansPro-Regular.woff") format("woff"), url("fonts/SourceSansPro-Regular.ttf") format("truetype"), url("fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  src: url("fonts/SourceSansPro-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Regular.woff") format("woff"), url("fonts/SourceSansPro-Regular.ttf") format("truetype"), url("fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SourceSansPro-Light';
-  src: url("fonts/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Light.otf") format("opentype"), url("fonts/SourceSansPro-Light.woff") format("woff"), url("fonts/SourceSansPro-Light.ttf") format("truetype"), url("fonts/SourceSansPro-Light.svg#SourceSansPro-Light") format("svg");
+  src: url("fonts/SourceSansPro-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Light.woff") format("woff"), url("fonts/SourceSansPro-Light.ttf") format("truetype"), url("fonts/SourceSansPro-Light.svg#SourceSansPro-Light") format("svg");
+  /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
@@ -738,32 +750,35 @@ textarea {
   position: relative;
 }
 /* line 5, sass/navigation/_masthead.scss */
-#masthead a[rel="home"] {
-  display: table;
-}
-/* line 9, sass/navigation/_masthead.scss */
 #masthead svg {
+  overflow: hidden;
+}
+/* line 12, sass/navigation/_masthead.scss */
+#masthead a[rel="home"] svg {
   display: block;
   width: 140px;
-  height: auto;
+  height: 56px;
 }
 @media (min-width: 450px) {
-  /* line 9, sass/navigation/_masthead.scss */
-  #masthead svg {
+  /* line 12, sass/navigation/_masthead.scss */
+  #masthead a[rel="home"] svg {
     width: 160px;
+    height: 64px;
   }
 }
 @media (min-width: 1190px) {
-  /* line 9, sass/navigation/_masthead.scss */
-  #masthead svg {
+  /* line 12, sass/navigation/_masthead.scss */
+  #masthead a[rel="home"] svg {
     width: 200px;
+    height: 93px;
     padding-bottom: 14px;
   }
 }
 @media (min-width: 1490px) {
-  /* line 9, sass/navigation/_masthead.scss */
-  #masthead svg {
+  /* line 12, sass/navigation/_masthead.scss */
+  #masthead a[rel="home"] svg {
     width: 220px;
+    height: 102px;
     padding-bottom: 14px;
   }
 }
@@ -772,19 +787,19 @@ textarea {
 ## Menus
 --------------------------------------------------------------*/
 /* line 67, sass/mixins/_mixins-master.scss */
-#main-navigation.home-desktop-menu ul a {
+.main-navigation ul a {
   color: #81bc00;
 }
 /* line 69, sass/mixins/_mixins-master.scss */
-#main-navigation.home-desktop-menu ul a:visited {
+.main-navigation ul a:visited {
   color: #81bc00;
 }
 /* line 72, sass/mixins/_mixins-master.scss */
-#main-navigation.home-desktop-menu ul a:hover {
+.main-navigation ul a:hover {
   color: #81bc00;
 }
 /* line 75, sass/mixins/_mixins-master.scss */
-#main-navigation.home-desktop-menu ul a:active {
+.main-navigation ul a:active {
   color: #81bc00;
 }
 
@@ -821,46 +836,263 @@ textarea {
           align-items: center;
   padding: 1em;
 }
-/* line 9, sass/navigation/_main-navigation.scss */
+/* line 10, sass/navigation/_main-navigation.scss */
 .main-nav-wrapper .site-branding {
   display: inline-block;
 }
-/* line 13, sass/navigation/_main-navigation.scss */
+/* line 14, sass/navigation/_main-navigation.scss */
 .main-nav-wrapper .mobile-menu-wrapper {
   text-align: center;
 }
-/* line 67, sass/mixins/_mixins-master.scss */
-.main-nav-wrapper .mobile-menu-wrapper a {
-  color: #fff;
-}
-/* line 69, sass/mixins/_mixins-master.scss */
-.main-nav-wrapper .mobile-menu-wrapper a:visited {
-  color: #fff;
-}
-/* line 72, sass/mixins/_mixins-master.scss */
-.main-nav-wrapper .mobile-menu-wrapper a:hover {
-  color: #fff;
-}
-/* line 75, sass/mixins/_mixins-master.scss */
-.main-nav-wrapper .mobile-menu-wrapper a:active {
-  color: #fff;
-}
 /* line 17, sass/navigation/_main-navigation.scss */
 .main-nav-wrapper .mobile-menu-wrapper a span, .main-nav-wrapper .mobile-menu-wrapper button span {
-  font-size: .9em;
+  font-size: .8em;
 }
-@media (min-width: 575px) {
-  /* line 17, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper a span, .main-nav-wrapper .mobile-menu-wrapper button span {
+/* line 21, sass/navigation/_main-navigation.scss */
+.main-nav-wrapper .mobile-menu-wrapper .call-btn {
+  display: block;
+  width: 105px;
+  color: #fff;
+  background-color: #111111;
+  text-decoration: none;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+/* line 32, sass/navigation/_main-navigation.scss */
+.main-nav-wrapper .mobile-menu-wrapper #mobile-toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 105px;
+  margin-left: auto;
+  margin-top: 10px;
+  border: none;
+  border-radius: 0;
+}
+/* line 43, sass/navigation/_main-navigation.scss */
+.main-nav-wrapper .home-desktop-navigation {
+  display: none;
+  position: absolute;
+  z-index: 20000;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 2em;
+  width: 220px;
+  height: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+/* line 57, sass/navigation/_main-navigation.scss */
+.main-nav-wrapper .home-desktop-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 8em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+/* line 64, sass/navigation/_main-navigation.scss */
+.main-nav-wrapper .home-desktop-navigation ul li {
+  margin: .5em 0;
+  line-height: 1.6;
+}
+/* line 68, sass/navigation/_main-navigation.scss */
+.main-nav-wrapper .home-desktop-navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "SourceSansPro-Regular";
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+@media (min-width: 950px) {
+  /* line 3, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper {
+    text-align: center;
+    padding: 0;
+  }
+  /* line 83, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .site-branding {
+    display: block;
+    position: absolute;
+    top: 3em;
+    left: 2.5em;
+    z-index: 30000;
+  }
+  /* line 90, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .site-branding svg {
+    width: 190px !important;
+  }
+  /* line 95, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper {
+    display: block;
+  }
+  /* line 98, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 50000;
+    width: 150px;
+    background-color: #81bc00;
+    top: 24em;
+    left: 4em;
+  }
+  /* line 107, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper .call-btn span {
+    font-size: .8em;
+  }
+  /* line 112, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper #mobile-toggle {
+    display: none;
+  }
+  /* line 117, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation {
+    display: block;
+  }
+  /* line 121, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation ul li a {
     font-size: 1em;
   }
 }
-/* line 25, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper .mobile-menu-wrapper .left-skew {
+@media (min-width: 1190px) {
+  /* line 133, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .site-branding svg {
+    width: 220px !important;
+  }
+  /* line 140, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+    width: 175px;
+    font-size: 1.1em;
+    top: 26em;
+    left: 3.5em;
+  }
+  /* line 148, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation {
+    width: 250px;
+    height: 600px;
+  }
+  /* line 152, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation ul {
+    margin-top: 9em;
+  }
+  /* line 156, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation ul li a {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1490px) {
+  /* line 167, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .site-branding svg {
+    width: 230px !important;
+  }
+  /* line 174, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+    width: 175px;
+    font-size: 1.1em;
+    top: 28em;
+    left: 4em;
+  }
+  /* line 182, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation {
+    width: 275px;
+    height: 700px;
+  }
+  /* line 186, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation ul {
+    margin-top: 9em;
+  }
+  /* line 190, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation ul li a {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1890px) {
+  /* line 201, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .site-branding svg {
+    margin-left: 50px;
+  }
+  /* line 207, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+    left: 6em;
+  }
+  /* line 212, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation {
+    left: 4em;
+  }
+}
+@media (min-width: 2000px) {
+  /* line 220, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .site-branding svg {
+    margin-left: 120px;
+  }
+  /* line 226, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+    left: 9.5em;
+  }
+  /* line 231, sass/navigation/_main-navigation.scss */
+  .main-nav-wrapper .home-desktop-navigation {
+    left: 8em;
+  }
+}
+
+/*--------------------------------------------------------------
+### Alt Navigation Menu Styles
+--------------------------------------------------------------*/
+/* line 3, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+/* line 9, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper .alt-site-branding {
+  display: inline-block;
+}
+/* line 13, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper {
+  text-align: center;
+}
+/* line 67, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a {
+  color: #fff;
+}
+/* line 69, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a:visited {
+  color: #fff;
+}
+/* line 72, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a:hover {
+  color: #fff;
+}
+/* line 75, sass/mixins/_mixins-master.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a:active {
+  color: #fff;
+}
+/* line 17, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper a span, .alt-nav-wrapper .alt-mobile-menu-wrapper button span {
+  font-size: .9em;
+}
+@media (min-width: 575px) {
+  /* line 17, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper a span, .alt-nav-wrapper .alt-mobile-menu-wrapper button span {
+    font-size: 1em;
+  }
+}
+/* line 25, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper .left-skew {
   position: relative;
 }
 /* line 8, sass/mixins/_mixins-master.scss */
-.main-nav-wrapper .mobile-menu-wrapper .left-skew:before {
+.alt-nav-wrapper .alt-mobile-menu-wrapper .left-skew:before {
   z-index: -1;
   content: '';
   position: absolute;
@@ -874,8 +1106,8 @@ textarea {
       -ms-transform: skew(-20deg);
           transform: skew(-20deg);
 }
-/* line 29, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper .mobile-menu-wrapper .call-btn {
+/* line 29, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
   display: block;
   width: 105px;
   color: #fff;
@@ -885,8 +1117,8 @@ textarea {
   margin-left: auto;
   margin-right: 15px;
 }
-/* line 40, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper .mobile-menu-wrapper #mobile-toggle {
+/* line 40, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
   display: block;
   margin: 0;
   padding: 0;
@@ -896,30 +1128,30 @@ textarea {
   border: none;
   border-radius: 0;
 }
-/* line 51, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper #main-navigation {
+/* line 51, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation {
   z-index: 20;
   display: none;
   background-color: #81bc00;
   padding: 5px 0;
   margin-top: 15px;
 }
-/* line 59, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper #main-navigation .current-menu-item a {
+/* line 59, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation .current-menu-item a {
   color: #000;
 }
-/* line 64, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper #main-navigation ul {
+/* line 64, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation ul {
   list-style-type: none;
 }
-/* line 68, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper #main-navigation ul li {
+/* line 68, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-/* line 71, sass/navigation/_main-navigation.scss */
-.main-nav-wrapper #main-navigation ul li a {
+/* line 71, sass/navigation/_alt-navigation.scss */
+.alt-nav-wrapper #alt-navigation ul li a {
   font-size: .8em;
   text-decoration: none;
   margin-right: 10px;
@@ -927,238 +1159,80 @@ textarea {
   text-transform: uppercase;
 }
 @media (min-width: 450px) {
-  /* line 84, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper a {
+  /* line 84, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper a {
     font-size: 1em;
   }
-  /* line 87, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+  /* line 87, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
     width: 130px;
   }
-  /* line 91, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper #mobile-toggle {
+  /* line 91, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
     width: 130px;
   }
 }
 @media (min-width: 750px) {
-  /* line 3, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper {
+  /* line 3, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper {
     padding: 1rem 2.75rem;
   }
 }
 @media (min-width: 950px) {
-  /* line 3, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper {
+  /* line 3, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper {
     padding: 1em 0 0 1em;
   }
-  /* line 105, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper #mobile-toggle {
+  /* line 105, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper #mobile-toggle {
     display: none;
   }
-  /* line 109, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+  /* line 109, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
     width: 175px;
     margin-right: 20px;
   }
-  /* line 115, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper #main-navigation {
+  /* line 115, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 8px 0;
     margin-top: 25px;
   }
-  /* line 120, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper #main-navigation ul {
+  /* line 120, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation ul {
     margin: 0;
     padding: 0;
   }
 }
 @media (min-width: 1190px) {
-  /* line 128, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper a {
+  /* line 128, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper a {
     font-size: 1.1em;
   }
-  /* line 131, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+  /* line 131, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
     width: 200px;
   }
-  /* line 136, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper #main-navigation {
+  /* line 136, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation {
     padding: 10px 0;
     margin-top: 25px;
   }
-  /* line 141, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper #main-navigation ul li a {
+  /* line 141, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation ul li a {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 151, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper .mobile-menu-wrapper .call-btn {
+  /* line 151, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper .alt-mobile-menu-wrapper .alt-call-btn {
     margin-right: 30px;
   }
-  /* line 158, sass/navigation/_main-navigation.scss */
-  .main-nav-wrapper #main-navigation ul li {
+  /* line 158, sass/navigation/_alt-navigation.scss */
+  .alt-nav-wrapper #alt-navigation ul li {
     margin-right: 10px;
-  }
-}
-
-/*--------------------------------------------------------------
-### Frontpage Desktop Navigation Menu Styles
---------------------------------------------------------------*/
-@media (min-width: 950px) {
-  /* line 7, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead svg {
-    width: 190px;
-  }
-  /* line 11, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper {
-    text-align: center;
-    padding: 0;
-  }
-  /* line 15, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .site-branding {
-    display: block;
-    position: absolute;
-    top: 3em;
-    left: 2.5em;
-    z-index: 30000;
-  }
-  /* line 23, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .mobile-menu-wrapper {
-    display: block;
-  }
-  /* line 26, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .mobile-menu-wrapper .call-btn {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 50000;
-    width: 150px;
-    background-color: #81bc00;
-    top: 25em;
-    left: 4em;
-  }
-  /* line 35, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .mobile-menu-wrapper .call-btn span {
-    font-size: .8em;
-  }
-  /* line 40, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .mobile-menu-wrapper #mobile-toggle {
-    display: none;
-  }
-  /* line 45, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation {
-    position: absolute;
-    z-index: 20000;
-    background-color: rgba(0, 0, 0, 0.7);
-    top: 0;
-    width: 220px;
-    height: 500px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 2em;
-    text-align: center;
-    margin-top: 0;
-  }
-  /* line 58, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation:before {
-    display: none;
-  }
-  /* line 62, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation ul {
-    margin: 0 auto;
-    list-style-type: none;
-    margin-top: 8em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    text-align: center;
-  }
-  /* line 70, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation ul li {
-    margin: .5em 0;
-    line-height: 1.6;
-    display: block;
-  }
-  /* line 75, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: "SourceSansPro-Regular";
-    font-size: 1em;
-    text-transform: uppercase;
-    margin: 0;
-  }
-}
-@media (min-width: 1190px) {
-  /* line 93, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead svg {
-    width: 220px;
-  }
-  /* line 99, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .mobile-menu-wrapper .call-btn {
-    width: 175px;
-    font-size: 1.1em;
-    top: 26em;
-    left: 3.5em;
-  }
-  /* line 107, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation {
-    width: 250px;
-    height: 600px;
-  }
-  /* line 111, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation ul {
-    margin-top: 9em;
-  }
-  /* line 115, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation ul li a {
-    font-size: 1.3em;
-  }
-}
-@media (min-width: 1490px) {
-  /* line 128, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead svg {
-    width: 230px;
-  }
-  /* line 134, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .mobile-menu-wrapper .call-btn {
-    top: 28em;
-    left: 4em;
-  }
-  /* line 140, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation {
-    width: 275px;
-    height: 700px;
-  }
-}
-@media (min-width: 1890px) {
-  /* line 151, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead svg {
-    margin-left: 50px;
-  }
-  /* line 156, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .mobile-menu-wrapper .call-btn {
-    left: 6em;
-  }
-  /* line 161, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead #main-navigation {
-    margin-left: 4em;
-  }
-}
-@media (min-width: 2000px) {
-  /* line 170, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead svg {
-    margin-left: 120px;
-  }
-  /* line 176, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper .mobile-menu-wrapper .call-btn {
-    left: 9.5em;
-  }
-  /* line 181, sass/navigation/_frontpage-desktop-navigation.scss */
-  .page-template-front-page #masthead .main-nav-wrapper #main-navigation {
-    margin-left: 8em;
   }
 }
 
@@ -1169,7 +1243,6 @@ textarea {
 #mobile-navigation {
   width: 100%;
   font-family: "SourceSansPro-Bold";
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s ease-out;
   transition: opacity 0.5s, -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out, opacity 0.5s;
   transition: transform 0.5s ease-out, opacity 0.5s, -webkit-transform 0.5s ease-out;
@@ -1413,31 +1486,30 @@ textarea {
   display: block;
   opacity: .6;
   width: 100%;
-  -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
 @media (min-width: 950px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    max-width: 750px;
+    width: 750px;
   }
 }
 @media (min-width: 1190px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    max-width: 400px;
+    width: 400px;
   }
 }
 @media (min-width: 1490px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    max-width: 475px;
+    width: 475px;
   }
 }
 @media (min-width: 1890px) {
   /* line 23, sass/site/secondary/_drill-page-sidebar.scss */
   #secondary.drill-page-sidebar .wrapper .sidebar-highlight img {
-    max-width: 450px;
+    width: 450px;
   }
 }
 /* line 46, sass/site/secondary/_drill-page-sidebar.scss */
@@ -1452,7 +1524,6 @@ textarea {
   margin-top: 25%;
   padding: 5px 0;
   line-height: 1;
-  -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
 /* line 59, sass/site/secondary/_drill-page-sidebar.scss */
@@ -1524,9 +1595,6 @@ textarea {
 }
 /* line 15, sass/site/_site.scss */
 .site-content #primary {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   padding-top: 1.5em;
@@ -1925,7 +1993,6 @@ object {
   right: 2.5em;
   /* 40 */
   border-radius: 50%;
-  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 
@@ -2190,7 +2257,6 @@ object {
 /* line 21, sass/modules/_home-carousel.scss */
 #home-carousel ul li {
   opacity: 0;
-  -webkit-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
   margin: 0;
   position: absolute;
@@ -2229,7 +2295,6 @@ object {
 ol.carousel-nav {
   display: none;
   opacity: 0;
-  -webkit-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
 }
 
@@ -2269,7 +2334,6 @@ ol.carousel-nav li a {
   text-decoration: none;
   background-color: #000;
   text-indent: -9999em;
-  -webkit-transition: background-color 2s;
   transition: background-color 2s;
 }
 
@@ -2562,7 +2626,6 @@ ol.carousel-nav li.active a:hover {
   display: block;
   opacity: .6;
   width: 100%;
-  -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
 /* line 101, sass/page-templates/_frontpage.scss */
@@ -2577,7 +2640,6 @@ ol.carousel-nav li.active a:hover {
   margin-top: 40%;
   padding: 5px 0;
   line-height: 1;
-  -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
 /* line 115, sass/page-templates/_frontpage.scss */
@@ -2815,12 +2877,9 @@ ol.carousel-nav li.active a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   /* line 19, sass/page-templates/_drill-page-sidebar-page.scss */
   .page-template-page-drill-page-sidebar .site-content #primary {

@@ -13,8 +13,8 @@
     @include respond-to(medium) {
       .site-content-wrapper {
         display: flex;
-        justify-content: center;
-        align-items: stretch;
+        justify-content: space-between;
+        // align-items: stretch;
       }
       #primary {
         padding-bottom: 0;

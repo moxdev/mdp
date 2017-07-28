@@ -1,4 +1,4 @@
-#main-navigation.home-desktop-menu {
+.main-navigation {
   ul {
     @include linx($color__brand-1,$color__brand-1,$color__brand-1,$color__brand-1); // remove when finished
   }
@@ -21,9 +21,9 @@
 @import "main-navigation";
 
 /*--------------------------------------------------------------
-### Frontpage Desktop Navigation Menu Styles
+### Alt Navigation Menu Styles
 --------------------------------------------------------------*/
-@import "frontpage-desktop-navigation";
+@import "alt-navigation";
 
 /*--------------------------------------------------------------
 ### Mobile Navigation Menu Styles

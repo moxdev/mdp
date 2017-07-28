@@ -2,26 +2,32 @@
   background-color: $color__brand-2;
   position: relative;
 
-  a[rel="home"] {
-    display: table;
+  svg {
+    overflow: hidden;
   }
 
-  svg {
+  .masthead-wrapper {
+  }
+
+  a[rel="home"] svg {
     display: block;
     width: 140px;
-    height: auto;
+    height: 56px;
 
     @include respond-to(small) {
       width: 160px;
+      height: 64px;
     }
 
     @include respond-to(large) {
       width: 200px;
+      height: 93px;
       padding-bottom: 14px;
     }
 
     @include respond-to(x-large) {
       width: 220px;
+      height: 102px;
       padding-bottom: 14px;
     }
   }
