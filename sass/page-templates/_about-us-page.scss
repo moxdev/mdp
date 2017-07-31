@@ -3,9 +3,6 @@
   .site-content {
 
     @include respond-to(med-small) {
-      .site-content-wrapper {
-      }
-
       .drill-page-sidebar {
         .wrapper {
           display: flex;
@@ -16,12 +13,17 @@
     @include respond-to(medium) {
       .site-content-wrapper {
         display: flex;
-        justify-content: center;
-        align-items: stretch;
+        justify-content: space-between;
+        // align-items: stretch;
       }
       #primary {
-        padding-bottom: 0;
         max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 0;
+      }
+
+      .site-main {
+        padding-left: 1em;
       }
 
       .drill-page-sidebar {
@@ -34,6 +36,11 @@
     @include respond-to(large) {
       #primary {
         padding-top: 3em;
+        max-width: 1000px;
+      }
+
+      .site-main {
+        padding-left: 0;
       }
     }
 
@@ -41,12 +48,39 @@
       #primary {
         max-width: 1200px;
         padding-left: 8em;
+        padding-right: 4rem;
+      }
+    }
+
+    @media screen and (min-width:1620px) {
+      #primary {
+        // max-width: 1200px;
+        padding-left: 10em;
+
+      }
+    }
+
+    @media screen and (min-width:1720px) {
+      #primary {
+        // max-width: 1100px;
+        padding-top: 4em;
+        padding-left: 12em;
       }
     }
 
     @include respond-to(xx-large) {
       #primary {
-        padding-left: 14em;
+        max-width: 1400px;
+        padding-left: 17em;
+        padding-right: 8em;
+      }
+    }
+
+    @media screen and (min-width:2300px) {
+      #primary {
+        max-width: 1600px;
+        padding-top: 4em;
+        // padding-left: 15em;
       }
     }
   }

@@ -43,6 +43,9 @@
   }
 
   @include respond-to(large) {
+    #primary {
+      @include container;
+    }
     .site-content-wrapper {
       background-position: -99px -126px;
       min-height: 400px;
