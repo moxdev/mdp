@@ -18,6 +18,10 @@
         .image-wrapper {
           max-width: 230px;
           @include margin-auto;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         img {
