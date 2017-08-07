@@ -24,6 +24,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ----------------------------------------------------------------
 # Normalize
 # Typography
+  ## Fonts
+  ## Headings
+  ## Copy
 # Elements
   ## Links
 # Forms
@@ -39,8 +42,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Clearings
 # Widgets
 # Content
+  ## Site Container Styles
 	## Posts and pages
 	## Comments
+  ## Footer
 # Infinite scroll
 # Media
 	## Captions
@@ -49,44 +54,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Home Carousel
 # Page Templates
   ## Frontpage Template
+  ## Drill Page with Sidebar Template
+  ## Projects Page Template
+  ## About Us Page Template
+  ## Contact Us Page Template
 
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'SourceSansPro-BlackIt';
-  src: url("fonts/SourceSansPro-BlackIt.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/SourceSansPro-BlackIt.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-BlackIt.woff") format("woff"), url("fonts/SourceSansPro-BlackIt.ttf") format("truetype"), url("fonts/SourceSansPro-BlackIt.svg#SourceSansPro-BlackIt") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: url("fonts/SourceSansPro-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Bold.woff") format("woff"), url("fonts/SourceSansPro-Bold.ttf") format("truetype"), url("fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SourceSansPro-Regular';
-  src: url("fonts/SourceSansPro-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Regular.woff") format("woff"), url("fonts/SourceSansPro-Regular.ttf") format("truetype"), url("fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SourceSansPro-Light';
-  src: url("fonts/SourceSansPro-Light.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Light.woff") format("woff"), url("fonts/SourceSansPro-Light.ttf") format("truetype"), url("fonts/SourceSansPro-Light.svg#SourceSansPro-Light") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -343,52 +316,83 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-/* line 1, sass/typography/_typography.scss */
+/*--------------------------------------------------------------
+## Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'source_sans_problack_italic';
+  src: url("fonts/sourcesanspro-blackitalic-webfont.eot");
+  src: url("fonts/sourcesanspro-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sourcesanspro-blackitalic-webfont.woff2") format("woff2"), url("fonts/sourcesanspro-blackitalic-webfont.woff") format("woff"), url("fonts/sourcesanspro-blackitalic-webfont.ttf") format("truetype"), url("fonts/sourcesanspro-blackitalic-webfont.svg#source_sans_problack_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_probold';
+  src: url("fonts/sourcesanspro-bold-webfont.eot");
+  src: url("fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("fonts/sourcesanspro-bold-webfont.ttf") format("truetype"), url("fonts/sourcesanspro-bold-webfont.svg#source_sans_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_prolight';
+  src: url("fonts/sourcesanspro-light-webfont.eot");
+  src: url("fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("fonts/sourcesanspro-light-webfont.woff") format("woff"), url("fonts/sourcesanspro-light-webfont.ttf") format("truetype"), url("fonts/sourcesanspro-light-webfont.svg#source_sans_prolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("fonts/sourcesanspro-regular-webfont.eot");
+  src: url("fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 56, sass/typography/_typography.scss */
 html {
   font-size: 15px;
   font-size: 0.9375rem;
 }
 @media (min-width: 450px) {
-  /* line 1, sass/typography/_typography.scss */
+  /* line 56, sass/typography/_typography.scss */
   html {
     font-size: 16px;
     font-size: 1rem;
   }
 }
 @media (min-width: 950px) {
-  /* line 1, sass/typography/_typography.scss */
+  /* line 56, sass/typography/_typography.scss */
   html {
     font-size: 17.44px;
     font-size: 1.09rem;
   }
 }
 @media (min-width: 1190px) {
-  /* line 1, sass/typography/_typography.scss */
+  /* line 56, sass/typography/_typography.scss */
   html {
     font-size: 17.76px;
     font-size: 1.11rem;
   }
 }
 @media (min-width: 1490px) {
-  /* line 1, sass/typography/_typography.scss */
+  /* line 56, sass/typography/_typography.scss */
   html {
     font-size: 19.376px;
     font-size: 1.211rem;
   }
 }
 
-/* line 21, sass/typography/_typography.scss */
+/* line 76, sass/typography/_typography.scss */
 body,
 button,
 input,
 select,
 textarea {
   color: #111111;
-  font-family: "SourceSansPro-Light", sans-serif;
+  font-family: "source_sans_prolight", sans-serif;
   line-height: 1.5;
 }
 @media (min-width: 1190px) {
-  /* line 21, sass/typography/_typography.scss */
+  /* line 76, sass/typography/_typography.scss */
   body,
   button,
   input,
@@ -398,6 +402,9 @@ textarea {
   }
 }
 
+/*--------------------------------------------------------------
+## Headings
+--------------------------------------------------------------*/
 /* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -408,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #81bc00;
   line-height: 1;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   margin: 0;
   padding: 0;
   padding-top: .5em;
@@ -442,7 +449,7 @@ h2.section-header {
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "SourceSansPro-Regular";
+  font-family: "source_sans_proregular";
   letter-spacing: 5px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -473,11 +480,14 @@ h2.section-header {
 
 /* line 54, sass/typography/_headings.scss */
 h3.product-header {
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   margin: .5em 0;
   line-height: 1.1;
 }
 
+/*--------------------------------------------------------------
+## Copy
+--------------------------------------------------------------*/
 /* line 1, sass/typography/_copy.scss */
 p {
   margin: 0;
@@ -815,7 +825,7 @@ textarea {
   -webkit-transform: skew(-25deg);
           transform: skew(-25deg);
   display: inline-block;
-  font-family: "SourceSansPro-Light";
+  font-family: "source_sans_prolight";
 }
 
 /*--------------------------------------------------------------
@@ -900,7 +910,7 @@ textarea {
 .main-nav-wrapper .home-desktop-navigation ul li a {
   text-decoration: none;
   color: #fff;
-  font-family: "SourceSansPro-Regular";
+  font-family: "source_sans_proregular";
   font-size: 1.2em;
   text-transform: uppercase;
 }
@@ -1152,7 +1162,7 @@ textarea {
   font-size: .8em;
   text-decoration: none;
   margin-right: 10px;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   text-transform: uppercase;
 }
 @media (min-width: 450px) {
@@ -1239,7 +1249,7 @@ textarea {
 /* line 3, sass/navigation/_mobile-navigation.scss */
 #mobile-navigation {
   width: 100%;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   transition: opacity 0.5s, -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out, opacity 0.5s;
   transition: transform 0.5s ease-out, opacity 0.5s, -webkit-transform 0.5s ease-out;
@@ -1277,7 +1287,7 @@ textarea {
   padding-top: .125em;
   padding-bottom: .375em;
   padding-left: 3rem;
-  font-family: "SourceSansPro-Regular";
+  font-family: "source_sans_proregular";
   font-size: 1em;
 }
 /* line 47, sass/navigation/_mobile-navigation.scss */
@@ -1514,7 +1524,7 @@ textarea {
 #secondary.drill-page-sidebar .wrapper .sidebar-highlight .span-wrapper .span-text {
   color: #FFF;
   font-size: 1.8em;
-  font-family: "SourceSansPro-Regular";
+  font-family: "source_sans_proregular";
   text-shadow: 2px 2px 4px black;
 }
 @media (min-width: 450px) {
@@ -1600,7 +1610,7 @@ textarea {
 }
 /* line 21, sass/site/_site.scss */
 .site-content .wysiwyg-bold-font {
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   line-height: 1;
 }
 @media (min-width: 575px) {
@@ -1704,7 +1714,7 @@ textarea {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   font-size: .9em;
   padding-top: 1em;
   padding-bottom: 5em;
@@ -1746,7 +1756,7 @@ textarea {
 }
 /* line 18, sass/site/footer/_footer.scss */
 .site-footer .contact-information {
-  font-family: "SourceSansPro-Light";
+  font-family: "source_sans_prolight";
 }
 /* line 21, sass/site/footer/_footer.scss */
 .site-footer .contact-information a {
@@ -1755,7 +1765,7 @@ textarea {
 }
 /* line 27, sass/site/footer/_footer.scss */
 .site-footer .contact-information .company-name {
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   color: #81bc00;
   text-transform: uppercase;
 }
@@ -2280,7 +2290,7 @@ object {
   top: 4em;
   left: 2em;
   font-size: 1.8em;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   text-align: left;
   line-height: 1;
   color: #FFF;
@@ -2594,7 +2604,7 @@ ol.carousel-nav li.active a:hover {
 /* line 55, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary a {
   text-decoration: none;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
 }
 /* line 60, sass/page-templates/_frontpage.scss */
 .page-template-front-page #frontpage-secondary .cert-link-wrapper {
@@ -2653,7 +2663,7 @@ ol.carousel-nav li.active a:hover {
 .page-template-front-page .frontpage-highlight-section .frontpage-highlight-wrapper .highlight-box .span-text {
   color: #FFF;
   font-size: 1.6em;
-  font-family: "SourceSansPro-Regular";
+  font-family: "source_sans_proregular";
 }
 @media (min-width: 450px) {
   /* line 124, sass/page-templates/_frontpage.scss */
@@ -3021,7 +3031,7 @@ ol.carousel-nav li.active a:hover {
 /* line 122, sass/page-templates/_drill-page-sidebar-page.scss */
 .page-template-page-drill-page-sidebar .product-section .callout-section a {
   text-decoration: none;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.5em;
@@ -3208,7 +3218,7 @@ ol.carousel-nav li.active a:hover {
 /* line 31, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .featured-projects .featured-projects-wrapper ul span.project-title {
   display: block;
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   text-align: left;
   padding-top: 5px;
 }
@@ -3312,7 +3322,7 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 115, sass/page-templates/_projects-page.scss */
 .page-template-page-projects .other-projects-section .other-projects-wrapper h3 {
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   margin: 0;
   padding: 0;
   margin-bottom: .2em;
@@ -3455,7 +3465,7 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 96, sass/page-templates/_about-us-page.scss */
 .page-template-page-about .certification-section .certification-wrapper h3 {
-  font-family: "SourceSansPro-Bold";
+  font-family: "source_sans_probold";
   margin: 0;
   padding: 0;
   margin-bottom: .2em;
@@ -3518,4 +3528,5 @@ ol.carousel-nav li.active a:hover {
   max-width: 400px;
   margin: 0 auto;
 }
+
 /*# sourceMappingURL=style.css.map */

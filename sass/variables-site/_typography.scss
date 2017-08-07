@@ -1,51 +1,7 @@
-@font-face {
-  font-family: 'SourceSansPro-BlackIt';
-  src: url('fonts/SourceSansPro-BlackIt.eot'); /* IE9 Compat Modes */
-  src: url('fonts/SourceSansPro-BlackIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/SourceSansPro-BlackIt.woff') format('woff'), /* Modern Browsers */
-       url('fonts/SourceSansPro-BlackIt.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/SourceSansPro-BlackIt.svg#SourceSansPro-BlackIt') format('svg'); /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: url('fonts/SourceSansPro-Bold.eot'); /* IE9 Compat Modes */
-  src: url('fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/SourceSansPro-Bold.woff') format('woff'), /* Modern Browsers */
-       url('fonts/SourceSansPro-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg'); /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SourceSansPro-Regular';
-  src: url('fonts/SourceSansPro-Regular.eot'); /* IE9 Compat Modes */
-  src: url('fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/SourceSansPro-Regular.woff') format('woff'), /* Modern Browsers */
-       url('fonts/SourceSansPro-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg'); /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SourceSansPro-Light';
-  src: url('fonts/SourceSansPro-Light.eot'); /* IE9 Compat Modes */
-  src: url('fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/SourceSansPro-Light.woff') format('woff'), /* Modern Browsers */
-       url('fonts/SourceSansPro-Light.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg'); /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}
-
-$font__black: 'SourceSansPro-BlackIt';
-$font__bold: 'SourceSansPro-Bold';
-$font__regular: 'SourceSansPro-Regular';
-$font__light: 'SourceSansPro-Light';
+$font__black: 'source_sans_problack_italic';
+$font__bold: 'source_sans_probold';
+$font__regular: 'source_sans_proregular';
+$font__light: 'source_sans_prolight';
 
 
 $font__main: $font__light, sans-serif;

@@ -126,140 +126,140 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/fonts\/SourceSansPro-BlackIt.eot": {
+	"\/fonts\/sourcesanspro-blackitalic-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.eot",
+		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.eot",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-BlackIt.otf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.otf",
-		"oF": 0
-		},
-	"\/fonts\/SourceSansPro-BlackIt.svg": {
+	"\/fonts\/sourcesanspro-blackitalic-webfont.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.svg",
+		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/SourceSansPro-BlackIt.ttf": {
+	"\/fonts\/sourcesanspro-blackitalic-webfont.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.ttf",
+		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.ttf",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-BlackIt.woff": {
+	"\/fonts\/sourcesanspro-blackitalic-webfont.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-BlackIt.woff",
+		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.woff",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Bold.eot": {
+	"\/fonts\/sourcesanspro-blackitalic-webfont.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Bold.eot",
+		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.woff2",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Bold.otf": {
+	"\/fonts\/sourcesanspro-bold-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Bold.otf",
+		"oAP": "\/fonts\/sourcesanspro-bold-webfont.eot",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Bold.svg": {
+	"\/fonts\/sourcesanspro-bold-webfont.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Bold.svg",
+		"oAP": "\/fonts\/sourcesanspro-bold-webfont.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/SourceSansPro-Bold.ttf": {
+	"\/fonts\/sourcesanspro-bold-webfont.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Bold.ttf",
+		"oAP": "\/fonts\/sourcesanspro-bold-webfont.ttf",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Bold.woff": {
+	"\/fonts\/sourcesanspro-bold-webfont.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Bold.woff",
+		"oAP": "\/fonts\/sourcesanspro-bold-webfont.woff",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Light.eot": {
+	"\/fonts\/sourcesanspro-bold-webfont.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Light.eot",
+		"oAP": "\/fonts\/sourcesanspro-bold-webfont.woff2",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Light.otf": {
+	"\/fonts\/sourcesanspro-light-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Light.otf",
+		"oAP": "\/fonts\/sourcesanspro-light-webfont.eot",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Light.svg": {
+	"\/fonts\/sourcesanspro-light-webfont.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Light.svg",
+		"oAP": "\/fonts\/sourcesanspro-light-webfont.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/SourceSansPro-Light.ttf": {
+	"\/fonts\/sourcesanspro-light-webfont.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Light.ttf",
+		"oAP": "\/fonts\/sourcesanspro-light-webfont.ttf",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Light.woff": {
+	"\/fonts\/sourcesanspro-light-webfont.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Light.woff",
+		"oAP": "\/fonts\/sourcesanspro-light-webfont.woff",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Regular.eot": {
+	"\/fonts\/sourcesanspro-light-webfont.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Regular.eot",
+		"oAP": "\/fonts\/sourcesanspro-light-webfont.woff2",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Regular.otf": {
+	"\/fonts\/sourcesanspro-regular-webfont.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Regular.otf",
+		"oAP": "\/fonts\/sourcesanspro-regular-webfont.eot",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Regular.svg": {
+	"\/fonts\/sourcesanspro-regular-webfont.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Regular.svg",
+		"oAP": "\/fonts\/sourcesanspro-regular-webfont.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/SourceSansPro-Regular.ttf": {
+	"\/fonts\/sourcesanspro-regular-webfont.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Regular.ttf",
+		"oAP": "\/fonts\/sourcesanspro-regular-webfont.ttf",
 		"oF": 0
 		},
-	"\/fonts\/SourceSansPro-Regular.woff": {
+	"\/fonts\/sourcesanspro-regular-webfont.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/SourceSansPro-Regular.woff",
+		"oAP": "\/fonts\/sourcesanspro-regular-webfont.woff",
+		"oF": 0
+		},
+	"\/fonts\/sourcesanspro-regular-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/sourcesanspro-regular-webfont.woff2",
 		"oF": 0
 		},
 	"\/footer.php": {
@@ -607,6 +607,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/min\/jquery-imagefill.min-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery-imagefill.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/min\/jquery-imagefill.min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -616,11 +625,29 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/min\/jquery.imagesloaded.min-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery.imagesloaded.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/min\/jquery.imagesloaded.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/jquery.imagesloaded.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/min\/jquery.touchSwipe.min-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery.touchSwipe.min-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -700,6 +727,16 @@
 		"oAP": "\/languages\/readme.txt",
 		"oF": 0
 		},
+	"\/layouts\/content-sidebar-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/layouts\/content-sidebar-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/layouts\/content-sidebar.css": {
 		"aP": 1,
 		"bl": 0,
@@ -709,6 +746,16 @@
 		"oAP": "\/layouts\/content-sidebar-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/layouts\/sidebar-content-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/layouts\/sidebar-content-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/layouts\/sidebar-content.css": {
 		"aP": 1,
@@ -792,6 +839,16 @@
 		"oAP": "\/readme.txt",
 		"oF": 0
 		},
+	"\/rtl-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/rtl-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/rtl.css": {
 		"aP": 1,
 		"bl": 0,
@@ -818,6 +875,12 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar-page.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_frontpage.scssc": {
@@ -866,6 +929,12 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_alt-navigation.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_links.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_links.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/27720d40d64e66d5fdaa06d1a855233d88e07ec2\/_main-navigation.scssc": {
