@@ -7,7 +7,7 @@
 		"uuidString": "95435921-6443-456F-BEA0-8E4A03AA1032"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25813",
 "files": {
 	"\/*notes\/*notes.md": {
 		"cS": 0,
@@ -126,140 +126,140 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/fonts\/sourcesanspro-blackitalic-webfont.eot": {
+	"\/fonts\/SourceSansPro-BlackIt.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.eot",
+		"oAP": "\/fonts\/SourceSansPro-BlackIt.eot",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-blackitalic-webfont.svg": {
+	"\/fonts\/SourceSansPro-BlackIt.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-BlackIt.otf",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-BlackIt.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.svg",
+		"oAP": "\/fonts\/SourceSansPro-BlackIt.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/sourcesanspro-blackitalic-webfont.ttf": {
+	"\/fonts\/SourceSansPro-BlackIt.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.ttf",
+		"oAP": "\/fonts\/SourceSansPro-BlackIt.ttf",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-blackitalic-webfont.woff": {
+	"\/fonts\/SourceSansPro-BlackIt.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.woff",
+		"oAP": "\/fonts\/SourceSansPro-BlackIt.woff",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-blackitalic-webfont.woff2": {
+	"\/fonts\/SourceSansPro-Bold.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-blackitalic-webfont.woff2",
+		"oAP": "\/fonts\/SourceSansPro-Bold.eot",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-bold-webfont.eot": {
+	"\/fonts\/SourceSansPro-Bold.otf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-bold-webfont.eot",
+		"oAP": "\/fonts\/SourceSansPro-Bold.otf",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-bold-webfont.svg": {
+	"\/fonts\/SourceSansPro-Bold.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-bold-webfont.svg",
+		"oAP": "\/fonts\/SourceSansPro-Bold.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/sourcesanspro-bold-webfont.ttf": {
+	"\/fonts\/SourceSansPro-Bold.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-bold-webfont.ttf",
+		"oAP": "\/fonts\/SourceSansPro-Bold.ttf",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-bold-webfont.woff": {
+	"\/fonts\/SourceSansPro-Bold.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-bold-webfont.woff",
+		"oAP": "\/fonts\/SourceSansPro-Bold.woff",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-bold-webfont.woff2": {
+	"\/fonts\/SourceSansPro-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-bold-webfont.woff2",
+		"oAP": "\/fonts\/SourceSansPro-Light.eot",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-light-webfont.eot": {
+	"\/fonts\/SourceSansPro-Light.otf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-light-webfont.eot",
+		"oAP": "\/fonts\/SourceSansPro-Light.otf",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-light-webfont.svg": {
+	"\/fonts\/SourceSansPro-Light.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-light-webfont.svg",
+		"oAP": "\/fonts\/SourceSansPro-Light.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/sourcesanspro-light-webfont.ttf": {
+	"\/fonts\/SourceSansPro-Light.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-light-webfont.ttf",
+		"oAP": "\/fonts\/SourceSansPro-Light.ttf",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-light-webfont.woff": {
+	"\/fonts\/SourceSansPro-Light.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-light-webfont.woff",
+		"oAP": "\/fonts\/SourceSansPro-Light.woff",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-light-webfont.woff2": {
+	"\/fonts\/SourceSansPro-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-light-webfont.woff2",
+		"oAP": "\/fonts\/SourceSansPro-Regular.eot",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-regular-webfont.eot": {
+	"\/fonts\/SourceSansPro-Regular.otf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-regular-webfont.eot",
+		"oAP": "\/fonts\/SourceSansPro-Regular.otf",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-regular-webfont.svg": {
+	"\/fonts\/SourceSansPro-Regular.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-regular-webfont.svg",
+		"oAP": "\/fonts\/SourceSansPro-Regular.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/fonts\/sourcesanspro-regular-webfont.ttf": {
+	"\/fonts\/SourceSansPro-Regular.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-regular-webfont.ttf",
+		"oAP": "\/fonts\/SourceSansPro-Regular.ttf",
 		"oF": 0
 		},
-	"\/fonts\/sourcesanspro-regular-webfont.woff": {
+	"\/fonts\/SourceSansPro-Regular.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-regular-webfont.woff",
-		"oF": 0
-		},
-	"\/fonts\/sourcesanspro-regular-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/sourcesanspro-regular-webfont.woff2",
+		"oAP": "\/fonts\/SourceSansPro-Regular.woff",
 		"oF": 0
 		},
 	"\/footer.php": {
@@ -278,12 +278,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/functions.php",
-		"oF": 0
-		},
-	"\/header-copy.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/header-copy.php",
 		"oF": 0
 		},
 	"\/header.php": {
@@ -308,8 +302,8 @@
 		"oA": 0,
 		"oAP": "\/img\/arrow-green.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -475,8 +469,8 @@
 		"oA": 0,
 		"oAP": "\/img\/old\/logo.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -607,15 +601,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/min\/jquery-imagefill.min-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery-imagefill.min-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/min\/jquery-imagefill.min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -625,29 +610,11 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/min\/jquery.imagesloaded.min-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery.imagesloaded.min-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/min\/jquery.imagesloaded.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/jquery.imagesloaded.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/jquery.touchSwipe.min-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery.touchSwipe.min-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -727,16 +694,6 @@
 		"oAP": "\/languages\/readme.txt",
 		"oF": 0
 		},
-	"\/layouts\/content-sidebar-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/layouts\/content-sidebar-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/layouts\/content-sidebar.css": {
 		"aP": 1,
 		"bl": 0,
@@ -746,16 +703,6 @@
 		"oAP": "\/layouts\/content-sidebar-min.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/layouts\/sidebar-content-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/layouts\/sidebar-content-min-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/layouts\/sidebar-content.css": {
 		"aP": 1,
@@ -839,16 +786,6 @@
 		"oAP": "\/readme.txt",
 		"oF": 0
 		},
-	"\/rtl-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/rtl-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/rtl.css": {
 		"aP": 1,
 		"bl": 0,
@@ -863,12 +800,6 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_about-us-page.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_contact-us-page.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_contact-us-page.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/11f2c1b38f70ee4a73bc36ddbc64738b845193c9\/_drill-page-sidebar-page.scssc": {
@@ -1427,19 +1358,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/navigation\/_frontpage-desktop-navigation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/navigation\/_frontpage-desktop-navigation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/navigation\/_main-navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1514,19 +1432,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-templates\/_about-us-page.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/page-templates\/_contact-us-page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/page-templates\/_contact-us-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1784,8 +1689,8 @@
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -1875,7 +1780,7 @@
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
-	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerBrowserString": "> 1%, last 3 versions, Firefox ESR, Opera 12.1",
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -3804,7 +3709,6 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
