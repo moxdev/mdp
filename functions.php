@@ -272,6 +272,11 @@ require get_template_directory() . '/inc/projects-other-section.php';
  */
 require get_template_directory() . '/inc/certifications-section.php';
 
+/**
+ * Displays the Request Qoute Form.
+ */
+include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
+
 
 // Featured Images Light Box
 function md_partitions_project_listing() {
