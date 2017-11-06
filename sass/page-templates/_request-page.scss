@@ -1,28 +1,57 @@
 .page-template-page-request-qoute {
   form {
     #in-corner-wrapper {
-      // li {
-      //   position: relative;
-      //   &:before {
-      //     position: absolute;
-      //     top: 0;
-      //     left: 0;
-      //     background-color: #fff;
-      //   }
-      // }
-    }
-    #field_1_35 {
-      &:before {
-        content: '';
-        padding: 1em 2em;
-        background-color: #fff;
-        display: block;
-        background: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-430h.jpg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: auto;
-        height: 430px;
+      .gfield_label {
+        display: inline-block;
       }
+      .ginput_container {
+        display: inline-block;
+        margin-left: 1em;
+        .small {
+          width: 25%;
+        }
+      }
+      li {
+        &:before {
+          content: '';
+          display: block;
+          background-size: contain;
+          width: auto;
+          height: 200px;
+          border: 1px solid black;
+          background-color: #fff;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+      #field_1_35 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_52 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_54 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_53 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      // #field_1_47 {
+      //   display: none;
+      // }
     }
   }
 

@@ -3558,17 +3558,52 @@ ol.carousel-nav li.active a:hover {
 /*--------------------------------------------------------------
 ## Request Page Template
 --------------------------------------------------------------*/
+/* line 4, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper .gfield_label {
+  display: inline-block;
+}
+/* line 7, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper .ginput_container {
+  display: inline-block;
+  margin-left: 1em;
+}
+/* line 10, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper .ginput_container .small {
+  width: 25%;
+}
 /* line 15, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form #field_1_35:before {
+.page-template-page-request-qoute form #in-corner-wrapper li:before {
   content: '';
-  padding: 1em 2em;
-  background-color: #fff;
   display: block;
-  background: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-430h.jpg");
-  background-repeat: no-repeat;
   background-size: contain;
   width: auto;
-  height: 430px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+/* line 24, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper li:last-child {
+  display: none;
+}
+/* line 29, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper #field_1_35:before {
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg");
+  background-repeat: no-repeat;
+}
+/* line 35, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper #field_1_52:before {
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg");
+  background-repeat: no-repeat;
+}
+/* line 41, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper #field_1_54:before {
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg");
+  background-repeat: no-repeat;
+}
+/* line 47, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper #field_1_53:before {
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg");
+  background-repeat: no-repeat;
 }
 
 /*--------------------------------------------------------------
