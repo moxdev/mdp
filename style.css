@@ -192,7 +192,8 @@ figure {
 
 /* line 108, sass/_normalize.scss */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
 }
 
@@ -262,7 +263,8 @@ input {
 /* line 167, sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -553,7 +555,8 @@ big {
 --------------------------------------------------------------*/
 /* line 1, sass/elements/_elements.scss */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* line 5, sass/elements/_elements.scss */
@@ -561,7 +564,8 @@ html {
 *:before,
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /* line 11, sass/elements/_elements.scss */
@@ -697,53 +701,57 @@ input[type="submit"]:focus {
 }
 
 /* line 1, sass/forms/_fields.scss */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+input[type='checkbox'],
 textarea {
+  display: block;
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px;
 }
-/* line 22, sass/forms/_fields.scss */
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
+/* line 24, sass/forms/_fields.scss */
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+input[type='range']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='time']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='color']:focus,
+input[type='checkbox']:focus,
 textarea:focus {
   color: #111111;
 }
 
-/* line 27, sass/forms/_fields.scss */
+/* line 29, sass/forms/_fields.scss */
 select {
+  display: block;
   border: 1px solid #ccc;
 }
 
-/* line 31, sass/forms/_fields.scss */
+/* line 34, sass/forms/_fields.scss */
 textarea {
   width: 100%;
 }
@@ -816,6 +824,7 @@ textarea {
 /* line 7, sass/navigation/_menus.scss */
 .slant-btn {
   -webkit-transform: skew(25deg);
+      -ms-transform: skew(25deg);
           transform: skew(25deg);
   display: inline-block;
 }
@@ -823,6 +832,7 @@ textarea {
 /* line 12, sass/navigation/_menus.scss */
 .unslant {
   -webkit-transform: skew(-25deg);
+      -ms-transform: skew(-25deg);
           transform: skew(-25deg);
   display: inline-block;
   font-family: "source_sans_prolight";
@@ -1111,6 +1121,7 @@ textarea {
   width: 100px;
   background: #81bc00;
   -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
           transform: skew(-20deg);
 }
 /* line 29, sass/navigation/_alt-navigation.scss */
@@ -1250,13 +1261,17 @@ textarea {
 #mobile-navigation {
   width: 100%;
   font-family: "source_sans_probold";
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s ease-out;
   transition: opacity 0.5s, -webkit-transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out, opacity 0.5s;
   transition: transform 0.5s ease-out, opacity 0.5s;
   transition: transform 0.5s ease-out, opacity 0.5s, -webkit-transform 0.5s ease-out;
   opacity: 0;
   -webkit-transform: translate3D(0, -150%, 0);
+      -ms-transform: translate3D(0, -150%, 0);
           transform: translate3D(0, -150%, 0);
   -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
           transform-origin: center top;
   position: absolute;
   z-index: 999999;
@@ -1268,6 +1283,7 @@ textarea {
 /* line 18, sass/navigation/_mobile-navigation.scss */
 #mobile-navigation.active {
   -webkit-transform: translate3D(0, 0, 0);
+      -ms-transform: translate3D(0, 0, 0);
           transform: translate3D(0, 0, 0);
   opacity: 1;
   letter-spacing: 1.5px;
@@ -1334,23 +1350,19 @@ textarea {
 ### Page/Post Nav Styles
 --------------------------------------------------------------*/
 /* line 52, sass/navigation/_menus.scss */
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
 /* line 57, sass/navigation/_menus.scss */
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
 /* line 62, sass/navigation/_menus.scss */
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
@@ -1372,7 +1384,8 @@ textarea {
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -1490,6 +1503,8 @@ textarea {
   display: block;
   opacity: .6;
   width: 100%;
+  -webkit-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
 @media (min-width: 950px) {
@@ -1518,6 +1533,8 @@ textarea {
   margin-top: 25%;
   padding: 5px 0;
   line-height: 1;
+  -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
+  -o-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
 /* line 61, sass/site/secondary/_drill-page-sidebar.scss */
@@ -1896,7 +1913,8 @@ object {
   z-index: 10000;
   -ms-touch-action: none;
       touch-action: none;
-  box-shadow: 0 0 3.125em rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 3.125em rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 3.125em rgba(0, 0, 0, 0.75);
   /* 50 */
 }
 
@@ -1930,7 +1948,8 @@ object {
   left: 50%;
   padding: 0.65em;
   margin: -1.3em 0 0 -1.3em;
-  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.75);
   /* 40 */
 }
 
@@ -2007,6 +2026,8 @@ object {
   right: 2.5em;
   /* 40 */
   border-radius: 50%;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
   transition: color .3s ease;
 }
 
@@ -2031,12 +2052,14 @@ object {
 /* line 104, sass/media/_lightbox.scss */
 .imagelightbox-close:before {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 /* line 108, sass/media/_lightbox.scss */
 .imagelightbox-close:after {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -2068,6 +2091,7 @@ object {
   padding: 0.313em;
   /* 5 */
   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 20px;
 }
@@ -2268,6 +2292,8 @@ object {
 /* line 21, sass/modules/_home-carousel.scss */
 #home-carousel ul li {
   opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
   margin: 0;
   position: absolute;
@@ -2306,6 +2332,8 @@ object {
 ol.carousel-nav {
   display: none;
   opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
 }
 
@@ -2340,10 +2368,13 @@ ol.carousel-nav li a {
   width: 60px;
   height: 20px;
   -webkit-transform: skewX(20deg);
+      -ms-transform: skewX(20deg);
           transform: skewX(20deg);
   text-decoration: none;
   background-color: #000;
   text-indent: -9999em;
+  -webkit-transition: background-color 2s;
+  -o-transition: background-color 2s;
   transition: background-color 2s;
 }
 
@@ -2643,6 +2674,8 @@ ol.carousel-nav li.active a:hover {
   display: block;
   opacity: .6;
   width: 100%;
+  -webkit-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
 }
 /* line 101, sass/page-templates/_frontpage.scss */
@@ -2657,6 +2690,8 @@ ol.carousel-nav li.active a:hover {
   margin-top: 40%;
   padding: 5px 0;
   line-height: 1;
+  -webkit-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
+  -o-transition: opacity .35s ease-in-out, padding .35s ease-in-out;
   transition: opacity .35s ease-in-out, padding .35s ease-in-out;
 }
 /* line 115, sass/page-templates/_frontpage.scss */
@@ -3518,6 +3553,24 @@ ol.carousel-nav li.active a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/*--------------------------------------------------------------
+## Request Page Template
+--------------------------------------------------------------*/
+/* line 3, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #field_1_35 {
+  position: relative;
+}
+/* line 5, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #field_1_35:before {
+  content: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-1-svg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 80px 100px;
+  border: 1px solid black;
+  background-repeat: no-repeat;
 }
 
 /*--------------------------------------------------------------

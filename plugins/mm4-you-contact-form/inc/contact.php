@@ -16,8 +16,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 	$captcha = $_POST['g-recaptcha-response'];
 	
 	$name = strip_tags($_POST["first-name"]);
-	$email= strip_tags($_POST["email-address"]);
+	$company_name = strip_tags($_POST["company-name"]);
+	$zip = strip_tags($_POST["shipping-zip"]);
 	$phone = $_POST["primary-phone"];
+	$email= strip_tags($_POST["email-address"]);
+
+	
 	$comments = strip_tags($_POST["comments"]);
 	
 	if(!$captcha){

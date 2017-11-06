@@ -127,21 +127,74 @@ function mm4_you_contact_form() {
 
 	<form name="contact-form" method="POST" action="<?php echo $form_action; ?>" novalidate>
 		<input type="hidden" value="<?php echo $subject_line; ?>" name="subject" id="subject">
-		<label for="first-name">
-			<input type="text" name="first-name" id="first-name" class="required" data-error-label="First Name" placeholder="NAME">
-		</label>
-		<label for="email-address">
-			<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email" placeholder="EMAIL">
-		</label>
-		<label for="primary-phone">
-			<input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone" placeholder="PHONE">
-		</label>
-		<label for="comments">
-			<textarea name="comments" id="comments" rows="6" placeholder="MESSAGE"></textarea>
-		</label>
-		<div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
-		<div class="msg-box"></div>
-		<input type="submit" value="Submit">
+
+		<fieldset>
+			<label for="first-name">*NAME:
+				<input type="text" name="first-name" id="first-name" class="required" data-error-label="First Name" placeholder="NAME">
+			</label>
+			<label for="company-name">*COMPANY NAME:
+				<input type="text" name="company-name" id="company-name" class="required" data-error-label="Company Name" placeholder="Company Name">
+			</label>
+			<label for="shipping-zip">*SHIPPING ZIP CODE:
+				<input type="text" name="shipping-zip" id="shipping-zip" class="required" data-error-label="Shipping Zip Code" placeholder="Shipping Zip Code">
+			</label>
+			<label for="primary-phone">PHONE:
+				<input type="tel" name="primary-phone" id="primary-phone" class="required" data-error-label="Primary Phone" placeholder="PHONE">
+			</label>
+			<label for="email-address">*EMAIL:
+				<input type="email" name="email-address" id="email-address" class="required" data-error-label="Email" placeholder="EMAIL">
+			</label>
+		</fieldset>
+
+		<hr>
+
+		<fieldset>
+
+			<label for="partition-estimate">
+				<input type="checkbox" name="partition-estimate" id="partition-estimate">
+					YES, I WOULD LIKE A PARTITIONS ESTIMATE
+			</label>
+
+			<label for="total-standard">TOTAL QUANTITY OF STANDARD STALLS</label>
+			<input type="text" name="total-standard" id="total-standard">
+			
+			<label for="total-ada">TOTAL QUANTITY OF ADA STALLS
+				<input type="checkbox" name="total-ada" id="total-ada">
+			</label>
+
+			<label for="total-stall">TOTAL STALL QUANTITY
+				<input type="checkbox" name="total-stall" id="total-stall">
+			</label>
+
+			<select name="material-type">
+				<option disabled selected>*MATERIAL TYPE</option>
+				<option value="powder">Powder Coated/Baked Enamel (Painted Steel)</option>
+				<option value="laminate">Plastic Laminate</option>
+				<option value="plastic">Solid Plastic (HDPE)</option>
+				<option value="phenolic">Phenolic</option>
+				<option value="steel">Stainless Steel</option>
+			</select> 
+
+			<select name="mounting-style">
+				<option disabled selected>*MOUNTING STYLE</option>
+				<option value="overhead">Overhead Braced</option>
+				<option value="hung">Ceiling Hung</option>
+				<option value="floor-mounted">Floor Mounted</option>
+				<option value="floor-ceiling">Floor to Ceiling</option>
+			</select>
+		
+		</fieldset>
+		
+		
+		
+		<fieldset>
+			<label for="comments">
+				<textarea name="comments" id="comments" rows="6" placeholder="MESSAGE"></textarea>
+			</label>
+			<div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
+			<div class="msg-box"></div>
+			<input type="submit" value="Submit">
+		<fieldset>
 	</form>
 <?php }
 

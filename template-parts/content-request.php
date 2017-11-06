@@ -44,9 +44,6 @@
 		<?php
 			the_content();
 
-			
-			if(function_exists( 'mm4_you_contact_form' )): mm4_you_contact_form(); endif;
-
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'md_partitions' ),
 				'after'  => '</div>',
