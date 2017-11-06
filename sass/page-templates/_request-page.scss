@@ -1,16 +1,35 @@
 .page-template-page-request-qoute {
   form {
+    #in-corner-wrapper {
+      li {
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #fff;
+        }
+      }
+    }
     #field_1_35 {
-      position: relative;
       &:before {
         content: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-1-svg.jpg');
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: 80px 100px;
-        border: 1px solid black;
-        background-repeat: no-repeat;
+        padding: 1em 2em;
       }
     }
   }
+
+  // @include respond-to(medium) {
+  //   #in-corner-wrapper {
+  //     ul {
+  //       display: flex;
+  //       flex-wrap: wrap;
+  //     }
+  //     ul > li {
+  //       flex: 1 1 50%;
+  //       display: flex;
+  //       align-items: center;
+  //     }
+  //   }
+  // }
 }

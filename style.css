@@ -3558,19 +3558,21 @@ ol.carousel-nav li.active a:hover {
 /*--------------------------------------------------------------
 ## Request Page Template
 --------------------------------------------------------------*/
-/* line 3, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form #field_1_35 {
+/* line 4, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper li {
   position: relative;
 }
-/* line 5, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form #field_1_35:before {
-  content: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-1-svg.jpg");
+/* line 6, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper li:before {
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 80px 100px;
-  border: 1px solid black;
-  background-repeat: no-repeat;
+  background-color: #fff;
+}
+/* line 15, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #field_1_35:before {
+  content: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-1-svg.jpg");
+  padding: 1em 2em;
 }
 
 /*--------------------------------------------------------------
