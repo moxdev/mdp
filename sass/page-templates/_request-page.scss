@@ -1,6 +1,10 @@
 .page-template-page-request-qoute {
   form {
     #in-corner-wrapper {
+      border: 1px solid black;
+      padding-top: 2em;
+      padding-bottom: 2em;
+
       .gfield_label {
         display: inline-block;
       }
@@ -18,8 +22,7 @@
           background-size: contain;
           width: auto;
           height: 200px;
-          border: 1px solid black;
-          background-color: #fff;
+          // background-color: #fff;
         }
         &:last-child {
           display: none;
@@ -52,6 +55,165 @@
       // #field_1_47 {
       //   display: none;
       // }
+    }
+    #between-wall-wrapper {
+      border: 1px solid black;
+      padding-top: 2em;
+      padding-bottom: 2em;
+
+      .gfield_label {
+        display: inline-block;
+      }
+      .ginput_container {
+        display: inline-block;
+        margin-left: 1em;
+        .small {
+          width: 25%;
+        }
+      }
+      li {
+        &:before {
+          content: '';
+          display: block;
+          background-size: contain;
+          width: auto;
+          height: 200px;
+          // background-color: #fff;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+      #field_1_50 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_57 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_56 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_55 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    #alcove-in-corner-wrapper {
+      border: 1px solid black;
+      padding-top: 2em;
+      padding-bottom: 2em;
+
+      .gfield_label {
+        display: inline-block;
+      }
+      .ginput_container {
+        display: inline-block;
+        margin-left: 1em;
+        .small {
+          width: 25%;
+        }
+      }
+      li {
+        &:before {
+          content: '';
+          display: block;
+          background-size: contain;
+          width: auto;
+          height: 200px;
+          // background-color: #fff;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+      #field_1_59 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_62 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_61 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_60 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    #alcove-between-wall-wrapper {
+      border: 1px solid black;
+      padding-top: 2em;
+      padding-bottom: 2em;
+
+      .gfield_label {
+        display: inline-block;
+      }
+      .ginput_container {
+        display: inline-block;
+        margin-left: 1em;
+        .small {
+          width: 25%;
+        }
+      }
+      li {
+        &:before {
+          content: '';
+          display: block;
+          background-size: contain;
+          width: auto;
+          height: 200px;
+          // background-color: #fff;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+      #field_1_64 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_67 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_66 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg');
+          background-repeat: no-repeat;
+        }
+      }
+      #field_1_65 {
+        &:before {
+          background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg');
+          background-repeat: no-repeat;
+        }
+      }
     }
   }
 
