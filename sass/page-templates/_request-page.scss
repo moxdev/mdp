@@ -1,27 +1,15 @@
 .page-template-page-request-qoute {
   form {
     #in-corner-wrapper {
-      // li {
-      //   position: relative;
-      //   &:before {
-      //     position: absolute;
-      //     top: 0;
-      //     left: 0;
-      //     background-color: #fff;
-      //   }
-      // }
-    }
-    #field_1_35 {
-      &:before {
-        content: '';
-        padding: 1em 2em;
-        background-color: #fff;
-        display: block;
-        background: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-430h.jpg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: auto;
-        height: 430px;
+      li {
+        &:before {
+          content: '';
+          width: auto;
+          height: 430px;
+          background: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-430h.jpg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
       }
     }
   }

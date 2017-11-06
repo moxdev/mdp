@@ -3558,17 +3558,14 @@ ol.carousel-nav li.active a:hover {
 /*--------------------------------------------------------------
 ## Request Page Template
 --------------------------------------------------------------*/
-/* line 15, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form #field_1_35:before {
+/* line 5, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #in-corner-wrapper li:before {
   content: '';
-  padding: 1em 2em;
-  background-color: #fff;
-  display: block;
+  width: auto;
+  height: 430px;
   background: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-430h.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: auto;
-  height: 430px;
 }
 
 /*--------------------------------------------------------------
