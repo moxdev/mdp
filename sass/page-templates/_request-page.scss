@@ -42,13 +42,7 @@
       font-size: 1.1em;
     }
 
-    hr {
-      margin-top: 2em;
-    }
-
     #in-corner-wrapper {
-      padding-bottom: 2em;
-
       #li.gfield {
         margin-top: 1.5em;
       }
@@ -73,6 +67,21 @@
           // background-color: #fff;
         }
         &:last-child {
+          display: none !important;
+        }
+      }
+      #field_1_105 {
+        &:before {
+          background-image: none;
+          width: 0;
+          height: 0;
+        }
+        label {
+          font-family: $font__bold;
+          letter-spacing: 1px;
+          margin-top: 2em;
+        }
+        .ginput_container {
           display: none;
         }
       }
@@ -105,8 +114,6 @@
       // }
     }
     #between-wall-wrapper {
-      padding-bottom: 2em;
-
       #li.gfield {
         margin-top: 1.5em;
       }
@@ -131,6 +138,21 @@
           // background-color: #fff;
         }
         &:last-child {
+          display: none !important;
+        }
+      }
+      #field_1_106 {
+        &:before {
+          background-image: none;
+          width: 0;
+          height: 0;
+        }
+        label {
+          font-family: $font__bold;
+          letter-spacing: 1px;
+          margin-top: 2em;
+        }
+        .ginput_container {
           display: none;
         }
       }
@@ -160,8 +182,6 @@
       }
     }
     #alcove-in-corner-wrapper {
-      padding-bottom: 2em;
-
       #li.gfield {
         margin-top: 1.5em;
       }
@@ -186,6 +206,21 @@
           // background-color: #fff;
         }
         &:last-child {
+          display: none !important;
+        }
+      }
+      #field_1_107 {
+        &:before {
+          background-image: none;
+          width: 0;
+          height: 0;
+        }
+        label {
+          font-family: $font__bold;
+          letter-spacing: 1px;
+          margin-top: 2em;
+        }
+        .ginput_container {
           display: none;
         }
       }
@@ -239,6 +274,21 @@
           // background-color: #fff;
         }
         &:last-child {
+          display: none !important;
+        }
+      }
+      #field_1_108 {
+        &:before {
+          background-image: none;
+          width: 0;
+          height: 0;
+        }
+        label {
+          font-family: $font__bold;
+          letter-spacing: 1px;
+          margin-top: 2em;
+        }
+        .ginput_container {
           display: none;
         }
       }
