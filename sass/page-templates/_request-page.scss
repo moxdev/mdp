@@ -1,16 +1,64 @@
 .page-template-page-request-qoute {
   form {
+    font-family: $font__light;
+    .gform_heading {
+      display: none;
+    }
+    #label_1_11_1,
+    #label_1_71_1 {
+      font-family: $font__bold;
+      color: $color__brand-1;
+      font-size: 1.3em;
+      line-height: 1.1;
+      padding-left: 5px;
+      margin-top: 0;
+    }
+    #field_1_11 {
+      margin-top: 0;
+      .ginput_container_checkbox {
+        margin-top: 0;
+        #input_1_11 {
+          margin: 0;
+        }
+      }
+    }
+    #field_1_71 {
+      margin-top: 0;
+      .ginput_container_checkbox {
+        margin-top: 0;
+        input_1_71 {
+          margin: 0;
+        }
+      }
+    }
+
+    h2 {
+      font-family: $font__bold;
+      font-size: 1em;
+      line-height: 1.3;
+    }
+    h3 {
+      font-family: $font__bold;
+      font-size: 1.1em;
+    }
+
+    hr {
+      margin-top: 2em;
+    }
+
     #in-corner-wrapper {
-      border: 1px solid black;
-      padding-top: 2em;
       padding-bottom: 2em;
+
+      #li.gfield {
+        margin-top: 1.5em;
+      }
 
       .gfield_label {
         display: inline-block;
       }
       .ginput_container {
         display: inline-block;
-        margin-left: 1em;
+        margin-left: 10px;
         .small {
           width: 25%;
         }
@@ -57,16 +105,18 @@
       // }
     }
     #between-wall-wrapper {
-      border: 1px solid black;
-      padding-top: 2em;
       padding-bottom: 2em;
+
+      #li.gfield {
+        margin-top: 1.5em;
+      }
 
       .gfield_label {
         display: inline-block;
       }
       .ginput_container {
         display: inline-block;
-        margin-left: 1em;
+        margin-left: 10px;
         .small {
           width: 25%;
         }
@@ -110,16 +160,18 @@
       }
     }
     #alcove-in-corner-wrapper {
-      border: 1px solid black;
-      padding-top: 2em;
       padding-bottom: 2em;
+
+      #li.gfield {
+        margin-top: 1.5em;
+      }
 
       .gfield_label {
         display: inline-block;
       }
       .ginput_container {
         display: inline-block;
-        margin-left: 1em;
+        margin-left: 10px;
         .small {
           width: 25%;
         }
@@ -163,9 +215,9 @@
       }
     }
     #alcove-between-wall-wrapper {
-      border: 1px solid black;
-      padding-top: 2em;
-      padding-bottom: 2em;
+      #li.gfield {
+        margin-top: 1.5em;
+      }
 
       .gfield_label {
         display: inline-block;
@@ -214,6 +266,127 @@
           background-repeat: no-repeat;
         }
       }
+    }
+    #field_1_68 {
+      .ginput_container {
+        margin-top: 0;
+      }
+    }
+    .locker-flex {
+      padding-top: 1em !important;
+      padding-bottom: 2em !important;
+
+      #li.gfield {
+        margin-top: 1.5em;
+      }
+
+      .gfield_label {
+        display: inline-block;
+      }
+      .ginput_container {
+        display: inline-block;
+        margin-left: 10px;
+        .small {
+          width: 25%;
+        }
+      }
+      li {
+        &:before {
+          display: block;
+          width: auto;
+          height: 25px;
+          font-family: $font__bold;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+      #field_1_74 {
+        &:before {
+          content: '1 Tier 12”W x 12”D x 60”H';
+        }
+      }
+      #field_1_85 {
+        &:before {
+          content: '1 Tier 12”W x 12”D x 72”H';
+        }
+      }
+      #field_1_84 {
+        &:before {
+          content: '1 Tier 12”W x 15”D x 60”H';
+        }
+      }
+      #field_1_83 {
+        &:before {
+          content: '1 Tier 12”W x 15”D x 72”H';
+        }
+      }
+      #field_1_82 {
+        &:before {
+          content: '1 Tier 12”W x 18”D x 60”H';
+        }
+      }
+      #field_1_81 {
+        &:before {
+          content: '1 Tier 12”W x 18”D x 72”H';
+        }
+      }
+      #field_1_80 {
+        &:before {
+          content: '1 Tier 15”W x 18”D x 72”H';
+        }
+      }
+      #field_1_79 {
+        &:before {
+          content: '1 Tier 18”W x 18”D x 72”H';
+        }
+      }
+      #field_1_78 {
+        &:before {
+          content: '2 Tier 12”W x 12”D x 30”/60”H';
+        }
+      }
+      #field_1_77 {
+        &:before {
+          content: '2 Tier 12”W x 12”D x 36”/72”H';
+        }
+      }
+      #field_1_76 {
+        &:before {
+          content: '2 Tier 12”W x 15”D x 36”/72”H';
+        }
+      }
+      #field_1_75 {
+        &:before {
+          content: '2 Tier 12”W x 18”D x 36”/72”H';
+        }
+      }
+      #field_1_89 {
+        &:before {
+          content: '2 Tier 15”W x 18”D x 36”/72”H';
+        }
+      }
+      #field_1_88 {
+        &:before {
+          content: '3 Tier 12”W x 12”D x 24”/72”H';
+        }
+      }
+      #field_1_87 {
+        &:before {
+          content: '3 Tier 12”W x 15”D x 24”/72”H';
+        }
+      }
+      #field_1_86 {
+        &:before {
+          content: '3 Tier 12”W x 18”D x 24”/72”H';
+        }
+      }
+    }
+    #gform_submit_button_1 {
+      border: none;
+      border-radius: 10px;
+      background-color: $color__brand-1;
+      font-family: $font__bold;
     }
   }
 
