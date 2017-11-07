@@ -348,7 +348,7 @@
           font-family: $font__bold;
         }
         &:last-child {
-          display: none;
+          display: none !important;
         }
       }
       #field_1_74 {
@@ -440,16 +440,47 @@
     }
   }
 
-  // @include respond-to(medium) {
-  //   #in-corner-wrapper {
-  //     ul {
-  //       display: flex;
+  @include respond-to(tablet) {
+    #gform_fields_1 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      li {
+        flex: 0 1 50%;
+      }
+      #field_1_102 {
+        flex: 0 0 100%;
+      }
+    }
+    #partition-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+
+      li {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  // @include respond-to(large) {
+  //   #partition-section {
+  //     #field_1_19,
+  //     #field_1_20,
+  //     #field_1_22 {
+  //       flex: 1 1 33%;
+  //       display: flex !important;
   //       flex-wrap: wrap;
-  //     }
-  //     ul > li {
-  //       flex: 1 1 50%;
-  //       display: flex;
-  //       align-items: center;
+  //       font-size: 0.8em;
+
+  //       label {
+  //         flex: 0 1 70%;
+  //       }
+  //       .ginput_container {
+  //         flex: 0 1 30%;
+  //       }
   //     }
   //   }
   // }

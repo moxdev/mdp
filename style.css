@@ -3910,7 +3910,7 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 350, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex li:last-child {
-  display: none;
+  display: none !important;
 }
 /* line 355, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_74:before {
@@ -3982,6 +3982,54 @@ ol.carousel-nav li.active a:hover {
   border-radius: 10px;
   background-color: #81bc00;
   font-family: "source_sans_probold";
+}
+@media (min-width: 750px) {
+  /* line 444, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #gform_fields_1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 449, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #gform_fields_1 li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+  /* line 452, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #gform_fields_1 #field_1_102 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  /* line 456, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 462, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 /*--------------------------------------------------------------
