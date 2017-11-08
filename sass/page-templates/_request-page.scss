@@ -42,17 +42,23 @@
       font-size: 1.1em;
     }
 
-    #in-corner-wrapper {
+    #in-corner-wrapper,
+    #between-wall-wrapper,
+    #alcove-in-corner-wrapper,
+    #alcove-between-wall-wrapper {
       #li.gfield {
         margin-top: 1.5em;
       }
 
       .gfield_label {
         display: inline-block;
+        margin-top: 0.5em;
       }
       .ginput_container {
         display: inline-block;
-        margin-left: 10px;
+        margin-top: 1em;
+        padding-left: 0.25em;
+        max-width: 170px;
         .small {
           width: 25%;
         }
@@ -64,12 +70,13 @@
           background-size: contain;
           width: 250px;
           height: 200px;
-          // background-color: #fff;
         }
         &:last-child {
           display: none !important;
         }
       }
+    }
+    #in-corner-wrapper {
       #field_1_105 {
         &:before {
           background-image: none;
@@ -109,38 +116,8 @@
           background-repeat: no-repeat;
         }
       }
-      // #field_1_47 {
-      //   display: none;
-      // }
     }
     #between-wall-wrapper {
-      #li.gfield {
-        margin-top: 1.5em;
-      }
-
-      .gfield_label {
-        display: inline-block;
-      }
-      .ginput_container {
-        display: inline-block;
-        margin-left: 10px;
-        .small {
-          width: 25%;
-        }
-      }
-      li {
-        &:before {
-          content: '';
-          display: block;
-          background-size: contain;
-          width: 250px;
-          height: 200px;
-          // background-color: #fff;
-        }
-        &:last-child {
-          display: none !important;
-        }
-      }
       #field_1_106 {
         &:before {
           background-image: none;
@@ -182,32 +159,6 @@
       }
     }
     #alcove-in-corner-wrapper {
-      #li.gfield {
-        margin-top: 1.5em;
-      }
-
-      .gfield_label {
-        display: inline-block;
-      }
-      .ginput_container {
-        display: inline-block;
-        margin-left: 10px;
-        .small {
-          width: 25%;
-        }
-      }
-      li {
-        &:before {
-          content: '';
-          display: block;
-          background-size: contain;
-          width: 250px;
-          height: 200px;
-        }
-        &:last-child {
-          display: none !important;
-        }
-      }
       #field_1_107 {
         &:before {
           background-image: none;
@@ -249,47 +200,6 @@
       }
     }
     #alcove-between-wall-wrapper {
-      #li.gfield {
-        margin-top: 1.5em;
-      }
-
-      .gfield_label {
-        display: inline-block;
-      }
-      .ginput_container {
-        display: inline-block;
-        margin-left: 1em;
-        .small {
-          width: 25%;
-        }
-      }
-      li {
-        &:before {
-          content: '';
-          display: block;
-          background-size: contain;
-          width: 250px;
-          height: 200px;
-        }
-        &:last-child {
-          display: none !important;
-        }
-      }
-      #field_1_108 {
-        &:before {
-          background-image: none;
-          width: 0;
-          height: 0;
-        }
-        label {
-          font-family: $font__bold;
-          letter-spacing: 1px;
-          margin-top: 2em;
-        }
-        .ginput_container {
-          display: none;
-        }
-      }
       #field_1_64 {
         &:before {
           background-image: url('http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-1.jpg');
@@ -315,6 +225,7 @@
         }
       }
     }
+    // custom order checkbox
     #field_1_68 {
       .ginput_container {
         margin-top: 0;
@@ -432,9 +343,41 @@
     }
     #gform_submit_button_1 {
       border: none;
-      border-radius: 10px;
+      border-radius: 15px;
+      padding: 0.5em 1em;
       background-color: $color__brand-1;
       font-family: $font__bold;
+    }
+  }
+
+  @include respond-to(med-small) {
+    #partition-section {
+      ul#in-corner-wrapper,
+      ul#between-wall-wrapper,
+      ul#alcove-in-corner-wrapper,
+      ul#alcove-between-wall-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+
+        li {
+          flex: 0 1 50%;
+          margin: 1.5em auto 0;
+        }
+
+        #field_1_105,
+        #field_1_106,
+        #field_1_107,
+        #field_1_108 {
+          flex: 0 0 100%;
+          text-align: left;
+          &:before {
+            width: 0;
+            height: 0;
+          }
+        }
+      }
     }
   }
 
@@ -455,7 +398,7 @@
     #partition-section {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
       flex-wrap: wrap;
 
       li,
@@ -486,23 +429,8 @@
       ul#between-wall-wrapper,
       ul#alcove-in-corner-wrapper,
       ul#alcove-between-wall-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
         li {
-          flex: 1 1 50%;
-        }
-
-        #field_1_105,
-        #field_1_106,
-        #field_1_107,
-        #field_1_108 {
-          flex: 0 0 100%;
-          &:before {
-            width: 0;
-            height: 0;
-          }
+          flex: 0 1 33%;
         }
       }
     }
@@ -515,16 +443,9 @@
       ul#alcove-in-corner-wrapper,
       ul#alcove-between-wall-wrapper {
         border: 1px solid red;
-        // flex-wrap: nowrap;
-        // justify-content: flex-start;
-        // text-align: left;
 
         li {
-          flex: 1 1 20%;
-          &:before {
-            width: 200px;
-            height: 150px;
-          }
+          flex: 0 1 33%;
         }
       }
     }
@@ -551,6 +472,19 @@
           input {
             width: 30%;
             // margin-left: auto;
+          }
+        }
+      }
+
+      ul#in-corner-wrapper,
+      ul#between-wall-wrapper,
+      ul#alcove-in-corner-wrapper,
+      ul#alcove-between-wall-wrapper {
+        li {
+          flex: 0 1 25%;
+          &:before {
+            // width: 200px;
+            // height: 150px;
           }
         }
       }
