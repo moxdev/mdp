@@ -3637,7 +3637,7 @@ ol.carousel-nav li.active a:hover {
   content: '';
   display: block;
   background-size: contain;
-  width: auto;
+  width: 250px;
   height: 200px;
 }
 /* line 69, sass/page-templates/_request-page.scss */
@@ -3662,22 +3662,22 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 89, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_35:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-1.jpg");
   background-repeat: no-repeat;
 }
 /* line 95, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_52:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-2.jpg");
   background-repeat: no-repeat;
 }
 /* line 101, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_54:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-3.jpg");
   background-repeat: no-repeat;
 }
 /* line 107, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_53:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-4.jpg");
   background-repeat: no-repeat;
 }
 /* line 117, sass/page-templates/_request-page.scss */
@@ -3702,7 +3702,7 @@ ol.carousel-nav li.active a:hover {
   content: '';
   display: block;
   background-size: contain;
-  width: auto;
+  width: 250px;
   height: 200px;
 }
 /* line 140, sass/page-templates/_request-page.scss */
@@ -3727,22 +3727,22 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 160, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_50:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-1.jpg");
   background-repeat: no-repeat;
 }
 /* line 166, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_57:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-2.jpg");
   background-repeat: no-repeat;
 }
 /* line 172, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_56:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-3.jpg");
   background-repeat: no-repeat;
 }
 /* line 178, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_55:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-4.jpg");
   background-repeat: no-repeat;
 }
 /* line 185, sass/page-templates/_request-page.scss */
@@ -3767,216 +3767,216 @@ ol.carousel-nav li.active a:hover {
   content: '';
   display: block;
   background-size: contain;
-  width: auto;
+  width: 250px;
   height: 200px;
 }
-/* line 208, sass/page-templates/_request-page.scss */
+/* line 207, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper li:last-child {
   display: none !important;
 }
-/* line 213, sass/page-templates/_request-page.scss */
+/* line 212, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_107:before {
   background-image: none;
   width: 0;
   height: 0;
 }
-/* line 218, sass/page-templates/_request-page.scss */
+/* line 217, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_107 label {
   font-family: "source_sans_probold";
   letter-spacing: 1px;
   margin-top: 2em;
 }
-/* line 223, sass/page-templates/_request-page.scss */
+/* line 222, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_107 .ginput_container {
   display: none;
 }
-/* line 228, sass/page-templates/_request-page.scss */
+/* line 227, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_59:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-1.jpg");
   background-repeat: no-repeat;
 }
-/* line 234, sass/page-templates/_request-page.scss */
+/* line 233, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_62:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-2.jpg");
   background-repeat: no-repeat;
 }
-/* line 240, sass/page-templates/_request-page.scss */
+/* line 239, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_61:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-3.jpg");
   background-repeat: no-repeat;
 }
-/* line 246, sass/page-templates/_request-page.scss */
+/* line 245, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_60:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-4.jpg");
   background-repeat: no-repeat;
 }
-/* line 253, sass/page-templates/_request-page.scss */
+/* line 252, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #li.gfield {
   margin-top: 1.5em;
 }
-/* line 257, sass/page-templates/_request-page.scss */
+/* line 256, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper .gfield_label {
   display: inline-block;
 }
-/* line 260, sass/page-templates/_request-page.scss */
+/* line 259, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper .ginput_container {
   display: inline-block;
   margin-left: 1em;
 }
-/* line 263, sass/page-templates/_request-page.scss */
+/* line 262, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper .ginput_container .small {
   width: 25%;
 }
-/* line 268, sass/page-templates/_request-page.scss */
+/* line 267, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper li:before {
   content: '';
   display: block;
   background-size: contain;
-  width: auto;
+  width: 250px;
   height: 200px;
 }
-/* line 276, sass/page-templates/_request-page.scss */
+/* line 274, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper li:last-child {
   display: none !important;
 }
-/* line 281, sass/page-templates/_request-page.scss */
+/* line 279, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_108:before {
   background-image: none;
   width: 0;
   height: 0;
 }
-/* line 286, sass/page-templates/_request-page.scss */
+/* line 284, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_108 label {
   font-family: "source_sans_probold";
   letter-spacing: 1px;
   margin-top: 2em;
 }
-/* line 291, sass/page-templates/_request-page.scss */
+/* line 289, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_108 .ginput_container {
   display: none;
 }
-/* line 296, sass/page-templates/_request-page.scss */
+/* line 294, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_64:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-1.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-1.jpg");
   background-repeat: no-repeat;
 }
-/* line 302, sass/page-templates/_request-page.scss */
+/* line 300, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_67:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-2.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-2.jpg");
   background-repeat: no-repeat;
 }
-/* line 308, sass/page-templates/_request-page.scss */
+/* line 306, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_66:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-3.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-3.jpg");
   background-repeat: no-repeat;
 }
-/* line 314, sass/page-templates/_request-page.scss */
+/* line 312, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_65:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner/in-corner-4.jpg");
+  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-4.jpg");
   background-repeat: no-repeat;
 }
-/* line 321, sass/page-templates/_request-page.scss */
+/* line 319, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #field_1_68 .ginput_container {
   margin-top: 0;
 }
-/* line 325, sass/page-templates/_request-page.scss */
+/* line 323, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex {
   padding-top: 1em !important;
   padding-bottom: 2em !important;
 }
-/* line 329, sass/page-templates/_request-page.scss */
+/* line 327, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #li.gfield {
   margin-top: 1.5em;
 }
-/* line 333, sass/page-templates/_request-page.scss */
+/* line 331, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex .gfield_label {
   display: inline-block;
 }
-/* line 336, sass/page-templates/_request-page.scss */
+/* line 334, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex .ginput_container {
   display: inline-block;
   margin-left: 10px;
 }
-/* line 339, sass/page-templates/_request-page.scss */
+/* line 337, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex .ginput_container .small {
   width: 25%;
 }
-/* line 344, sass/page-templates/_request-page.scss */
+/* line 342, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex li:before {
   display: block;
   width: auto;
   height: 25px;
   font-family: "source_sans_probold";
 }
-/* line 350, sass/page-templates/_request-page.scss */
+/* line 348, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex li:last-child {
   display: none !important;
 }
-/* line 355, sass/page-templates/_request-page.scss */
+/* line 353, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_74:before {
   content: '1 Tier 12”W x 12”D x 60”H';
 }
-/* line 360, sass/page-templates/_request-page.scss */
+/* line 358, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_85:before {
   content: '1 Tier 12”W x 12”D x 72”H';
 }
-/* line 365, sass/page-templates/_request-page.scss */
+/* line 363, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_84:before {
   content: '1 Tier 12”W x 15”D x 60”H';
 }
-/* line 370, sass/page-templates/_request-page.scss */
+/* line 368, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_83:before {
   content: '1 Tier 12”W x 15”D x 72”H';
 }
-/* line 375, sass/page-templates/_request-page.scss */
+/* line 373, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_82:before {
   content: '1 Tier 12”W x 18”D x 60”H';
 }
-/* line 380, sass/page-templates/_request-page.scss */
+/* line 378, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_81:before {
   content: '1 Tier 12”W x 18”D x 72”H';
 }
-/* line 385, sass/page-templates/_request-page.scss */
+/* line 383, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_80:before {
   content: '1 Tier 15”W x 18”D x 72”H';
 }
-/* line 390, sass/page-templates/_request-page.scss */
+/* line 388, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_79:before {
   content: '1 Tier 18”W x 18”D x 72”H';
 }
-/* line 395, sass/page-templates/_request-page.scss */
+/* line 393, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_78:before {
   content: '2 Tier 12”W x 12”D x 30”/60”H';
 }
-/* line 400, sass/page-templates/_request-page.scss */
+/* line 398, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_77:before {
   content: '2 Tier 12”W x 12”D x 36”/72”H';
 }
-/* line 405, sass/page-templates/_request-page.scss */
+/* line 403, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_76:before {
   content: '2 Tier 12”W x 15”D x 36”/72”H';
 }
-/* line 410, sass/page-templates/_request-page.scss */
+/* line 408, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_75:before {
   content: '2 Tier 12”W x 18”D x 36”/72”H';
 }
-/* line 415, sass/page-templates/_request-page.scss */
+/* line 413, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_89:before {
   content: '2 Tier 15”W x 18”D x 36”/72”H';
 }
-/* line 420, sass/page-templates/_request-page.scss */
+/* line 418, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_88:before {
   content: '3 Tier 12”W x 12”D x 24”/72”H';
 }
-/* line 425, sass/page-templates/_request-page.scss */
+/* line 423, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_87:before {
   content: '3 Tier 12”W x 15”D x 24”/72”H';
 }
-/* line 430, sass/page-templates/_request-page.scss */
+/* line 428, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form .locker-flex #field_1_86:before {
   content: '3 Tier 12”W x 18”D x 24”/72”H';
 }
-/* line 435, sass/page-templates/_request-page.scss */
+/* line 433, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #gform_submit_button_1 {
   border: none;
   border-radius: 10px;
@@ -3984,7 +3984,7 @@ ol.carousel-nav li.active a:hover {
   font-family: "source_sans_probold";
 }
 @media (min-width: 750px) {
-  /* line 444, sass/page-templates/_request-page.scss */
+  /* line 442, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3998,19 +3998,19 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 449, sass/page-templates/_request-page.scss */
+  /* line 447, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
-  /* line 452, sass/page-templates/_request-page.scss */
+  /* line 451, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 #field_1_102 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  /* line 456, sass/page-templates/_request-page.scss */
+  /* line 455, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4024,11 +4024,158 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 462, sass/page-templates/_request-page.scss */
-  .page-template-page-request-qoute #partition-section li {
+  /* line 461, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section li,
+  .page-template-page-request-qoute #partition-section ul {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+  /* line 468, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section #field_1_19 input,
+  .page-template-page-request-qoute #partition-section #field_1_20 input,
+  .page-template-page-request-qoute #partition-section #field_1_22 input {
+    width: 10%;
+  }
+  /* line 472, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section #field_1_97,
+  .page-template-page-request-qoute #partition-section #field_1_101 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+  /* line 476, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section #field_1_99,
+  .page-template-page-request-qoute #partition-section #field_1_100 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 481, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section #field_1_99 input,
+  .page-template-page-request-qoute #partition-section #field_1_100 input {
+    width: 30%;
+  }
+  /* line 485, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 493, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  /* line 497, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_105,
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_106,
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_107,
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_108,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_105,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_106,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_107,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_108,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_105,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_106,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_107,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_108,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_105,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_106,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_107,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_108 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  /* line 502, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_105:before,
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_106:before,
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_107:before,
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_108:before,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_105:before,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_106:before,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_107:before,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper #field_1_108:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_105:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_106:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_107:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper #field_1_108:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_105:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_106:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_107:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper #field_1_108:before {
+    width: 0;
+    height: 0;
+  }
+}
+@media (min-width: 950px) {
+  /* line 513, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper {
+    border: 1px solid red;
+  }
+  /* line 522, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+  }
+  /* line 524, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li:before,
+  .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li:before,
+  .page-template-page-request-qoute #partition-section ul#alcove-between-wall-wrapper li:before {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (min-width: 1190px) {
+  /* line 535, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section #field_1_19,
+  .page-template-page-request-qoute #partition-section #field_1_20,
+  .page-template-page-request-qoute #partition-section #field_1_22 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33%;
+            flex: 1 0 33%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.9em;
+  }
+  /* line 551, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section #field_1_19 .ginput_container input,
+  .page-template-page-request-qoute #partition-section #field_1_20 .ginput_container input,
+  .page-template-page-request-qoute #partition-section #field_1_22 .ginput_container input {
+    width: 30%;
   }
 }
 
