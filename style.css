@@ -3606,34 +3606,35 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 34, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form li#field_1_113,
-.page-template-page-request-qoute form li#field_1_32 {
+.page-template-page-request-qoute form li#field_1_32,
+.page-template-page-request-qoute form li#field_1_70 {
   display: none !important;
 }
-/* line 39, sass/page-templates/_request-page.scss */
+/* line 40, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form h2 {
   font-family: "source_sans_probold";
   font-size: 1em;
   line-height: 1.3;
 }
-/* line 44, sass/page-templates/_request-page.scss */
+/* line 45, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form h3 {
   font-family: "source_sans_probold";
   font-size: 1.1em;
 }
-/* line 52, sass/page-templates/_request-page.scss */
+/* line 53, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#totals-section li:last-child,
 .page-template-page-request-qoute form ul#material-dropdowns-section li:last-child,
 .page-template-page-request-qoute form ul#screens-section li:last-child {
   display: none !important;
 }
-/* line 62, sass/page-templates/_request-page.scss */
+/* line 63, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#in-corner-wrapper #li.gfield,
 .page-template-page-request-qoute form ul#between-wall-wrapper #li.gfield,
 .page-template-page-request-qoute form ul#alcove-in-corner-wrapper #li.gfield,
 .page-template-page-request-qoute form ul#alcove-between-wall-wrapper #li.gfield {
   margin-top: 1.5em;
 }
-/* line 66, sass/page-templates/_request-page.scss */
+/* line 67, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#in-corner-wrapper .gfield_label,
 .page-template-page-request-qoute form ul#between-wall-wrapper .gfield_label,
 .page-template-page-request-qoute form ul#alcove-in-corner-wrapper .gfield_label,
@@ -3641,7 +3642,7 @@ ol.carousel-nav li.active a:hover {
   display: inline-block;
   margin-top: 0.5em;
 }
-/* line 70, sass/page-templates/_request-page.scss */
+/* line 71, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#in-corner-wrapper .ginput_container,
 .page-template-page-request-qoute form ul#between-wall-wrapper .ginput_container,
 .page-template-page-request-qoute form ul#alcove-in-corner-wrapper .ginput_container,
@@ -3651,14 +3652,14 @@ ol.carousel-nav li.active a:hover {
   padding-left: 0.25em;
   max-width: 170px;
 }
-/* line 75, sass/page-templates/_request-page.scss */
+/* line 76, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#in-corner-wrapper .ginput_container .small,
 .page-template-page-request-qoute form ul#between-wall-wrapper .ginput_container .small,
 .page-template-page-request-qoute form ul#alcove-in-corner-wrapper .ginput_container .small,
 .page-template-page-request-qoute form ul#alcove-between-wall-wrapper .ginput_container .small {
   width: 25%;
 }
-/* line 80, sass/page-templates/_request-page.scss */
+/* line 81, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#in-corner-wrapper li:before,
 .page-template-page-request-qoute form ul#between-wall-wrapper li:before,
 .page-template-page-request-qoute form ul#alcove-in-corner-wrapper li:before,
@@ -3669,23 +3670,23 @@ ol.carousel-nav li.active a:hover {
   width: 250px;
   height: 200px;
 }
-/* line 87, sass/page-templates/_request-page.scss */
+/* line 88, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#in-corner-wrapper li:last-child,
 .page-template-page-request-qoute form ul#between-wall-wrapper li:last-child,
 .page-template-page-request-qoute form ul#alcove-in-corner-wrapper li:last-child,
 .page-template-page-request-qoute form ul#alcove-between-wall-wrapper li:last-child {
   display: none !important;
 }
-/* line 97, sass/page-templates/_request-page.scss */
+/* line 98, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form li#field_1_105:before,
 .page-template-page-request-qoute form li#field_1_106:before,
 .page-template-page-request-qoute form li#field_1_107:before,
 .page-template-page-request-qoute form li#field_1_108:before {
-  background-image: none;
-  width: 0;
-  height: 0;
+  background-image: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
-/* line 102, sass/page-templates/_request-page.scss */
+/* line 103, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form li#field_1_105 label,
 .page-template-page-request-qoute form li#field_1_106 label,
 .page-template-page-request-qoute form li#field_1_107 label,
@@ -3694,224 +3695,219 @@ ol.carousel-nav li.active a:hover {
   letter-spacing: 1px;
   margin-top: 2em;
 }
-/* line 107, sass/page-templates/_request-page.scss */
+/* line 108, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form li#field_1_105 .ginput_container,
 .page-template-page-request-qoute form li#field_1_106 .ginput_container,
 .page-template-page-request-qoute form li#field_1_107 .ginput_container,
 .page-template-page-request-qoute form li#field_1_108 .ginput_container {
   display: none;
 }
-/* line 113, sass/page-templates/_request-page.scss */
+/* line 114, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_105:before {
   background-image: none;
   width: 0;
   height: 0;
 }
-/* line 118, sass/page-templates/_request-page.scss */
+/* line 119, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_105 label {
   font-family: "source_sans_probold";
   letter-spacing: 1px;
   margin-top: 2em;
 }
-/* line 123, sass/page-templates/_request-page.scss */
+/* line 124, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_105 .ginput_container {
   display: none;
 }
-/* line 128, sass/page-templates/_request-page.scss */
+/* line 129, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_35:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-1.jpg");
   background-repeat: no-repeat;
 }
-/* line 134, sass/page-templates/_request-page.scss */
+/* line 135, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_52:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-2.jpg");
   background-repeat: no-repeat;
 }
-/* line 140, sass/page-templates/_request-page.scss */
+/* line 141, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_54:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-3.jpg");
   background-repeat: no-repeat;
 }
-/* line 146, sass/page-templates/_request-page.scss */
+/* line 147, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_53:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-4.jpg");
   background-repeat: no-repeat;
 }
-/* line 154, sass/page-templates/_request-page.scss */
+/* line 155, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_106:before {
   background-image: none;
   width: 0;
   height: 0;
 }
-/* line 159, sass/page-templates/_request-page.scss */
+/* line 160, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_106 label {
   font-family: "source_sans_probold";
   letter-spacing: 1px;
   margin-top: 2em;
 }
-/* line 164, sass/page-templates/_request-page.scss */
+/* line 165, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_106 .ginput_container {
   display: none;
 }
-/* line 169, sass/page-templates/_request-page.scss */
+/* line 170, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_50:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-1.jpg");
   background-repeat: no-repeat;
 }
-/* line 175, sass/page-templates/_request-page.scss */
+/* line 176, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_57:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-2.jpg");
   background-repeat: no-repeat;
 }
-/* line 181, sass/page-templates/_request-page.scss */
+/* line 182, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_56:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-3.jpg");
   background-repeat: no-repeat;
 }
-/* line 187, sass/page-templates/_request-page.scss */
+/* line 188, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_55:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-4.jpg");
   background-repeat: no-repeat;
 }
-/* line 195, sass/page-templates/_request-page.scss */
+/* line 196, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_59:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-1.jpg");
   background-repeat: no-repeat;
 }
-/* line 201, sass/page-templates/_request-page.scss */
+/* line 202, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_62:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-2.jpg");
   background-repeat: no-repeat;
 }
-/* line 207, sass/page-templates/_request-page.scss */
+/* line 208, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_61:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-3.jpg");
   background-repeat: no-repeat;
 }
-/* line 213, sass/page-templates/_request-page.scss */
+/* line 214, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_60:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-4.jpg");
   background-repeat: no-repeat;
 }
-/* line 221, sass/page-templates/_request-page.scss */
+/* line 222, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_64:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-1.jpg");
   background-repeat: no-repeat;
 }
-/* line 227, sass/page-templates/_request-page.scss */
+/* line 228, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_67:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-2.jpg");
   background-repeat: no-repeat;
 }
-/* line 233, sass/page-templates/_request-page.scss */
+/* line 234, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_66:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-3.jpg");
   background-repeat: no-repeat;
 }
-/* line 239, sass/page-templates/_request-page.scss */
+/* line 240, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_65:before {
   background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-4.jpg");
   background-repeat: no-repeat;
 }
-/* line 247, sass/page-templates/_request-page.scss */
+/* line 248, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #field_1_68 .ginput_container {
   margin-top: 0;
 }
-/* line 251, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex {
-  padding-top: 1em !important;
-  padding-bottom: 2em !important;
-}
-/* line 255, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #li.gfield {
+/* line 254, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #li.gfield {
   margin-top: 1.5em;
 }
-/* line 259, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex .gfield_label {
+/* line 258, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex .gfield_label {
   display: inline-block;
 }
-/* line 262, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex .ginput_container {
+/* line 261, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex .ginput_container {
   display: inline-block;
   margin-left: 10px;
 }
-/* line 265, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex .ginput_container .small {
+/* line 264, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex .ginput_container .small {
   width: 25%;
 }
-/* line 270, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex li:before {
+/* line 269, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex li:before {
   display: block;
   width: auto;
   height: 25px;
   font-family: "source_sans_probold";
 }
-/* line 276, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex li:last-child {
+/* line 275, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex li:last-child {
   display: none !important;
 }
-/* line 281, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_74:before {
+/* line 280, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_74:before {
   content: '1 Tier 12”W x 12”D x 60”H';
 }
-/* line 286, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_85:before {
+/* line 285, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_85:before {
   content: '1 Tier 12”W x 12”D x 72”H';
 }
-/* line 291, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_84:before {
+/* line 290, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_84:before {
   content: '1 Tier 12”W x 15”D x 60”H';
 }
-/* line 296, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_83:before {
+/* line 295, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_83:before {
   content: '1 Tier 12”W x 15”D x 72”H';
 }
-/* line 301, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_82:before {
+/* line 300, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_82:before {
   content: '1 Tier 12”W x 18”D x 60”H';
 }
-/* line 306, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_81:before {
+/* line 305, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_81:before {
   content: '1 Tier 12”W x 18”D x 72”H';
 }
-/* line 311, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_80:before {
+/* line 310, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_80:before {
   content: '1 Tier 15”W x 18”D x 72”H';
 }
-/* line 316, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_79:before {
+/* line 315, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_79:before {
   content: '1 Tier 18”W x 18”D x 72”H';
 }
-/* line 321, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_78:before {
+/* line 320, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_78:before {
   content: '2 Tier 12”W x 12”D x 30”/60”H';
 }
-/* line 326, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_77:before {
+/* line 325, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_77:before {
   content: '2 Tier 12”W x 12”D x 36”/72”H';
 }
-/* line 331, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_76:before {
+/* line 330, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_76:before {
   content: '2 Tier 12”W x 15”D x 36”/72”H';
 }
-/* line 336, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_75:before {
+/* line 335, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_75:before {
   content: '2 Tier 12”W x 18”D x 36”/72”H';
 }
-/* line 341, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_89:before {
+/* line 340, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_89:before {
   content: '2 Tier 15”W x 18”D x 36”/72”H';
 }
-/* line 346, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_88:before {
+/* line 345, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_88:before {
   content: '3 Tier 12”W x 12”D x 24”/72”H';
 }
-/* line 351, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_87:before {
+/* line 350, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_87:before {
   content: '3 Tier 12”W x 15”D x 24”/72”H';
 }
-/* line 356, sass/page-templates/_request-page.scss */
-.page-template-page-request-qoute form .locker-flex #field_1_86:before {
+/* line 355, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul#locker-section ul#locker-flex #field_1_86:before {
   content: '3 Tier 12”W x 18”D x 24”/72”H';
 }
 /* line 361, sass/page-templates/_request-page.scss */
@@ -3922,8 +3918,13 @@ ol.carousel-nav li.active a:hover {
   background-color: #81bc00;
   font-family: "source_sans_probold";
 }
+/* line 369, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form #gform_confirmation_wrapper_1 #gform_confirmation_message_1 {
+  text-align: center;
+  font-size: 1.8em;
+}
 @media (min-width: 575px) {
-  /* line 372, sass/page-templates/_request-page.scss */
+  /* line 378, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section,
   .page-template-page-request-qoute #partition-section ul#screens-section {
     display: -webkit-box;
@@ -3938,7 +3939,7 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 378, sass/page-templates/_request-page.scss */
+  /* line 384, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li,
   .page-template-page-request-qoute #partition-section ul#screens-section li {
     -webkit-box-flex: 0;
@@ -3951,26 +3952,26 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 382, sass/page-templates/_request-page.scss */
+  /* line 388, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li label,
   .page-template-page-request-qoute #partition-section ul#screens-section li label {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 60%;
             flex: 0 1 60%;
   }
-  /* line 385, sass/page-templates/_request-page.scss */
+  /* line 391, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container,
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 40%;
             flex: 0 1 40%;
   }
-  /* line 387, sass/page-templates/_request-page.scss */
+  /* line 393, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container input,
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container input {
     width: 45%;
   }
-  /* line 394, sass/page-templates/_request-page.scss */
+  /* line 400, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper,
@@ -3986,7 +3987,7 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  /* line 403, sass/page-templates/_request-page.scss */
+  /* line 409, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -3996,7 +3997,7 @@ ol.carousel-nav li.active a:hover {
             flex: 0 1 50%;
     margin: 1.5em auto 0;
   }
-  /* line 408, sass/page-templates/_request-page.scss */
+  /* line 414, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_105,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_106,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_107,
@@ -4018,7 +4019,7 @@ ol.carousel-nav li.active a:hover {
             flex: 0 0 100%;
     text-align: left;
   }
-  /* line 414, sass/page-templates/_request-page.scss */
+  /* line 420, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_105:before,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_106:before,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_107:before,
@@ -4038,9 +4039,39 @@ ol.carousel-nav li.active a:hover {
     width: 0;
     height: 0;
   }
+  /* line 428, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section li#field_1_72 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 431, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section li#field_1_72 .ginput_container {
+    padding-left: 1em;
+  }
+  /* line 435, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section #locker-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 439, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section #locker-flex li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
 }
 @media (min-width: 750px) {
-  /* line 424, sass/page-templates/_request-page.scss */
+  /* line 447, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4054,19 +4085,19 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 429, sass/page-templates/_request-page.scss */
+  /* line 452, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
-  /* line 433, sass/page-templates/_request-page.scss */
+  /* line 456, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 #field_1_102 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  /* line 437, sass/page-templates/_request-page.scss */
+  /* line 460, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4080,14 +4111,14 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 443, sass/page-templates/_request-page.scss */
+  /* line 466, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section li,
   .page-template-page-request-qoute #partition-section ul {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  /* line 447, sass/page-templates/_request-page.scss */
+  /* line 470, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#material-dropdowns-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4096,13 +4127,13 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  /* line 451, sass/page-templates/_request-page.scss */
+  /* line 474, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#material-dropdowns-section li {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 459, sass/page-templates/_request-page.scss */
+  /* line 482, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -4113,7 +4144,7 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 950px) {
-  /* line 472, sass/page-templates/_request-page.scss */
+  /* line 495, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -4122,9 +4153,15 @@ ol.carousel-nav li.active a:hover {
         -ms-flex: 0 1 33%;
             flex: 0 1 33%;
   }
+  /* line 502, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section #locker-flex li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33%;
+            flex: 1 0 33%;
+  }
 }
 @media (min-width: 1190px) {
-  /* line 481, sass/page-templates/_request-page.scss */
+  /* line 511, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4136,7 +4173,7 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  /* line 486, sass/page-templates/_request-page.scss */
+  /* line 515, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33%;
@@ -4151,40 +4188,40 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 491, sass/page-templates/_request-page.scss */
+  /* line 520, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li label {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 80%;
             flex: 0 1 80%;
   }
-  /* line 494, sass/page-templates/_request-page.scss */
+  /* line 523, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 10%;
             flex: 0 1 10%;
   }
-  /* line 496, sass/page-templates/_request-page.scss */
+  /* line 525, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container input {
     width: 100%;
   }
-  /* line 504, sass/page-templates/_request-page.scss */
+  /* line 533, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#screens-section li label {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 60%;
             flex: 0 1 60%;
   }
-  /* line 507, sass/page-templates/_request-page.scss */
+  /* line 536, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 40%;
             flex: 0 1 40%;
     padding-left: 10px;
   }
-  /* line 510, sass/page-templates/_request-page.scss */
+  /* line 539, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container input {
     width: 20%;
   }
-  /* line 521, sass/page-templates/_request-page.scss */
+  /* line 549, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -4194,8 +4231,16 @@ ol.carousel-nav li.active a:hover {
             flex: 0 1 25%;
   }
 }
+@media screen and (min-width: 1300px) {
+  /* line 558, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section #locker-flex li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%;
+  }
+}
 @media (min-width: 1490px) {
-  /* line 534, sass/page-templates/_request-page.scss */
+  /* line 567, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section {
     font-size: 0.9em;
   }
