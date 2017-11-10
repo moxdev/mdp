@@ -3657,7 +3657,7 @@ ol.carousel-nav li.active a:hover {
 .page-template-page-request-qoute form ul#between-wall-wrapper .ginput_container .small,
 .page-template-page-request-qoute form ul#alcove-in-corner-wrapper .ginput_container .small,
 .page-template-page-request-qoute form ul#alcove-between-wall-wrapper .ginput_container .small {
-  width: 25%;
+  width: 28%;
 }
 /* line 81, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form ul#in-corner-wrapper li:before,
@@ -3720,22 +3720,22 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 129, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_35:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-1.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/in-corner-1.jpg");
   background-repeat: no-repeat;
 }
 /* line 135, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_52:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-2.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/in-corner-2.jpg");
   background-repeat: no-repeat;
 }
 /* line 141, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_54:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-3.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/in-corner-3.jpg");
   background-repeat: no-repeat;
 }
 /* line 147, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #in-corner-wrapper #field_1_53:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/in-corner-4.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/in-corner-4.jpg");
   background-repeat: no-repeat;
 }
 /* line 155, sass/page-templates/_request-page.scss */
@@ -3756,62 +3756,62 @@ ol.carousel-nav li.active a:hover {
 }
 /* line 170, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_50:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-1.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/between-wall-1.jpg");
   background-repeat: no-repeat;
 }
 /* line 176, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_57:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-2.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/between-wall-2.jpg");
   background-repeat: no-repeat;
 }
 /* line 182, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_56:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-3.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/between-wall-3.jpg");
   background-repeat: no-repeat;
 }
 /* line 188, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #between-wall-wrapper #field_1_55:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/between-wall-4.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/between-wall-4.jpg");
   background-repeat: no-repeat;
 }
 /* line 196, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_59:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-1.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-in-corner-1.jpg");
   background-repeat: no-repeat;
 }
 /* line 202, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_62:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-2.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-in-corner-2.jpg");
   background-repeat: no-repeat;
 }
 /* line 208, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_61:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-3.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-in-corner-3.jpg");
   background-repeat: no-repeat;
 }
 /* line 214, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-in-corner-wrapper #field_1_60:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-in-corner-4.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-in-corner-4.jpg");
   background-repeat: no-repeat;
 }
 /* line 222, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_64:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-1.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-between-wall-1.jpg");
   background-repeat: no-repeat;
 }
 /* line 228, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_67:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-2.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-between-wall-2.jpg");
   background-repeat: no-repeat;
 }
 /* line 234, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_66:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-3.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-between-wall-3.jpg");
   background-repeat: no-repeat;
 }
 /* line 240, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #alcove-between-wall-wrapper #field_1_65:before {
-  background-image: url("http://localhost:8888/mdp/wp-content/themes/md_partitions/img/form/alcove-between-wall-4.jpg");
+  background-image: url("/wp-content/themes/md_partitions/img/form/alcove-between-wall-4.jpg");
   background-repeat: no-repeat;
 }
 /* line 248, sass/page-templates/_request-page.scss */
@@ -3911,20 +3911,26 @@ ol.carousel-nav li.active a:hover {
   content: '3 Tier 12”W x 18”D x 24”/72”H';
 }
 /* line 361, sass/page-templates/_request-page.scss */
+.page-template-page-request-qoute form ul.disclaimer {
+  font-size: 0.8em;
+  padding-top: 1em;
+  font-style: italic;
+}
+/* line 366, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #gform_submit_button_1 {
   border: none;
   border-radius: 15px;
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
   background-color: #81bc00;
   font-family: "source_sans_probold";
 }
-/* line 369, sass/page-templates/_request-page.scss */
+/* line 374, sass/page-templates/_request-page.scss */
 .page-template-page-request-qoute form #gform_confirmation_wrapper_1 #gform_confirmation_message_1 {
   text-align: center;
   font-size: 1.8em;
 }
 @media (min-width: 575px) {
-  /* line 378, sass/page-templates/_request-page.scss */
+  /* line 383, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section,
   .page-template-page-request-qoute #partition-section ul#screens-section {
     display: -webkit-box;
@@ -3939,7 +3945,7 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 384, sass/page-templates/_request-page.scss */
+  /* line 389, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li,
   .page-template-page-request-qoute #partition-section ul#screens-section li {
     -webkit-box-flex: 0;
@@ -3952,26 +3958,26 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 388, sass/page-templates/_request-page.scss */
+  /* line 393, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li label,
   .page-template-page-request-qoute #partition-section ul#screens-section li label {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 60%;
             flex: 0 1 60%;
   }
-  /* line 391, sass/page-templates/_request-page.scss */
+  /* line 396, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container,
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 40%;
             flex: 0 1 40%;
   }
-  /* line 393, sass/page-templates/_request-page.scss */
+  /* line 398, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container input,
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container input {
     width: 45%;
   }
-  /* line 400, sass/page-templates/_request-page.scss */
+  /* line 405, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper,
@@ -3987,7 +3993,7 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  /* line 409, sass/page-templates/_request-page.scss */
+  /* line 414, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -3997,7 +4003,7 @@ ol.carousel-nav li.active a:hover {
             flex: 0 1 50%;
     margin: 1.5em auto 0;
   }
-  /* line 414, sass/page-templates/_request-page.scss */
+  /* line 419, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_105,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_106,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_107,
@@ -4019,7 +4025,7 @@ ol.carousel-nav li.active a:hover {
             flex: 0 0 100%;
     text-align: left;
   }
-  /* line 420, sass/page-templates/_request-page.scss */
+  /* line 425, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_105:before,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_106:before,
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper #field_1_107:before,
@@ -4039,7 +4045,7 @@ ol.carousel-nav li.active a:hover {
     width: 0;
     height: 0;
   }
-  /* line 428, sass/page-templates/_request-page.scss */
+  /* line 433, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #locker-section li#field_1_72 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4048,11 +4054,11 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 431, sass/page-templates/_request-page.scss */
+  /* line 436, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #locker-section li#field_1_72 .ginput_container {
     padding-left: 1em;
   }
-  /* line 435, sass/page-templates/_request-page.scss */
+  /* line 440, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #locker-section #locker-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4063,7 +4069,7 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 439, sass/page-templates/_request-page.scss */
+  /* line 444, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #locker-section #locker-flex li {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
@@ -4071,7 +4077,7 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 750px) {
-  /* line 447, sass/page-templates/_request-page.scss */
+  /* line 452, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4085,19 +4091,19 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 452, sass/page-templates/_request-page.scss */
+  /* line 457, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
-  /* line 456, sass/page-templates/_request-page.scss */
+  /* line 461, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #gform_fields_1 #field_1_102 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  /* line 460, sass/page-templates/_request-page.scss */
+  /* line 465, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4111,14 +4117,14 @@ ol.carousel-nav li.active a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 466, sass/page-templates/_request-page.scss */
+  /* line 471, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section li,
   .page-template-page-request-qoute #partition-section ul {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  /* line 470, sass/page-templates/_request-page.scss */
+  /* line 475, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#material-dropdowns-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4127,13 +4133,13 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  /* line 474, sass/page-templates/_request-page.scss */
+  /* line 479, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#material-dropdowns-section li {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  /* line 482, sass/page-templates/_request-page.scss */
+  /* line 487, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -4144,7 +4150,7 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 950px) {
-  /* line 495, sass/page-templates/_request-page.scss */
+  /* line 500, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -4153,7 +4159,7 @@ ol.carousel-nav li.active a:hover {
         -ms-flex: 0 1 33%;
             flex: 0 1 33%;
   }
-  /* line 502, sass/page-templates/_request-page.scss */
+  /* line 507, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #locker-section #locker-flex li {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 33%;
@@ -4161,8 +4167,9 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 1190px) {
-  /* line 511, sass/page-templates/_request-page.scss */
+  /* line 516, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section {
+    font-size: 0.9em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4173,7 +4180,7 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  /* line 515, sass/page-templates/_request-page.scss */
+  /* line 521, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33%;
@@ -4188,40 +4195,52 @@ ol.carousel-nav li.active a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 520, sass/page-templates/_request-page.scss */
-  .page-template-page-request-qoute #partition-section ul#total-section li label {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 80%;
-            flex: 0 1 80%;
-  }
-  /* line 523, sass/page-templates/_request-page.scss */
+  /* line 526, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 10%;
-            flex: 0 1 10%;
+        -ms-flex: 0 1 12%;
+            flex: 0 1 12%;
   }
-  /* line 525, sass/page-templates/_request-page.scss */
+  /* line 528, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#total-section li .ginput_container input {
     width: 100%;
   }
-  /* line 533, sass/page-templates/_request-page.scss */
+  /* line 534, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#total-section li.total-flex-1 label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 85%;
+            flex: 0 1 85%;
+  }
+  /* line 539, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#total-section li.total-flex-2 label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+  }
+  /* line 544, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #partition-section ul#total-section li.total-flex-3 label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 52%;
+            flex: 0 1 52%;
+  }
+  /* line 551, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#screens-section li label {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 60%;
-            flex: 0 1 60%;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
   }
-  /* line 536, sass/page-templates/_request-page.scss */
+  /* line 554, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 40%;
             flex: 0 1 40%;
     padding-left: 10px;
   }
-  /* line 539, sass/page-templates/_request-page.scss */
+  /* line 557, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#screens-section li .ginput_container input {
-    width: 20%;
+    width: 23%;
   }
-  /* line 549, sass/page-templates/_request-page.scss */
+  /* line 567, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #partition-section ul#in-corner-wrapper li,
   .page-template-page-request-qoute #partition-section ul#between-wall-wrapper li,
   .page-template-page-request-qoute #partition-section ul#alcove-in-corner-wrapper li,
@@ -4232,7 +4251,7 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 558, sass/page-templates/_request-page.scss */
+  /* line 576, sass/page-templates/_request-page.scss */
   .page-template-page-request-qoute #locker-section #locker-flex li {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 25%;
@@ -4240,9 +4259,19 @@ ol.carousel-nav li.active a:hover {
   }
 }
 @media (min-width: 1490px) {
-  /* line 567, sass/page-templates/_request-page.scss */
-  .page-template-page-request-qoute #partition-section ul#total-section {
-    font-size: 0.9em;
+  /* line 586, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section #locker-flex li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%;
+  }
+  /* line 588, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section #locker-flex li .ginput_container {
+    width: 30%;
+  }
+  /* line 590, sass/page-templates/_request-page.scss */
+  .page-template-page-request-qoute #locker-section #locker-flex li .ginput_container input {
+    width: 50% !important;
   }
 }
 

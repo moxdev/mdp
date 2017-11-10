@@ -44,15 +44,28 @@
 		<?php
 			the_content();
 
+			if ( function_exists( 'get_field' ) ) {
+
+					$disclaimer = get_field( 'request_disclaimer' ); ?>
+
+					<div class="request-disclaimer">
+						<?php echo $disclaimer ?>
+					</div>
+					
+					<?php
+			}
+
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'md_partitions' ),
 				'after'  => '</div>',
 			) );
 		?>
+
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
+
 			<?php
 				edit_post_link(
 					sprintf(
