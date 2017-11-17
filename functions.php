@@ -277,6 +277,11 @@ require get_template_directory() . '/inc/certifications-section.php';
  */
 include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
 
+/**
+ * Displays Map for the Community Page.
+ */
+require get_template_directory() . '/inc/community-map.php';
+
 
 // Featured Images Light Box
 function md_partitions_project_listing() {
