@@ -55,6 +55,13 @@
         }
       }
     }
+    ul#total-section {
+      label {
+        font-family: $font__bold;
+        letter-spacing: 1px;
+        margin-top: 2em;
+      }
+    }
 
     ul#in-corner-wrapper,
     ul#between-wall-wrapper,
@@ -63,7 +70,6 @@
       #li.gfield {
         margin-top: 1.5em;
       }
-
       .gfield_label {
         display: inline-block;
         margin-top: 0.5em;
@@ -243,12 +249,6 @@
         }
       }
     }
-    // custom order checkbox
-    #field_1_68 {
-      .ginput_container {
-        margin-top: 0;
-      }
-    }
     ul#locker-section {
       ul#locker-flex {
         #li.gfield {
@@ -358,6 +358,30 @@
         }
       }
     }
+    ul#input_1_119 {
+      .gchoice_1_119_1 {
+        &:before {
+          content: '';
+          display: block;
+          background-image: url('/wp-content/themes/md_partitions/img/form/locker-champagne.jpg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .gchoice_1_119_2 {
+        &:before {
+          content: '';
+          display: block;
+          background-image: url('/wp-content/themes/md_partitions/img/form/locker-gray.jpg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
     ul.disclaimer {
       font-size: 0.8em;
       padding-top: 1em;
@@ -443,6 +467,13 @@
         flex-wrap: wrap;
         li {
           flex: 1 0 50%;
+        }
+      }
+      ul#input_1_119 {
+        display: flex;
+
+        .gchoice_1_119_2 {
+          margin-left: 1em !important;
         }
       }
     }
