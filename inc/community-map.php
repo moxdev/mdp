@@ -18,7 +18,7 @@ function md_partitions_community_map() {
         </div>
       </section>
 
-      <?php wp_enqueue_script( 'md_partitions-directions', get_template_directory_uri() . '/js/min/directions-map-min.js', array(), '20150904', true );
+      <?php wp_enqueue_script( 'md_partitions-directions', get_template_directory_uri() . '/js/min/directions-map-min.js', array(), null, true );
     }
   }
 }

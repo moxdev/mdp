@@ -11,9 +11,11 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+
 		<?php if ( function_exists( 'md_partitions_community_map' ) ) {
-					md_partitions_community_map();
-				} ?>
+			md_partitions_community_map();
+		} ?>
+		
 		<main id="main" class="site-main" role="main">
 
 			<?php

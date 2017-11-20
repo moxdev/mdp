@@ -127,11 +127,6 @@ function md_partitions_scripts() {
 
 	wp_enqueue_script( 'md_partitions-skip-link-focus-fix', get_template_directory_uri() . '/js/min/skip-link-focus-fix-min.js', array(), '20151215', true );
 
-	// if ( is_page_template( 'front-page.php' ) ) {
-	// 	wp_enqueue_script( 'md_partitions-wallop-library', get_template_directory_uri() . '/js/min/Wallop.min.js', false, false, true );
-	// 	wp_enqueue_script( 'md_partitions-home-carousel', get_template_directory_uri() . '/js/min/home-carousel-min.js', array('md_partitions-wallop-library'), false, true );
-	// }
-
 	if( is_page_template('front-page.php') ) {
 		if( function_exists('get_field') ) {
 			if( have_rows('slides') ) {
