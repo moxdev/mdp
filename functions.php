@@ -273,11 +273,6 @@ require get_template_directory() . '/inc/projects-other-section.php';
 require get_template_directory() . '/inc/certifications-section.php';
 
 /**
- * Displays the Request Qoute Form.
- */
-include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
-
-/**
  * Displays Map for the Community Page.
  */
 require get_template_directory() . '/inc/community-map.php';

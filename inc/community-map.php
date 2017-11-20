@@ -14,7 +14,7 @@ function md_partitions_community_map() {
     if($lat && $lng) { ?>
       <section class="community-map">
         <?php echo $lat; echo $lng ?>
-        <div id="map-canvas" style="min-height:300px;">
+        <div id="map-canvas">
         </div>
       </section>
 
